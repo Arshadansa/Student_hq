@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 body {
-	box-sizing: border-box;
-   background-position-x :center !important;
-   background-image:  linear-gradient(to right,rgba(255, 255, 255, 0.099), rgba(136, 17, 255, 0.055)10%, rgba(253, 204, 9, 0.137))
-  }
-  
+  box-sizing: border-box;
+  background-position-x: center !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.099),
+    rgba(136, 17, 255, 0.055) 10%,
+    rgba(253, 204, 9, 0.137)
+  );
+}

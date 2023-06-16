@@ -57,6 +57,63 @@ function DeceratationSection() {
                     <span>Whatever style is preferred, aim to keep your language simple and jargon-free. Use shorter, simpler words and phrases wherever possible. Short sentences are good as they are easier to follow. Any sentence that runs to more than three lines needs to be cut down or split.
 
                     </span>
+
+                    <table className=" bg-white mt-4 mb-4">
+                        <tr className=''>
+                            <th className="shadow-md  rounded-l-md bg-red-400 text-left px-8 py-4">Phrases</th>
+                            <th className="shadow-md  rounded-r-md bg-red-400 text-left px-8 py-4">Use instead</th>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">Due to the fact that…</td>
+                            <td className="shadow-md rounded-r-md hover:bg-gray-100 px-8 py-4">Because</td>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">In addition</td>
+                            <td className="shadow-md rounded-r-md hover:bg-gray-100 px-8 py-4">Additionally (or also)</td>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">In order to</td>
+                            <td className="shadow-md  rounded-r-md hover:bg-gray-100 px-8 py-4">To</td>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">In the first place</td>
+                            <td className="shadow-md  rounded-r-md hover:bg-gray-100 px-8 py-4">First</td>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">A considerable number</td>
+                            <td className="shadow-md  rounded-r-md hover:bg-gray-100 px-8 py-4">Many</td>
+
+                        </tr>
+                        <tr
+                            className=""
+                            tabindex="0"
+                        >
+                            <td className="shadow-md rounded-l-md hover:bg-gray-100 px-8 py-4">Whether or not</td>
+                            <td className="shadow-md  rounded-r-md hover:bg-gray-100 px-8 py-4">Whether or not</td>
+
+                        </tr>
+                    </table>
+
                     <span className=' font-bold'>Proof Reading:- You should have plenty of time for proof reading, to make sure that you did not make any errors.</span>
                     <p className='mt-2 mb-2'>Dissertations require a wide range of planning and research skills. In today's tech-savvy era, myriads have time management issues, for them, we help you to guide about dissertation. Our supervisors help you to submit your work in a committed time. Our experts do strong research with high-quality academic writing which help you to score well.
                     </p>

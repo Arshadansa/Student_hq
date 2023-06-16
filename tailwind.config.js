@@ -13,6 +13,8 @@ export const theme = {
       bg: "#B1A6A4",
       bgDark: "#413F3D",
       background: "#F2F2F2",
+      third: "#dc143c",
+      five: "#fc9800"
     },
   },
 };

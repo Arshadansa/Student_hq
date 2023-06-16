@@ -30,7 +30,7 @@ function Accordion({ title, content }) {
 export default function Faq() {
   return (
     <>
-      <div className="flex m-3 lg:p-20 md:p-0 flex-wrap lg:flex-nowrap justify-center align-middle  w-full h-full md:pt-32 md:pb-32  ">
+      <div className="flex m-3  lg:p-20 md:p-0 flex-wrap lg:flex-nowrap justify-center align-middle  w-full h-full md:pt-32 md:pb-32  ">
         <div className="w-full  flex flex-col h-full">
           <div className="flex flex-col  h-full ">
 

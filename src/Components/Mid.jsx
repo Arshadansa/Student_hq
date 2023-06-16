@@ -16,7 +16,7 @@ function Mid() {
     <>
       {/*one step..section*/}
       <div className="flex flex-row m-3 justify-center flex-wrap bg-fourth ">
-      <div className="max-w-sm py-[2rem] px-10 h-[28rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
+        <div className="max-w-sm py-[2rem] px-10 h-[28rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
           <div className="px-4 ">
             <img
               className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
@@ -178,7 +178,7 @@ function Mid() {
             globe.
           </span>
         </div>
-        <div className="flex flex-col bg-third justify-center ">
+        <div className="flex flex-col justify-center ">
           <div className="flex flex-row   flex-wrap my-5 justify-center">
             {countries.map((counrty, item) => {
               return (
