@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+
 export const theme = {
   extend: {
     colors: {
@@ -14,9 +15,11 @@ export const theme = {
       bgDark: "#413F3D",
       background: "#F2F2F2",
       third: "#dc143c",
-      five: "#fc9800"
-    },
+      five: "#fc9800",
+      lightblue: "#0099ff",
+    }
   },
+
 };
 
 export const plugins = [];
