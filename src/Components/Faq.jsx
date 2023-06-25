@@ -10,7 +10,7 @@ function Accordion({ title, content }) {
     <div className="">
 
       <button
-        className="flex justify-between mb-2 mt-2 w-full transition duration-300 ease-in-out bg-white px-4 py-4 text-lg md:text-2xl font-semibold text-left text-gray-700 rounded-t-3xl rounded-b-3xl  focus:outline-none"
+        className="flex justify-between select-none mb-2 mt-2 w-full transition duration-300 ease-in-out bg-white px-4 py-4 text-lg md:text-2xl font-semibold text-left text-gray-700 rounded-t-3xl rounded-b-3xl  focus:outline-none"
         onClick={handleClick}
       >
         <span>
@@ -30,7 +30,7 @@ function Accordion({ title, content }) {
 export default function Faq() {
   return (
     <>
-      <div className="flex m-3  lg:p-20 md:p-0 flex-wrap lg:flex-nowrap justify-center align-middle  w-full h-full md:pt-32 md:pb-32  ">
+      <div className="flex m-3 select-none lg:p-20 md:p-0 flex-wrap lg:flex-nowrap justify-center align-middle  w-full h-full md:pt-32 md:pb-32  ">
         <div className="w-full  flex flex-col h-full">
           <div className="flex flex-col  h-full ">
 
@@ -48,7 +48,7 @@ export default function Faq() {
               </h3>
             </div>
 
-            <div className="mt-12 ">
+            <div className="mt-12 select-none ">
               <a
                 href="#_"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-12   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"
@@ -63,7 +63,7 @@ export default function Faq() {
           </div>
         </div>
 
-        <div className="w-full h-auto  ">
+        <div className="w-full h-auto select-none ">
           <div className="w-full">
             <div className="container  ">
               <div className="w-full  h-fit mt-7">

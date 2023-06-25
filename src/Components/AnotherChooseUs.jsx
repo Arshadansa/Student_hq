@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 function AnotherChooseUs() {
 
     return (
-        <div className=" bg-hotpink pt-16 pb-16 flex flex-col  justify-center">
+        <div className="select-none bg-hotpink pt-16 pb-16 flex flex-col  justify-center">
             <div className="flex flex-col justify-center text-center">
                 <div className="pt-0">
                     <span className=" text-black font-bold text-2xl  sm:text-5xl ">
@@ -13,7 +13,7 @@ function AnotherChooseUs() {
                 </div>
             </div>
 
-            <div className="flex flex-row p-20  flex-wrap justify-center">
+            <div className="flex flex-row p-20 select-none flex-wrap justify-center">
                 <div className=" flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
                     <div className="grid   justify-center justify-items-center ">
                         <div className="h-fit">
@@ -141,7 +141,7 @@ function AnotherChooseUs() {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-96 flex justify-center'>
+            <div className='w-full select-none h-96 flex justify-center'>
                 <div className='bg-five w-[1300px] flex justify-between   h-auto rounded-3xl'>
                     <div className='p-16'>
                         <p className='text-white text-[45px]'><span className='font-bold'>Without Us</span> Where you will Lack.</p>

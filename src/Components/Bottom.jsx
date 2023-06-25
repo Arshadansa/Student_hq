@@ -557,7 +557,7 @@ function Bottom() {
 
 
       {/* faq...section */}
-      <div className="flex justify-center  bg-background   align-middle w-full h-full">
+      <div className="flex justify-center align-middle w-full h-full">
         <Faq />
       </div>
     </>

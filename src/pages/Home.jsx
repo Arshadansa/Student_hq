@@ -16,14 +16,14 @@ function Home() {
       <section>
         <Header />
       </section>
-      <main>
+      <main className="select-none">
         <Mid />
         <Contact />
       </main>
-      <section>
+      <section className="select-none">
         <Bottom />
       </section>
-      <footer>
+      <footer className="select-none">
         <Footer />
       </footer>
     </>

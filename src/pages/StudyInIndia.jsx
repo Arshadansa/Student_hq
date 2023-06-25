@@ -13,18 +13,18 @@ function StudyInIndia() {
         <Narbar />
       </nav>
 
-      <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+      <div className="grid select-none max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1
             className="max-w-2xl mb-4 text-5xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark: text-bgDark">
             Study In India <br /></h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Studying in India offers affordable education, a wide range of courses, and a culturally diverse experience. Indian degrees are globally recognized, and the country provides ample research opportunities and a strong network for career development. <a
-                href="https://flowbite.com/docs/getting-started/introduction/" className="hover:underline">Flowbite
-              Library</a> and the <a href="https://flowbite.com/blocks/" className="hover:underline">Blocks System</a>.</p>
+            href="https://flowbite.com/docs/getting-started/introduction/" className="hover:underline">Flowbite
+            Library</a> and the <a className="hover:underline">Blocks System</a>.</p>
           <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
 
 
-            <div className="hidden  w-full md:block md:w-auto ">
+            <div className="hidden select-none  w-full md:block md:w-auto ">
               <a href="#_"
                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-5 px-10   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                 <span
@@ -41,40 +41,40 @@ function StudyInIndia() {
 
           </div>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="hidden select-none lg:mt-0 lg:col-span-5 lg:flex">
           <img src="https://studenthq.in/images/study.webp" alt="hero image" />
         </div>
       </div>
 
 
       <div className=" mx-auto ">
-  <div className="md:flex">
+        <div className="md:flex">
 
-    {/* left */}
-    <div className="p-10 flex    md:w-1/2 ">
+          {/* left */}
+          <div className="p-10 flex    md:w-1/2 ">
 
-            <div className="  self-center "><img
+            <div className=" select-none self-center "><img
               src="https://i.imgur.com/6KG2AmW.png"
               className=" " /></div>
-    </div>
+          </div>
 
 
 
-    {/* right */}
+          {/* right */}
 
-    <div className=" md:w-1/2 md:mt-20">
-     
-    <div className="flex flex-col p-10 ">
+          <div className=" md:w-1/2 select-none md:mt-20">
+
+            <div className="flex flex-col p-10 ">
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-4xl md:text-5xl tracking-normal  leading-tight font-medium"><span>Why Study in
                 India?</span><br /><span></span><br /><span></span></div>
               <div className="  text-xl "><span>
-              India offers high-quality education at an affordable cost, with over 950 universities and 40,000 colleges
+                India offers high-quality education at an affordable cost, with over 950 universities and 40,000 colleges
                 offering programs in various fields. Its diverse culture, rich history, and growing economy make it a
                 unique and exciting place to study, while the emphasis on yoga and meditation provides a holistic approach
                 to education and wellness.
               </span><span className=' block mt-7'>
-              India is a country with a rich culture, diverse history, and a booming economy. It offers a plethora of
+                  India is a country with a rich culture, diverse history, and a booming economy. It offers a plethora of
                   opportunities for students to
                   learn and grow in a unique and dynamic environment. Here are some of the benefits of studying in India
                 </span><br />
@@ -85,39 +85,39 @@ function StudyInIndia() {
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
                     className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></a></div>
-            </div>  
-
-    
-    </div>
-  </div>
-</div>
+            </div>
 
 
+          </div>
+        </div>
+      </div>
 
-<div className=" mt-10  md:m-10 ">
-  <div className="md:flex">
 
-  <div className="md:hidden"><img
-              src="https://i.imgur.com/5HdvjWV.jpg"
-              className=" p-5 md:p-10   " /></div>
 
-    {/* left */}
-    <div className="w-full p-6   h-full  md:flex md:flex-col">
+      <div className=" mt-10 select-none md:m-10 ">
+        <div className="md:flex">
+
+          <div className="md:hidden"><img
+            src="https://i.imgur.com/5HdvjWV.jpg"
+            className=" p-5 md:p-10   " /></div>
+
+          {/* left */}
+          <div className="w-full p-6 select-none  h-full  md:flex md:flex-col">
             <div className="flex flex-col   h-full ">
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-3xl tracking-normal md:text-5xl  leading-tight font-medium"><span>Benefit of studying in
                 India </span><br /><span></span><br /><span></span></div>
               <div className=" text-left text-five text-xl w-11/12"><span>
-              Studying in India offers a multitude of benefits. With its renowned institutions and affordable education, 
-              students can receive a high-quality education without breaking the bank. Moreover, the diverse and multicultural 
-              society provides a unique cultural experience, exposing students to different traditions, languages, and festivals. 
-              Indian universities also boast a world-class faculty, providing students with the opportunity to learn from highly qualified 
-              professors. Additionally, India's emphasis on research and innovation opens doors for students to engage in cutting-edge projects and 
-              collaborate with renowned researchers.</span><br />
+                Studying in India offers a multitude of benefits. With its renowned institutions and affordable education,
+                students can receive a high-quality education without breaking the bank. Moreover, the diverse and multicultural
+                society provides a unique cultural experience, exposing students to different traditions, languages, and festivals.
+                Indian universities also boast a world-class faculty, providing students with the opportunity to learn from highly qualified
+                professors. Additionally, India's emphasis on research and innovation opens doors for students to engage in cutting-edge projects and
+                collaborate with renowned researchers.</span><br />
 
               </div>
 
-              <ul role="list" className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700 text-black">
+              <ul role="list" className="pt-8 select-none space-y-5 border-t border-gray-200 my-7 dark:border-gray-700 text-black">
                 <li className="flex space-x-3">
                   {/* Icon */}
                   <svg className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
@@ -181,19 +181,19 @@ function StudyInIndia() {
 
 
 
-    {/* right */}
+          {/* right */}
 
-    <div className=" w-4/5  hidden md:block">
-     
-    <div className="  h-auto  relative ">
-            <div className=""><img
-              src="https://i.imgur.com/5HdvjWV.jpg"
-              className=" p-10  md:w-[200vh]   " /></div>
+          <div className=" w-4/5 select-none  hidden md:block">
+
+            <div className="  h-auto  relative ">
+              <div className=""><img
+                src="https://i.imgur.com/5HdvjWV.jpg"
+                className=" p-10  md:w-[200vh]   " /></div>
+            </div>
+
           </div>
-    
-    </div>
-  </div>
-</div>
+        </div>
+      </div>
 
 
 
@@ -206,7 +206,7 @@ function StudyInIndia() {
 
       {/* best  colleges in india */}
 
-      <div className=' m-2 rounded-3xl bg-primary' >
+      <div className=' m-2 select-none rounded-3xl bg-primary' >
         <div className='m-5 p-10 md:p-10 justify-center'>
           <h1 className='font-bold  text-white text-3xl md:text-center md:text-5xl'>Some Top Colleges</h1>
           <div className="flex flex-wrap mt-10 md:m-20 gap-4">
@@ -279,7 +279,7 @@ function StudyInIndia() {
               <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
               <p className="text-sm text-gray-500">Established: 1964</p>
             </div>
-            
+
           </div>
 
         </div>
@@ -294,7 +294,7 @@ function StudyInIndia() {
       <div>
 
         <div
-          className=" mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg ">
+          className="select-none mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg ">
           <div className="flex flex-col justify-between">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
@@ -310,7 +310,7 @@ function StudyInIndia() {
           </div>
           <div className>
 
-            <div className=' grid grid-cols-2 gap-10'>
+            <div className='select-none grid grid-cols-2 gap-10'>
               <div>
                 <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
                 <input
@@ -492,9 +492,8 @@ function StudyInIndia() {
 
 
 
-      <footer>
-        <Footer />
-      </footer>
+
+      <Footer />
 
 
     </>

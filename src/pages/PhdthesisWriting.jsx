@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from "../Components/Navbar"
 import Footer from '../Components/Footer'
 import Faq from '../Components/Faq'
-import AssignementSection from '../Components/AssignementSection'
+import PhdthesisSection from '../Components/PhdthesisSection'
 
 function PhdthesisWriting() {
     return (
         <>
             <Navbar />
-            <AssignementSection />
-            <div className="flex justify-center bg-fourth bg-background align-middle w-full h-full">
+            <PhdthesisSection />
+            <div className="flex justify-center bg-fourth  align-middle w-full h-full">
                 <Faq />
             </div>
             <footer>
@@ -18,5 +18,6 @@ function PhdthesisWriting() {
         </>
     )
 }
+
 
 export default PhdthesisWriting

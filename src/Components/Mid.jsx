@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
 // import footer from '../Components/footer';
+import Modal from "react-modal";
+import { MdPlayCircleOutline } from "react-icons/md";
+import ReactPlayer from "react-player/lazy";
 
 function Mid() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const countries = [
     "Canada",
     "America",
@@ -97,9 +109,7 @@ function Mid() {
 
       {/* feedback...section */}
       <section className="m-3  ">
-
         <div className="flex flex-col mt-20  flex-wrap  sm:flex-nowrap md:flex-nowrap sm:justify-center sm:align-middle sm:mt-8">
-
           <div className=" uppercase  text-lg mb-4  flex justify-center text-primary font-bold">
             <span>FeedBacks</span>
           </div>
@@ -112,9 +122,15 @@ function Mid() {
         </div>
 
         <div className="mt-14 mb-20  justify-center md:justify-center sm:justify-start w-full h-full gap-3 flex flex-wrap sm:flex-row  ">
-
-          <div className='flex flex-wrap justify-center max-w-[320px]   py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-01.png")] bg-cover bg-no-repeat '>
-            <div className="flex flex-col justify-end align-middle">
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-01.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
               <div className=" flex flex-wrap justify-center font-bold text-xl">
                 <span className="text-white ">Annette black</span>
               </div>
@@ -125,11 +141,41 @@ function Mid() {
               </div>
             </div>
           </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex modal-content flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
 
-          <div className=' flex flex-wrap justify-center max-w-[350px] py-[2rem] h-[28rem] bg-white rounded-3xl shadow-2xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-02.png")] bg-cover bg-no-repeat '>
-            <div className="flex flex-col justify-end align-middle">
-              <div className=" flex justify-center font-bold text-xl">
-                <span className="text-white ">Robert Fox</span>
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-02.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
               </div>
               <div>
                 <span className="text-white font-bold">
@@ -138,10 +184,41 @@ function Mid() {
               </div>
             </div>
           </div>
-          <div className='flex flex-wrap justify-center max-w-[350px] py-[2rem] h-[28rem] bg-white rounded-3xl shadow-2xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-03.png")] bg-cover bg-no-repeat '>
-            <div className="flex flex-col justify-end align-middle">
-              <div className=" flex justify-center font-bold text-xl">
-                <span className="text-white ">Leslie Alexander</span>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-03.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
               </div>
               <div>
                 <span className="text-white font-bold">
@@ -150,10 +227,40 @@ function Mid() {
               </div>
             </div>
           </div>
-          <div className='flex flex-wrap justify-center max-w-[350px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-2xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-04.png")] bg-cover bg-no-repeat '>
-            <div className="flex flex-col justify-end align-middle">
-              <div className=" flex justify-center font-bold text-xl">
-                <span className="text-white ">Kristin Watson</span>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-04.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
               </div>
               <div>
                 <span className="text-white font-bold">
@@ -162,12 +269,34 @@ function Mid() {
               </div>
             </div>
           </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
         </div>
-
-      </section >
+      </section>
 
       {/* destination..section */}
-      < section className="" >
+      <section className="">
         <div className="  pt-28 pb-10">
           <span className="flex justify-center align-middle sm:text-5xl font-bold ">
             Top Destinations
@@ -312,7 +441,7 @@ function Mid() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
     </>
   );
 }

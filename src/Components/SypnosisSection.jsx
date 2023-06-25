@@ -5,18 +5,17 @@ function SypnosisSection() {
     return (
         <>
 
-            <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-10 xl:gap-24 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div className="grid select-none max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-10 xl:gap-24 lg:py-16 lg:grid-cols-12 lg:pt-24">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <h1
                         className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-4xl dark: text-black">
                         Are you Looking for Synposis<br />Writing Service ?</h1>
-                    <p className="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-slate-900 font-normal ">We Help you to make it better.</p>
+                    <p className="max-w-2xl mb-4  text-gray-500 lg:mb-4 md:text-lg lg:text-xl text-slate-900 font-normal ">We Help you to make it better.</p>
+
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-
-
                         <div className="hidden  w-full md:block md:w-auto ">
                             <a href="#_"
-                                className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-2 px-6  shadow-md  font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
+                                className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-2 px-6  shadow-md  font-sans tracking-tighter text-black border-[1px] border-gray rounded-xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
                                 <span
@@ -26,17 +25,16 @@ function SypnosisSection() {
                                 </span>
                             </a>
                         </div>
-
                     </div>
                 </div>
-                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <div className="hidden lg:mt-0  lg:col-span-5 lg:flex">
                     <img src="https://studenthq.in/images/synopsis.png" alt="hero image" />
                 </div>
 
             </div>
 
 
-            <div className='w-full bg-white h-auto pb-10 flex flex-col justify-center '>
+            <div className='w-full select-none bg-white h-auto pb-10 flex flex-col justify-center '>
                 <div className='flex justify-center mt-6 mb-10 text-5xl font-semibold'>
                     <h1>Synopsis Writing ?</h1>
                 </div>
@@ -79,7 +77,7 @@ function SypnosisSection() {
             </div>
 
 
-            <div className='w-full h-full  flex flex-col justify-center'>
+            <div className='w-full h-full select-none  flex flex-col justify-center'>
                 <div className='w-full h-66 flex  bg-third justify-between px-20 py-3 bg'>
                     <div className='p-11 text-white mt-4'>
                         <span className='text-4xl font-medium ' >
@@ -105,7 +103,7 @@ function SypnosisSection() {
                         <img className="h-[300px]" src="https://studenthq.in/images/syno.webp" alt="" />
                     </div>
                 </div>
-                <div className='w-full h-96  flex justify-start px-20 '>
+                <div className='w-full h-96 select-none flex justify-start px-20 '>
                     <div className='p-11 font-semibold'>
                         <h1 className='text-4xl '>Tips For Writing a Best Synopsis</h1>
 
