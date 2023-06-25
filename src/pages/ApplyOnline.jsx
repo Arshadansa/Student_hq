@@ -1,14 +1,69 @@
-import React from "react";
+import React, { useRef ,useState} from "react";
 import Narbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import emailjs, { init } from "@emailjs/browser";
+
+
+const SuccessPopup = () => {
+
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  return (
+    <div
+      className={`fixed inset-0 flex items-center justify-center z-10 bg-opacity-50 bg-gray-500 backdrop-filter backdrop-blur-sm transition-opacity ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      }`}
+    >
+      <div className="bg-white rounded-lg p-8 flex flex-col items-center">
+        {/* <MdCheckCircle className="text-green-500 text-5xl mb-4" /> */}
+        <p className="text-xl">Message Sent Successfully</p>
+        <button
+          className="mt-6 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+          onClick={handleClose}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+
+  
+};
+
 
 function ApplyOnline() {
+
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+   
+    emailjs.sendForm("service_ehoxret", "template_by0grl4", form.current, "P_PnTN-0ZUJJmj1z-").then(
+      (result) => {
+       // alert("Message Sent Successfully");
+        console.log(result.text);
+        setShowSuccessPopup(true);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  
+  };
+ 
   return (
     <>
+    
       <nav>
         <Narbar />
       </nav>
-
+      {showSuccessPopup && <SuccessPopup />}
+      <form ref={form} onSubmit={handleSubmit}>
       <div className="m-6 md:m-20">
         <div className="">
           <h1 className="text-4xl font-bold">Apply Online</h1>
@@ -29,7 +84,7 @@ function ApplyOnline() {
                   <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                 </svg>
               </div>
-              <input
+              <input name ="full_name"
                 className=" ml-1  font-normal text-bgDark  border-none rounded-xl block w-full pl-10 pr-3 py-2 border-gray-300  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Full Name"
               />
@@ -46,7 +101,7 @@ function ApplyOnline() {
                   <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                 </svg>
               </div>
-              <input
+              <input name="email"
                 type="email"
                 className=" ml-1  font-normal text-bgDark  border-none rounded-xl block w-full pl-10 pr-3 py-2 border-gray-300  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Email address"
@@ -64,7 +119,7 @@ function ApplyOnline() {
                   <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
                 </svg>
               </div>
-              <input
+              <input name="phone_number"
                 type="phonenumber"
                 className=" ml-1  font-normal text-bgDark  border-none rounded-xl block w-full pl-10 pr-3 py-2 border-gray-300  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Phone Number"
@@ -83,7 +138,7 @@ function ApplyOnline() {
                 </svg>
               </div>
 
-              <select
+              <select name="form_nationality"
                 className="ml-1 font-normal text-bgDark border-none rounded block w-full pl-10 pr-3 py-2  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 defaultValue=""
               >
@@ -106,7 +161,7 @@ function ApplyOnline() {
                   <path d="M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z" />
                 </svg>
               </div>
-              <input
+              <input name="date"
                 type="date"
                 className=" ml-1  font-normal text-bgDark  border-none rounded-xl block w-full pl-10 pr-3 py-2 border-gray-300  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Date Of Birth"
@@ -124,7 +179,7 @@ function ApplyOnline() {
                   <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                 </svg>
               </div>
-              <select
+              <select name="gender"
                 className="ml-1 font-normal text-bgDark border-none rounded block w-full pl-10 pr-3 py-2  focus:outline-none focus:border-indigo-500 focus:ring-indigo-500"
                 defaultValue=""
               >
@@ -210,7 +265,8 @@ function ApplyOnline() {
             </div>
           </div>
 
-          <div className=" flex  justify-left ml-2 sm:mr-2 sm:justify-end">
+         <button>
+         <div className=" flex  justify-left ml-2 sm:mr-2 sm:justify-end">
             <a
               href="#_"
               class="relative inline-flex   items-center justify-center overflow-hidden text-xl  py-5 px-16 ml  font-sans tracking-tighter text-black border rounded-2xl group"
@@ -220,8 +276,10 @@ function ApplyOnline() {
               <span class="relative ">Submit</span>
             </a>
           </div>
+         </button>
         </div>
       </div>
+      </form>
 
       <footer>
         <Footer />
