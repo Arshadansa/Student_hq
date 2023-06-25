@@ -4,7 +4,7 @@ function AssignementSection() {
     return (
         <>
 
-            <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div className="grid  select-none max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <h1
                         className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark: text-black">
@@ -34,7 +34,7 @@ function AssignementSection() {
 
             </div>
 
-            <div className='w-full h-32 text-white bg-primary flex justify-around py-6 '>
+            <div className='w-full h-32 select-none text-white bg-primary flex justify-around py-6 '>
                 <div className="w-fit h-26 ml-24">
                     <h1 className='text-5xl text-center font-bold'>2,11345</h1>
                     <div className='mt-2'>
@@ -54,7 +54,7 @@ function AssignementSection() {
                     </div>
                 </div>
             </div>
-            <div className='w-full bg-white h-auto p-10 flex flex-col justify-center align-middle'>
+            <div className='w-full  select-none  h-auto p-10 flex flex-col justify-center align-middle'>
                 <div className='flex justify-center mt-6 mb-10 text-5xl font-semibold'>
                     <h1>Why Assignment Writing is Important</h1>
                 </div>
@@ -65,7 +65,7 @@ function AssignementSection() {
                 <div className='flex justify-start  text-lg text-justify mt-4 mx-40'>
                     <p>Assignment Writing Services Provides Following benefits:-</p>
                 </div>
-                <div className='flex justify-start mt-3 mx-40'>
+                <div className='flex select-none justify-start mt-3 mx-40'>
                     <ul class="list-disc mx-5">
                         <li className='text-justify  text-lg'><span className=' font-bold'>Improve skills:-</span>For a student , assignment writing improve lot of skills to students.While writing students develop a firm command over the topic which improve the practical knowledge.</li>
                         <li className='text-justify  text-lg'><span className=' font-bold'>Improve Time Management:-</span>Assignment always come with up a deadline which improve the time managing  effectively, They will learn to schedule their time according to the priority. this whole journey will improve the time-management scheme. </li>

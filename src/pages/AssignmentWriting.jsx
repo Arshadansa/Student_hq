@@ -11,7 +11,7 @@ function AssignmentWriting() {
         <>
             <Navbar />
             <AssignementSection />
-            <div className=" bg-hotpink pt-16 pt flex flex-col  justify-center">
+            <div className="pt-16 select-none pt flex flex-col  justify-center">
                 <div className="flex flex-col justify-center text-center">
                     <div className="pt-0">
                         <span className=" text-black font-bold text-2xl  sm:text-5xl ">
@@ -63,8 +63,8 @@ function AssignmentWriting() {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
-                        <div className="grid   justify-center justify-items-center ">
+                    <div className="mb-6 flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
+                        <div className="grid     justify-center justify-items-center ">
                             <div className="h-fit">
                                 <img
                                     className="h-20"
@@ -84,7 +84,7 @@ function AssignmentWriting() {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
+                    <div className="mb-6 flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
                         <div className="grid   justify-center justify-items-center ">
                             <div className="h-fit">
                                 <img
@@ -126,7 +126,7 @@ function AssignmentWriting() {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
+                    <div className=" mb-6 flex flex-row mx-5 w-96 justify-center justify-items-center py-8">
                         <div className="grid   justify-center justify-items-center ">
                             <div className="h-fit">
                                 <img

@@ -3,7 +3,7 @@ import React from 'react'
 function DeceratationSection() {
     return (
         <>
-            <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div className="grid select-none max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <h1
                         className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark: text-black">
@@ -30,7 +30,7 @@ function DeceratationSection() {
                 </div>
 
             </div>
-            <div className='w-full bg-white h-auto p-10 flex flex-col justify-center align-middle'>
+            <div className='w-full select-none h-auto p-10 flex flex-col justify-center align-middle'>
                 <div className='flex justify-start mx-28 mt-6 mb-10 text-5xl font-semibold'>
                     <h1>Dissertation Writing?</h1>
                 </div>
@@ -58,7 +58,7 @@ function DeceratationSection() {
 
                     </span>
 
-                    <table className=" bg-white mt-4 mb-4">
+                    <table className="select-none mt-4 mb-4">
                         <tr className=''>
                             <th className="shadow-md  rounded-l-md bg-red-400 text-left px-8 py-4">Phrases</th>
                             <th className="shadow-md  rounded-r-md bg-red-400 text-left px-8 py-4">Use instead</th>
@@ -114,12 +114,12 @@ function DeceratationSection() {
                         </tr>
                     </table>
 
-                    <span className=' font-bold'>Proof Reading:- You should have plenty of time for proof reading, to make sure that you did not make any errors.</span>
+                    <span className='select-none font-bold'>Proof Reading:- You should have plenty of time for proof reading, to make sure that you did not make any errors.</span>
                     <p className='mt-2 mb-2'>Dissertations require a wide range of planning and research skills. In today's tech-savvy era, myriads have time management issues, for them, we help you to guide about dissertation. Our supervisors help you to submit your work in a committed time. Our experts do strong research with high-quality academic writing which help you to score well.
                     </p>
-                    <span className=' font-bold'>Note:-You should also choose a topic that you already know something about so that you already have a frame of reference for your literature search and some understanding and interest in the theory behind your topic.
+                    <span className='select-none font-bold'>Note:-You should also choose a topic that you already know something about so that you already have a frame of reference for your literature search and some understanding and interest in the theory behind your topic.
                     </span>
-                    <div className="hidden  mt-5  w-full md:block md:w-auto ">
+                    <div className="hidden select-none  mt-5  w-full md:block md:w-auto ">
                         <a href="#_"
                             className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-3 px-6   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                             <span

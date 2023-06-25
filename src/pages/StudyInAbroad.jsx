@@ -13,7 +13,7 @@ function StudyInIndia() {
         <Narbar />
       </nav>
 
-      <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+      <div className="grid select-none max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1
             className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark: text-bgDark">
@@ -42,31 +42,31 @@ function StudyInIndia() {
 
           </div>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex mb-20">
+        <div className="hidden select-none lg:mt-0 lg:col-span-5 lg:flex mb-20">
           <img className=' h-full' src="https://i.imgur.com/HBcuLvY.png" alt="hero image" />
         </div>
       </div>
- 
+
 
 
       <div className=" mx-auto ">
-  <div className="md:flex">
+        <div className="md:flex">
 
-    {/* left */}
-    <div className="p-10 flex    md:w-1/2 ">
+          {/* left */}
+          <div className="p-10 flex    md:w-1/2 ">
 
-            <div className="  self-center "><img
+            <div className="select-none  self-center "><img
               src="https://i.imgur.com/jXoyKof.png"
               className=" " /></div>
-    </div>
+          </div>
 
 
 
-    {/* right */}
+          {/* right */}
 
-    <div className=" md:w-1/2">
-     
-    <div className="flex flex-col p-10 ">
+          <div className="select-none md:w-1/2">
+
+            <div className="flex flex-col p-10 ">
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-4xl md:text-5xl tracking-normal  leading-tight font-medium"><span>Why Study
                 Abroad?</span><br /><span></span><br /><span></span></div>
@@ -88,25 +88,25 @@ function StudyInIndia() {
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
                     className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></a></div>
-            </div>  
-
-    
-    </div>
-  </div>
-</div>
+            </div>
 
 
+          </div>
+        </div>
+      </div>
 
 
-<div className=" mt-10  md:m-10 ">
-  <div className="md:flex">
 
-  <div className="md:hidden"><img
-              src="https://i.imgur.com/8vrEZFM.png"
-              className=" p-10   " /></div>
 
-    {/* left */}
-    <div className="w-full p-6   h-full  md:flex md:flex-col">
+      <div className="select-none mt-10  md:m-10 ">
+        <div className="md:flex">
+
+          <div className="md:hidden"><img
+            src="https://i.imgur.com/8vrEZFM.png"
+            className=" p-10   " /></div>
+
+          {/* left */}
+          <div className="w-full p-6 select-none   h-full  md:flex md:flex-col">
             <div className="flex flex-col   h-full ">
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-3xl tracking-normal md:text-5xl  leading-tight font-medium"><span>Benefits To Study
@@ -119,7 +119,7 @@ function StudyInIndia() {
 
               </div>
 
-              <ul role="list" className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700 text-black">
+              <ul role="list" className="pt-8 select-none space-y-5 border-t border-gray-200 my-7 dark:border-gray-700 text-black">
                 <li className="flex space-x-3">
                   {/* Icon */}
                   <svg className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
@@ -183,26 +183,26 @@ function StudyInIndia() {
 
 
 
-    {/* right */}
+          {/* right */}
 
-    <div className=" md:w-1/2  hidden md:block">
-     
-    <div className="  h-auto  relative ">
-            <div className=""><img
-              src="https://i.imgur.com/8vrEZFM.png"
-              className=" p-10 md:h-[60vh]   " /></div>
+          <div className=" md:w-1/2 select-none  hidden md:block">
+
+            <div className="  h-auto  relative ">
+              <div className=""><img
+                src="https://i.imgur.com/8vrEZFM.png"
+                className=" p-10 md:h-[60vh]   " /></div>
+            </div>
+
           </div>
-    
-    </div>
-  </div>
-</div>
+        </div>
+      </div>
 
 
 
 
       {/* best  colleges in abroad */}
 
-      <div className=' m-2 rounded-3xl bg-primary' >
+      <div className=' m-2 rounded-3xl select-none bg-primary' >
         <div className='m-5 p-10 md:p-10 justify-center'>
           <h1 className='font-bold  text-white text-3xl md:text-center md:text-5xl'>Some Top Colleges</h1>
           <div className="flex flex-wrap mt-10 md:m-20 gap-4">
@@ -272,7 +272,7 @@ function StudyInIndia() {
       <div>
 
         <div
-          className=" mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg ">
+          className="select-none mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg ">
           <div className="flex flex-col justify-between">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
@@ -280,7 +280,7 @@ function StudyInIndia() {
                 Hate forms? Send us an <span className="underline">email</span> instead.
               </div>
             </div>
-            <div className=" text-center">
+            <div className="select-none text-center">
 
               <img src="https://themeim.com/demo/eduplan/assets/img/services-details/01.png" alt="" />
 
@@ -288,7 +288,7 @@ function StudyInIndia() {
           </div>
           <div className>
 
-            <div className=' grid grid-cols-2 gap-10'>
+            <div className='select-none grid grid-cols-2 gap-10'>
               <div>
                 <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
                 <input
@@ -449,7 +449,7 @@ function StudyInIndia() {
             class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
             Frequently Asked Questions</h1>
         </div>
-        <div className=' m-10 flex  flex-col items-center self-center  justify-center'>
+        <div className=' m-10 flex select-none  flex-col items-center self-center  justify-center'>
 
           <div className=' w-11/12'>
             < Faq />

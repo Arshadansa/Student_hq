@@ -10,7 +10,7 @@ function DeceratationWriting() {
             <Navbar />
             <DeceratationSection />
 
-            <div className='flex justify-center items-center p-10'>
+            <div className='flex select-none justify-center items-center p-10'>
                 <div className='bg-lightblue w-[1600px] h-[290px] rounded-lg flex flex-col items-center pl-10 pr-10 pt-6 pb-6'>
                     <div className='flex justify-center items-start w-full '>
                         <span className='text-white text-5xl p-4 mb-3 font-bold'>We Cover the <span className=' font-medium'>follwing</span> topics. </span>
@@ -90,11 +90,11 @@ function DeceratationWriting() {
 
                     </div>
 
-                    <div className="hidden  mt-5  w-full md:block md:w-auto ">
+                    <div className="hidden select-none  mt-5  w-full md:block md:w-auto ">
                         <a href="#_"
                             className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-3 px-6   font-sans tracking-tighter text-black  border-gray rounded-2xl group">
                             <span
-                                className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-orange-400 rounded-full group-hover:w-80 group-hover:h-80"></span>
+                                className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-third rounded-full group-hover:w-80 group-hover:h-80"></span>
                             <span
                                 className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
                             <span className="relative  group-hover:text-white text-2xl ">
@@ -105,7 +105,7 @@ function DeceratationWriting() {
                 </div>
 
             </div>
-            <div className="flex justify-center bg-fourth bg-background   align-middle w-full h-full">
+            <div className="flex select-none justify-center bg-fourth bg-background  align-middle w-full h-full">
                 <Faq />
             </div>
             <footer>
