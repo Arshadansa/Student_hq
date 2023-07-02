@@ -1,0 +1,16 @@
+.dropdown_menu-6 {
+  animation: growOut 500ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growOut {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
