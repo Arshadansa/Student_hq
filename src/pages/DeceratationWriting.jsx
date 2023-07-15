@@ -16,7 +16,7 @@ function DeceratationWriting() {
                         <span className='text-white text-5xl p-4 mb-3 font-bold'>We Cover the <span className=' font-medium'>follwing</span> topics. </span>
                     </div>
                     <div className="flex  justify-center items-center w-full h-full">
-                        <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500  border-none border-gray-200 rounded-lg shadow-md dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4">
+                        <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500  shadow-sm shadow-slate-100 border-none border-gray-200 rounded-lg sm:text-base  sm:p-4 sm:space-x-4">
                             <li class="flex items-center text-white dark:text-blue-500">
                                 <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-white rounded-full shrink-0 dark:border-blue-500">
                                     1

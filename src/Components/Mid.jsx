@@ -16,95 +16,90 @@ function Mid() {
     setIsModalOpen(false);
   };
   const countries = [
-    "Canada",
-    "America",
-    "Austraila",
-    "Span",
-    "Franch",
-    "Swideen",
-    "italy",
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/canda.png',
+      name: 'Canada',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/usa.png',
+      name: 'America',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/australia.png',
+      name: 'Australia',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Spain',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'French',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Sweden',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/italy.png',
+      name: 'Italy',
+    }
   ];
+  
+  console.log(countries);
+  
+  const cardsData = [
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/idea.png',
+      title: 'One Stop Study Solution',
+      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      link: '#',
+    },
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/coversation.png',
+      title: 'One Stop Study Solution',
+      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      link: '#',
+    },
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/emergency.png',
+      title: 'One Stop Study Solution',
+      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      link: '#',
+    },
+  ];
+
   return (
     <>
       {/*one step..section*/}
       <div className="flex flex-row m-3 justify-center flex-wrap bg-fourth ">
-        <div className="max-w-sm py-[2rem] px-10 h-[28rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/idea.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-sm py-[2rem] px-10 h-[28rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/coversation.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-sm py-[2rem] px-10 h-[28rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/emergency.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
+      {
+      cardsData.map((card, index) => (
+    <div
+      key={index}
+      className="max-w-sm py-[2rem] px-10 h-[28rem] bg-white rounded-3xl shadow-2xl w-[100rem] m-3 sm:h-[23rem]"
+    >
+      <div className="px-4">
+        <img
+          className="my-3 text-gray-500 h-10 sm:h-[4rem]"
+          src={card.imgSrc}
+          alt=""
+        />
+        <a href={card.link}>
+          <h5 className="mb-5 text-2xl font-semibold">{card.title}</h5>
+        </a>
+        <p className="mb-3 font-normal text-black">{card.description}</p>
+        <a
+          href={card.link}
+          className="no-underline inline-flex items-center text-blue-600 hover:underline text-primary"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  ))
+        }
+        
       </div>
 
       {/* feedback...section */}
@@ -309,7 +304,7 @@ function Mid() {
         </div>
         <div className="flex flex-col justify-center ">
           <div className="flex flex-row   flex-wrap my-5 justify-center">
-            {countries.map((counrty, item) => {
+            {countries.map((country, item) => {
               return (
                 <div
                   key={item}
@@ -318,13 +313,13 @@ function Mid() {
                   <div className="self-center ">
                     <img
                       className="pt-3 pl-3 pr-3 h-36 w-40"
-                      src="https://themeim.com/demo/eduplan/assets/img/sections/destination/canda.png"
+                      src={country.link}
                       alt=""
                     />
                   </div>
 
                   <div className="m-4 font-bold text-slate-800">
-                    <h1 className=" text-xl text-center">{counrty}</h1>
+                    <h1 className=" text-xl text-center">{country.name}</h1>
                   </div>
                 </div>
               );

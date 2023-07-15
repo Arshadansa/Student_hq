@@ -3,21 +3,119 @@ import Faq from "./Faq";
 
 function Bottom() {
   const category = [
-    "Agriculture & Foresty",
-    "science & professional",
-    "Art, Design & Culture",
-    "Business & Management",
-    "Computer Science & IT",
-    "Education & Training",
-    "Engeneering & Technology",
-    "Hopitality & Sports",
-    "Journalism & Media",
-    "Medicine & Health",
-    "Law",
-    "Social Science",
-    "Humanities",
-    "Enviromental Studies",
+  
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/canda.png',
+      name: 'Agriculture & Foresty',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/usa.png',
+      name: 'Science & Professional',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/australia.png',
+      name: 'Art, Design & Culture',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Business & Management',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Computer Science & IT',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Education & Training',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/italy.png',
+      name: 'Engineering & Technology',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Hospitality & Sports',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Journalism & Media',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Medicine & Health',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/italy.png',
+      name: 'Law',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Social Science',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Humanities',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Environmental Studies',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png',
+      name: 'Agriculture & Foresty',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/science.png',
+      name: 'Science & Professional',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/art.png',
+      name: 'Art, Design & Culture',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/business.png',
+      name: 'Business & Management',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/pc.png',
+      name: 'Computer Science & IT',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/book.png',
+      name: 'Education & Training',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/click.png',
+      name: 'Click',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/french-fry.png',
+      name: 'French Fry',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/news-paper.png',
+      name: 'Journalism & Media',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/first-aid-kit.png',
+      name: 'Medicine & Health',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/enverment.png',
+      name: 'Environmental Studies',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/humanity.png',
+      name: 'Humanities',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/recicle.png',
+      name: 'Recycle',
+    },
   ];
+  
+  console.log(category);
+  
   return (
     <>
       {/* about us...section */}
@@ -120,13 +218,13 @@ function Bottom() {
                 <div className=" self-center">
                   <img
                     className="h-20 w-20 "
-                    src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
+                    src={categories.link}
                     alt=""
                   />
                 </div>
 
                 <div className="m-4">
-                  <h1 className=" text-xl text-center">{categories}</h1>
+                  <h1 className=" text-xl text-center">{categories.name}</h1>
                 </div>
               </div>
             );

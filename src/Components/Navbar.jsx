@@ -82,7 +82,7 @@ function Navbar() {
                 Blog
               </NavLink>
             </li>
-            <li className="relative duration-700 " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <li className="relative duration-700 " onMouseLeave={handleMouseLeave}>
               <button
                 id="dropdownHoverButton"
                 className={`hover:text-primary font-semibold xl:text-xs md:text-xs 2xl:text-lg focus:outline-none duration-300 focus:ring-blue-300 rounded-lg px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${toggleNav ? "text-primary" : "text-black"

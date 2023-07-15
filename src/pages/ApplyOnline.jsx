@@ -2,7 +2,7 @@ import React, { useRef ,useState} from "react";
 import Narbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import emailjs, { init } from "@emailjs/browser";
-
+import {MdCheckCircle } from "react-icons/md";
 
 const SuccessPopup = () => {
 
@@ -19,7 +19,7 @@ const SuccessPopup = () => {
       }`}
     >
       <div className="bg-white rounded-lg p-8 flex flex-col items-center">
-        {/* <MdCheckCircle className="text-green-500 text-5xl mb-4" /> */}
+        <MdCheckCircle className="text-green-500 text-5xl mb-4" />
         <p className="text-xl">Message Sent Successfully</p>
         <button
           className="mt-6 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
@@ -33,6 +33,8 @@ const SuccessPopup = () => {
 
   
 };
+
+
 
 
 function ApplyOnline() {

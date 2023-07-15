@@ -1,16 +1,20 @@
 .dropdown_menu-6 {
-  animation: growOut 500ms ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 250ms ease-in-out forwards;
   transform-origin: top center;
 }
 
-@keyframes growOut {
+@keyframes fadeIn {
   0% {
+    opacity: 0;
     transform: scale(0);
   }
   80% {
+    opacity: 1;
     transform: scale(1.1);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }

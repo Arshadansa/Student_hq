@@ -7,6 +7,71 @@ import Faq from '../Components/Faq'
 
 
 function StudyInIndia() {
+
+  const Colleges = [
+    {
+      name: "Massachusetts Institute of Technology (MIT)",
+      qswroldranking: "1",
+      location: "Cambridge, United States",
+      established: "1861"
+    },
+    {
+      name: "Stanford University",
+      qswroldranking: "2",
+      location: "Stanford, United States",
+      established: "1885"
+    },
+    {
+      name: "Harvard University",
+      qswroldranking: "3",
+      location: "Cambridge, United States",
+      established: "1636"
+    },
+    {
+      name: "California Institute of Technology (Caltech)",
+      qswroldranking: "4",
+      location: "Pasadena, United States",
+      established: "1891"
+    },
+    {
+      name: "University of Oxford",
+      qswroldranking: "5",
+      location: "Oxford, United Kingdom",
+      established: "1096"
+    },
+    {
+      name: "University of Cambridge",
+      qswroldranking: "6",
+      location: "Cambridge, United Kingdom",
+      established: "1209"
+    },
+    {
+      name: "ETH Zurich - Swiss Federal Institute of Technology",
+      qswroldranking: "7",
+      location: "Zurich, Switzerland",
+      established: "1854"
+    },
+    {
+      name: "University of Chicago",
+      qswroldranking: "9",
+      location: "Chicago, United States",
+      established: "1890"
+    },
+    {
+      name: "University College London (UCL)",
+      qswroldranking: "10",
+      location: "London, United Kingdom",
+      established: "1826"
+    },
+    {
+      name: "Princeton University",
+      qswroldranking: "13",
+      location: "Princeton, United States",
+      established: "1746"
+    }
+    // Add more colleges here
+  ];
+  
   return (
     <>
       <nav>
@@ -206,61 +271,24 @@ function StudyInIndia() {
         <div className='m-5 p-10 md:p-10 justify-center'>
           <h1 className='font-bold  text-white text-3xl md:text-center md:text-5xl'>Some Top Colleges</h1>
           <div className="flex flex-wrap mt-10 md:m-20 gap-4">
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
+           
+                    
+        {
+              
+              Colleges.map((college)=>{
+                  return (
+                    <div className="bg-white border-solid border text-xl md:text-sm border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md  p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <h2 className="font-bold mb-2">{college.name}</h2>
+                    <p className="text-gray-600 mb-2">QS World Ranking: {college.qswroldranking}</p>
+                    <p className="text-sm text-gray-500">Location: {college.location}</p>
+                    <p className="text-sm text-gray-500">Established: {college.established}</p>
+                  </div>
+      
+                  )
+              })
 
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
-
-            <div className="bg-white border-solid border border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <h2 className="font-bold mb-2">Birla Institute of Technology and Science (BITS)</h2>
-              <p className="text-gray-600 mb-2">QS World Ranking: 245</p>
-              <p className="text-sm text-gray-500">Location: Pilani, Rajasthan</p>
-              <p className="text-sm text-gray-500">Established: 1964</p>
-            </div>
+              
+        }
 
           </div>
 
@@ -441,22 +469,13 @@ function StudyInIndia() {
 
 
 
-      <div className=' mt-40 '>
 
 
-        <div className=' flex  justify-center'>
-          <h1 className=' '
-            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
-            Frequently Asked Questions</h1>
-        </div>
-        <div className=' m-10 flex select-none  flex-col items-center self-center  justify-center'>
 
-          <div className=' w-11/12'>
+      <div className=' '>
+       
             < Faq />
-          </div>
-        </div>
-
-
+      
       </div>
 
 
