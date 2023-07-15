@@ -211,7 +211,6 @@ function ApplyOnline() {
                     alt=""
                   />
                 </div>
-
                 <div class="m-4">
                   <h1 class=" mt-5 text-xl text-center">India</h1>
                 </div>
