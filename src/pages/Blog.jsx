@@ -1,55 +1,59 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Narbar from "../Components/Navbar";
 import { motion } from 'framer-motion';
 import Footer from "../Components/Footer";
 import { useNavigate } from 'react-router-dom';
-import CourseCard from "../Components/CourseCard";
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, onSnapshot, doc } from 'firebase/firestore';
+
+// Initialize Firebase (replace with your Firebase config)
+const firebaseConfig = {
+  apiKey: "AIzaSyBU0KUhO-qNDxYIYo-h0ShU4PBRUgFLTcE",
+  authDomain: "studenthq-9ddfb.firebaseapp.com",
+  projectId: "studenthq-9ddfb",
+  storageBucket: "studenthq-9ddfb.appspot.com",
+  messagingSenderId: "668174943946",
+  appId: "1:668174943946:web:ffc357daf7db0de2135633",
+  measurementId: "G-GQSM2XNMQK"
+};
+
+// Initialize Firebase
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 
 function Blog() {
+  const navigate = useNavigate();
+  const [blogPosts, setBlogPosts] = useState([]);
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, 'posts'), (snapshot) => {
+      const fetchedPosts = snapshot.docs.map((doc) => {
+        const data = doc.data();
+        console.log(doc.id);
+        return {
+          id: doc.id,
+          ...data,
+        };
+      });
+      setBlogPosts(fetchedPosts);
+    });
+  
+    return () => unsubscribe();
+  }, []);
+  
+
 
   const handleReadMore = (postId) => {
-    navigate(`/blog-post/${postId}`); // Navigate to the dynamic blog post page
+    console.log(postId);
+    navigate(`/new-page/${postId}`);
   };
-
-  const navigate = useNavigate();
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Tips for College Freshmen',
-      image: 'https://placeimg.com/400/300/college',
-      date: 'June 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ante vel erat.',
-    },
-    {
-      id: 2,
-      title: 'How to Choose the Right College Major',
-      image: 'https://placeimg.com/400/300/university',
-      date: 'June 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ante vel erat.',
-    },
-    {
-      id: 3,
-      title: 'Top Extracurricular Activities for College Applications',
-      image: 'https://placeimg.com/400/300/campus',
-      date: 'June 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ante vel erat.',
-    },
-    {
-      id: 4,
-      title: 'How to Manage Your Time in College',
-      image: 'https://placeimg.com/400/300/books',
-      date: 'June 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ante vel erat.',
-    },
-  ];
-
 
   return (
     <>
       <nav>
         <Narbar />
       </nav>
-
 
       <div className="bg-purple select-none min-h-screen py-8 mt-20 m-4">
         <div className="container mx-auto">
@@ -66,12 +70,11 @@ function Blog() {
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">{post.title}</h2>
                   <p className="text-gray-500 text-sm">{post.date}</p>
-                  <p className="text-gray-700 mt-2">{post.content}</p>
+                  <p className="text-gray-700 mt-2">{post.author}</p>
                   <button
-                    className="bg-primary hover:bg-hotpink text-white rounded-full py-2 px-4 mt-4 transition-colors duration-300"
-                    onClick={() => handleReadMore(post.id)}
-                  >
-                    Read More
+      className="bg-primary hover:bg-hotpink text-white rounded-full py-2 px-4 mt-4 transition-colors duration-300"
+      onClick={() => handleReadMore(post.id)}
+    >   READ MORE
                   </button>
                 </div>
               </motion.div>

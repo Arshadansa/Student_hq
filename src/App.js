@@ -1,8 +1,8 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../src/pages/Home";
 import Courses from "../src/pages/Courses";
 import ApplyOnline from "../src/pages/ApplyOnline";
-import "../src/index.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import StudyInIndia from "./pages/StudyInIndia";
 import StudyInAbroad from "./pages/StudyInAbroad";
 import AssignmentWriting from "./pages/AssignmentWriting";
@@ -11,14 +11,11 @@ import SynopsisWriting from "./pages/SynopsisWriting";
 import PhdthesisWriting from "./pages/PhdthesisWriting";
 import Mbaproject from "./pages/Mbaproject";
 import Blog from "./pages/Blog";
-import BlogPostPage from "./pages/BlogPostPage";
-
-
+import BlogContent from "./Components/BlogContent";
 
 function App() {
   return (
-
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="Courses" element={<Courses />} />
@@ -31,10 +28,9 @@ function App() {
         <Route path="Mbaproject" element={<Mbaproject />} />
         <Route path="PhdthesisWriting" element={<PhdthesisWriting />} />
         <Route path="blog" element={<Blog />} />
-        <Route exact path="/Blog-post" component={BlogPostPage} />
+        <Route path="/new-page/:id" element={<BlogContent />} />
       </Routes>
-    </BrowserRouter>
-
+    </Router>
   );
 }
 

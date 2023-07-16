@@ -11,10 +11,10 @@ function Home() {
   return (
     <>
     
-    <BlogView/>
+    {/* <BlogEditor/> */}
     
     {/* <BlogEditor/> */}
-      {/* <nav>
+      <nav>
         <Narbar />
       </nav>
 
@@ -30,7 +30,7 @@ function Home() {
       </section>
       <footer className="select-none">
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 }
