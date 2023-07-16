@@ -12,6 +12,8 @@ import PhdthesisWriting from "./pages/PhdthesisWriting";
 import Mbaproject from "./pages/Mbaproject";
 import Blog from "./pages/Blog";
 import BlogContent from "./Components/BlogContent";
+import BlogEditor from "./Components/BlogEditor"
+import ContentGenerator from "./Components/ContentGenerator"
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="PhdthesisWriting" element={<PhdthesisWriting />} />
         <Route path="blog" element={<Blog />} />
         <Route path="/new-page/:id" element={<BlogContent />} />
+        <Route path="BlogEditor" element={<BlogEditor />} />
+        <Route path="contentgenerator" element={<ContentGenerator />} />
       </Routes>
     </Router>
   );

@@ -25,6 +25,7 @@ const BlogPostCreator = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [content, setContent] = useState('');
+  const [htmlContent, setHtmlContent] = useState('');
   const [image, setImage] = useState('');
   const [author, setAuthor] = useState('');
   const [tags, setTags] = useState('');
@@ -37,7 +38,7 @@ const BlogPostCreator = () => {
     key: uniqueKey,
     title,
     category,
-    content,
+    content: content || htmlContent, // Use either content or htmlContent
     image,
     author,
     tags: tags.split(',').map((tag) => tag.trim()),
@@ -58,6 +59,10 @@ const BlogPostCreator = () => {
     setContent(value);
   };
 
+  const handleHtmlContentChange = (event) => {
+    setHtmlContent(event.target.value);
+  };
+
   const handleImageChange = (event) => {
     setImage(event.target.value);
   };
@@ -76,13 +81,13 @@ const BlogPostCreator = () => {
       key: uniqueKey,
       title,
       category,
-      content,
+      content: content || htmlContent, // Use either content or htmlContent
       image,
       author,
       tags: tags.split(',').map((tag) => tag.trim()),
       date: currentDate.toLocaleDateString(),
       time: currentDate.toLocaleTimeString(),
-    };  
+    };
     try {
       await addDoc(collection(db, 'posts'), postObject);
       console.log('Post created successfully');
@@ -208,6 +213,18 @@ const BlogPostCreator = () => {
                 modules={modules}
                 formats={formats}
                 className="border rounded"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="htmlContent" className="font-bold mb-2 block">
+                HTML Content:
+              </label>
+              <textarea
+                id="htmlContent"
+                value={htmlContent}
+                onChange={handleHtmlContentChange}
+                className="w-full border rounded py-2 px-3"
+                rows={6}
               />
             </div>
             <div className="bg-green-300 p-4 text-center fixed top-0 right-0 gap-5">

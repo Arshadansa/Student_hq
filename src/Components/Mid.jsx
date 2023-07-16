@@ -51,20 +51,20 @@ function Mid() {
   const cardsData = [
     {
       imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/idea.png',
-      title: 'One Stop Study Solution',
-      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      title: 'Streamlined Application Process',
+      description: 'Simplify the college application process and ensure a smooth submission of your applications.',
       link: '#',
     },
     {
       imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/coversation.png',
-      title: 'One Stop Study Solution',
-      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      title: 'Financial Aid and Scholarships',
+      description: 'Explore various financial aid options and scholarship programs to support your college education.',
       link: '#',
     },
     {
       imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/emergency.png',
-      title: 'One Stop Study Solution',
-      description: 'Get a full view so you know where to save. Track spending, keep tab subscription lorem ipsum text',
+      title: 'Career Guidance and Counseling',
+      description: 'Receive expert guidance and counseling to choose the right career path and make informed decisions.',
       link: '#',
     },
   ];
