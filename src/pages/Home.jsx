@@ -5,11 +5,16 @@ import Mid from "../Components/Mid";
 import Footer from "../Components/Footer";
 import Bottom from "../Components/Bottom";
 import Contact from "../Components/Contact";
-
+import BlogEditor from "../Components/BlogEditor"
+import BlogView from "../Components/BlogView"
 function Home() {
   return (
     <>
-      <nav>
+    
+    <BlogView/>
+    
+    {/* <BlogEditor/> */}
+      {/* <nav>
         <Narbar />
       </nav>
 
@@ -25,7 +30,7 @@ function Home() {
       </section>
       <footer className="select-none">
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 }
