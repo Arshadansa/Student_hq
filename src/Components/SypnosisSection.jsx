@@ -35,11 +35,11 @@ function SypnosisSection() {
             </div>
 
 
-            <div className='lg:w-full p-2 select-none bg-white h-auto pb-10 flex flex-col justify-center '>
+            <div className='lg:w-full p-2 select-none  h-auto pb-10 lg:flex flex-col justify-center '>
                 <div className='flex lg:justify-center lg:mt-6 mt-3 mb-3 lg:mb-10 text-3xl  lg:text-5xl font-semibold'>
                     <h1>Synopsis Writing ?</h1>
                 </div>
-                <div className='flex lg:text-lg md:text-xl justify-center text-justify lg:mx-28 text-gray-700'>
+                <div className='lg:flex lg:text-lg text-lg p-3 md:text-xl justify-center text-justify lg:mx-28 text-gray-700'>
                     <p>The synopsis is a summary of a book that reveals the entire story to the reader. A synopsis is often written but can also take verbal or visual forms. A synopsis typically includes information about the story's main events and style along with information about the characters. </p>
                 </div>
                 <div className='flex md:text-xl justify-start text-gray-600  text-justify mt-3 lg:mx-28'>
@@ -84,12 +84,48 @@ function SypnosisSection() {
                     <div className='lg:p-11 p-2 font-semibold'>
                         <h1 className='lg:text-4xl text-xl '>Tips For Writing a Best Synopsis</h1>
 
-                        <ul className='lg:text-xl text-xl text-gray-700 font-thin list-decimal p-5 lg:p-7 flex flex-col gap-y-2 lg:gap-y-4'>
-                            <li>Keep It simple and clear.</li>
-                            <li>Present a Unique Point of view in your synopsis.</li>
-                            <li>Focus on clatrity</li>
-                            <li>Avoid writing unnecessary description</li>
-                            <li>Dont reveal your climax at the beginning of your story.</li>
+                        <ul className='lg:text-xl text-xl text-gray-700 font-thin  p-5 lg:p-7 flex flex-col gap-y-2 lg:gap-y-4'>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Keep It simple and clear.</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Present a Unique Point of view in your synopsis.</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+
+                                Focus on clatrity</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Avoid writing unnecessary description</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Dont reveal your climax at the beginning of your story.</li>
                         </ul>
                     </div>
                 </div>

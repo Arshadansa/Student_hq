@@ -11,3 +11,8 @@ body {
     rgba(253, 204, 9, 0.137)
   );
 }
+@layer base {
+  html {
+    /* font-family: Proxima Nova, system-ui, sans-serif; */
+  }
+}

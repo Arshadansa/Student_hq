@@ -44,7 +44,9 @@ function PhdthesisSection() {
                 </div>
                 <div className='flex md:text-xl text-lg lg:text-lg justify-start mt-3 lg:mx-32'>
                     <ul class="list-decimal mx-5">
-                        <li className='text-justify  '><span className=' font-bold'>Formatting rules- </span>PhD thesis writing services in StudentHQ are familiar with various formatting guidelines and they also ensure that the font style and size, margins, spacing, etc. are according to rules. They also check the illustrations, tables and graphs, place them suitably and give references for them in the text.</li>
+                        <li className='text-justify  '>
+
+                            <span className=' font-bold'>Formatting rules- </span>PhD thesis writing services in StudentHQ are familiar with various formatting guidelines and they also ensure that the font style and size, margins, spacing, etc. are according to rules. They also check the illustrations, tables and graphs, place them suitably and give references for them in the text.</li>
                         <li className='text-justify  '><span className=' font-bold'>Punctuality - </span> PhD theses are lengthy documents so it is important to write in a planned manner to finish them timely. Our experts maintain speed as well as accuracy.</li>
                         <li className='text-justify  '><span className=' font-bold'>Language and Grammar: -</span> Perfect academic language is required for writing theses. Technical terms are dual checked for spelling. Grammar and tense are also as per the university standards.</li>
                     </ul>
@@ -71,22 +73,95 @@ function PhdthesisSection() {
                     <h1 className='lg:text-4xl text-3xl ml-2 lg:ml-0 '>What Makes a Good Thesis </h1>
                     <p className='mt-3 ml-2 md:text-xl lg:text-lg '>A Good thesis means you  have a final project which fulfils all the guidelines as per university norms.</p>
                     <p className='ml-2 md:text-xl lg:text-lg'>A Good thesis will prove that your work is relevant and important</p>
-                    <ul className='text-xl text-gray-700 font-thin list-decimal p-7 flex flex-col gap-y-4'>
-                        <li>Outlining.</li>
-                        <li>Knowing the Structure.</li>
-                        <li>Planning the Structure.</li>
-                        <li> Writing the thesis proposal.</li>
-                        <li>Proofreading the proposal.</li>
+                    <ul className='text-xl text-gray-700 font-thin  p-7 flex flex-col gap-y-4'>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Outlining.
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+
+                            Knowing the Structure.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Planning the Structure.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+
+                            Writing the thesis proposal.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Proofreading the proposal.</li>
                     </ul>
                 </div>
                 <div className='font-semibold'>
                     <h1 className='lg:text-4xl text-3xl ml-2 lg:ml-0 '>Tips to Write Phd Thesis Writing</h1>
                     <ul className='text-xl text-gray-700 font-thin list-decimal p-7 flex flex-col gap-y-4'>
-                        <li>Try to prepare a Strong Statement and highlight the objectives of your topic.</li>
-                        <li>Go through your reasearch paper properly.</li>
-                        <li>Start Collecting the data according to your topic and makes essential notes.</li>
-                        <li>Choose a good topic for your thesis and go through your latest journal and article related to your subject.</li>
-                        <li>After completing the work, give the best conclusion and a proper citation to all sources.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Try to prepare a Strong Statement and highlight the objectives of your topic.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Go through your reasearch paper properly.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Start Collecting the data according to your topic and makes essential notes.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            Choose a good topic for your thesis and go through your latest journal and article related to your subject.</li>
+                        <li className="flex items-center gap-2">
+                            <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd" />
+                            </svg>
+                            After completing the work, give the best conclusion and a proper citation to all sources.</li>
                     </ul>
                 </div>
             </div>

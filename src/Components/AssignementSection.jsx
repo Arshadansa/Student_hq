@@ -65,15 +65,53 @@ function AssignementSection() {
                 <div className='flex justify-start p-6 md:text-2xl text-lg text-justify mt-4 lg:mx-24'>
                     <p>Assignment Writing Services Provides Following benefits:-</p>
                 </div>
-                <div className='flex select-none  justify-start  p-10 lg:mx-24'>
-                    <ul class="list-disc ">
-                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'><span className=' font-bold'>Improve skills:-</span>For a student , assignment writing improve lot of skills to students.While writing students develop a firm command over the topic which improve the practical knowledge.</li>
-                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'><span className=' font-bold'>Improve Time Management:-</span>Assignment always come with up a deadline which improve the time managing  effectively, They will learn to schedule their time according to the priority. this whole journey will improve the time-management scheme. </li>
-                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'><span className=' font-bold'>Gain Knowledge and awareness:-</span>Students are provided with different assignemnts activities in such a way  that help them to know more about the topic deeply.therefore when students are writing they focus on each horizon and gain expertese.   </li>
-                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'><span className=' font-bold'>Evaluation:-</span>The purpose of assignments to students is to analyze whether they have grasped much about that topic or not. It is a kind of evaluation process that ensures and makes out how much the student has learned or has he/she even grasped anything or not.   </li>
+                <div className='flex select-none  justify-start  p-8 lg:mx-24'>
+                    <ul class="">
+                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'>
+                            <div className='flex gap-2'>
+                                <svg className="flex-shrink-0 w-5 mt-1 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" /></svg>
+                                <span className=' font-bold lg:w-[165px]  '>Improve skills:-</span>For a student , assignment writing improve lot of skills to students.While writing students develop a firm command over the topic which improve the practical knowledge.
+
+                            </div>
+                        </li>
+                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'>
+                            <div className='flex gap-2'>
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" /></svg>
+                                <span className=' font-bold lg:w-[445px]'>Improve Time Management:-</span>Assignment always come with up a deadline which improve the time managing  effectively, They will learn to schedule their time according to the priority. this whole journey will improve the time-management scheme.
+                            </div>
+                        </li>
+
+                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'>
+                            <div className='flex gap-2'>
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" /></svg>
+                                <span className='lg:w-[500px] font-bold'>Gain Knowledge and awareness:-</span>Students are provided with different assignemnts activities in such a way  that help them to know more about the topic deeply.therefore when students are writing they focus on each horizon and gain expertese.
+                            </div>
+                        </li>
+                        <li className='text-justify md:text-2xl mb-3 lg:text-lg'>
+                            <div className='flex gap-2'>
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" /></svg>
+                                <span className=' font-bold'>Evaluation:-</span>The purpose of assignments to students is to analyze whether they have grasped much about that topic or not. It is a kind of evaluation process that ensures and makes out how much the student has learned or has he/she even grasped anything or not.
+                            </div>
+                        </li>
                     </ul>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     )
 }

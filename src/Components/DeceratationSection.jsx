@@ -42,7 +42,8 @@ function DeceratationSection() {
                 </div>
                 <div className='flex flex-col justify-start mt-3 lg:mx-32'>
                     <ul class="list-decimal mx-5">
-                        <li className='text-justify text'><span className=' font-bold'>Choose your topic carefully:- </span> Your topic must be engaging and meaningful. Your dissertation is an opportunity to showcase your ideas and thoughts.</li>
+                        <li className='text-justify text'>
+                            <span className=' font-bold'>Choose your topic carefully:- </span> Your topic must be engaging and meaningful. Your dissertation is an opportunity to showcase your ideas and thoughts.</li>
                         <li className='text-justify  text'><span className=' font-bold'> Have a clear goal & structure:-</span>
                             Once you are settled with the topic,  you have a clear goal and structure. Knowing where your ideas are headed, will ensure that you remain on track and only relevant points are made.
                         </li>

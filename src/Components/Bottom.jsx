@@ -28,10 +28,10 @@ function Bottom() {
           <div className="w-full md:justify-center md:align-middle flex flex-col lg:h-full">
             <div className="flex flex-col  lg:h-full ">
 
-              <div className="text-primary md:mb-2 font-bold">
+              <div className="text-primary md:mb-2 text-xl md:text-2xl font-bold">
                 <span>ABOUT US & EXPERIENCE</span>
               </div>
-              <div className="text-3xl tracking-normal flex flex-col gap-2 lg:text-5xl leading-tight font-medium">
+              <div className="text-xl md:text-xl tracking-normal flex flex-col gap-2 lg:text-5xl leading-tight font-medium">
                 <span>Moving beyond product</span>
                 <span>innovation to gain a</span>
                 <span>competitive advantage</span>
@@ -105,7 +105,7 @@ function Bottom() {
           <p className="font-bold text-primary">CATEGORIES</p>
         </div>
         <div>
-          <h1 className=" mt-3 lg:ml-2  font-bold text-2xl sm:text-5xl text-black">
+          <h1 className=" mt-3 lg:ml-2  font-bold text-xl md:text-2xl lg:text-5xl text-black">
             Popular Discipline & Courses
           </h1>
         </div>

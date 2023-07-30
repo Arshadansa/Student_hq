@@ -2,15 +2,15 @@ import React from 'react'
 
 function Cart() {
     return (
-        <div className='lg:w-full lg:h-66 flex  bg-third justify-between lg:px-20 lg:py-3 bg'>
-            <div className='lg:p-11 p-5 text-white lg:mt-4'>
-                <span className='lg:text-4xl md:text-3xl text-2xl font-medium ' >
+        <div className='lg:w-full  md:w-[765px] lg:h-66 flex  bg-third justify-between lg:px-20 lg:py-3 '>
+            <div className='lg:p-11  p-5 text-white lg:mt-4'>
+                <span className='lg:text-4xl md:text-3xl text-2sxl font-medium ' >
                     Get A Summarized Version of your Research
                 </span>
                 <p className='mt-1'>
                     We are happy to help you in synopsis writing.
                 </p>
-                <div className="mt-4 w-full md:block md:w-auto ">
+                <div className="mt-4 lg:w-full md:block md:w-auto ">
                     <a href="#_"
                         className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-1 px-4   font-sans tracking-tighter shadow-md text-black border-[1px] border-gray-100 rounded group">
                         <span
@@ -23,7 +23,7 @@ function Cart() {
                     </a>
                 </div>
             </div>
-            <div className='hidden md:block mr-20'>
+            <div className='hidden md:block lg:mr-20'>
                 <img className="lg:h-[300px] md:h-[200px]" src="https://studenthq.in/images/syno.webp" alt="" />
             </div>
         </div>

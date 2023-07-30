@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Section() {
+
+  const [toggleNav, setToggleNav] = useState(false);
+  const handleToggleNav = () => {
+    setToggleNav(!toggleNav);
+  };
   return (
     <>
-      <section class="m-4 sm:py-[70px]  select-none " >
+      <section onClick={handleToggleNav} class={`p-3 sm:py-[70px] duration-700  transition-all ease-in-out  select-none  ${toggleNav ? "mt-8" : "mt-0"}`}
+      >
         <div class="container items-center w-full mx-auto xl:px-5">
           <div class="flex flex-wrap flex-row  sm:pl-20 w-auto md:pl-3 items-start sm:-mx-3">
-            <div class="w-fit md:w-1/2  pt-12 lg:pt-36  md:pl-8 ">
+            <div class="w-fit md:w-1/2   lg:pt-36  md:pl-8 ">
               <div class="w-fit  lg:mx-24  space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
                 <h1 class="text-4xl font-extrabold tracking-tight  sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
                   <span class="block xl:inline">Beautiful Pages to</span>

@@ -17,6 +17,13 @@ export const theme = {
       third: "#dc143c",
       five: "#fc9800",
       lightblue: "#0099ff",
+    },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['"Open Sans"'],
     }
   },
 

@@ -65,15 +65,71 @@ function PhdthesisSection() {
                         <li className='text-justify mt-2  md:text-xl   lg:text-lg'><p className=' font-bold'>Introduction</p>in this part the reader is introduced to the background of the study & nature of the problem being considered.The purpose of this section is to deliver the reader a basic idea of the subject area  of research project.</li>
                         <li className='text-justify mt-2  md:text-xl   lg:text-lg'><p className=' font-bold'>Review of literatre </p>This section provides a critical review of the existing  literature on the research  area being invested.</li>
                         <li className='text-justify mt-2  md:text-xl   lg:text-lg'><p className=' font-bold'>Research methodology </p>The purpose of this section is to indicate what the  reasercher actually did in study so the reader may evaluate the design  procedure and finding of the study. It address the following things:-</li>
-                        <ul className='list-disc md:text-xl lg:text-lg mx-10 mt-3 mb-3'>
-                            <li>Statement of the problem</li>
-                            <li> Objectives of the study</li>
-                            <li>Scope of the study</li>
-                            <li>Research Desgin</li>
-                            <li>Data Collection method</li>
-                            <li>Sample design</li>
-                            <li>Plan of Analysis</li>
-                            <li>Tools used for data analysis</li>
+                        <ul className=' md:text-xl lg:text-lg mx-10 mt-3 mb-3'>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Statement of the problem</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Objectives of the study</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Scope of the study</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Research Desgin</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Data Collection method</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Sample design</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Plan of Analysis</li>
+                            <li className="flex items-center gap-2">
+                                <svg className="flex-shrink-0  mt-1 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                                Tools used for data analysis</li>
                         </ul>
                         <li className='text-justify mt-2 md:text-xl  lg:text-lg'><p className=' font-bold'>Data Analysis and reasearch </p>This is the main part of the project. The data is accumulated and properly analyzed and presented neatly with charts and tables.</li>
                         <li className='text-justify mt-2 md:text-xl  lg:text-lg'><p className=' font-bold'>Finding,Suggesion and conclusion </p>This section explain the result obtained from the analysis.</li>
