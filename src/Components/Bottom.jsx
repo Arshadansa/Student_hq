@@ -37,7 +37,7 @@ function Bottom() {
                 <span>competitive advantage</span>
               </div>
 
-              <div className="mt-16 text-left flex flex-col gap-3  font-medium w-11/12">
+              <div className="lg:mt-16 mt-6 text-left flex flex-col gap-3  font-medium w-11/12">
                 <span>
                   Ouya Education, which is based in Victoria, British Columbia,
                   Canada, frequently deals with issues of employment

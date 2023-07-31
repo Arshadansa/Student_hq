@@ -6,7 +6,7 @@ function DeceratationSection() {
             <div className="grid  select-none max-w-screen-xl px-4 pt-20 lg:pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12 lg:pt-28">
                 <div className="mr-auto place-self-center md:col-span-8  lg:col-span-8">
                     <h1
-                        className="max-w-4xl  flex-wrap text-3xl lg:mb-4 lg:text-2xl font-extrabold leading-none tracking-tight md:text-2xl xl:text-5xl dark: text-black">
+                        className="max-w-4xl  flex-wrap text-3xl lg:mb-4 lg:text-2xl font-extrabold leading-none tracking-tight md:text-2xl xl:text-4xl dark: text-black">
                         Are you Looking for Dissertation ?<br /></h1>
                     <p className="max-w-2xl  mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl mt-2 text-slate-900 font-normal ">Get Online Dissertation Help From Our Experts Of Relevent Background</p>
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">

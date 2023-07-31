@@ -8,7 +8,7 @@ function Section() {
   };
   return (
     <>
-      <section onClick={handleToggleNav} class={`p-3 sm:py-[70px] duration-700  transition-all ease-in-out  select-none  ${toggleNav ? "mt-8" : "mt-0"}`}
+      <section class={`p-3 sm:py-[70px] duration-700  transition-all ease-in-out  select-none  ${!toggleNav ? "mt-8" : "mt-0"}`}
       >
         <div class="container items-center w-full mx-auto xl:px-5">
           <div class="flex flex-wrap flex-row  sm:pl-20 w-auto md:pl-3 items-start sm:-mx-3">

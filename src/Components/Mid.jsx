@@ -302,7 +302,7 @@ function Mid() {
             Top Destinations
           </span>
 
-          <span className="flex flex-wrap p-3 md:justify-center md:text-xl pl-5 text-gray font-bold  font-sans   sm:text-ls lg:mt-3">
+          <span className="flex flex-wrap p-3  text-center text-sm justify-center md:text-lg pl-5 text-gray  font-medium  font-sans   lg:mt-3">
             We have quality partners in variety of destinations around the
             globe.
           </span>
@@ -330,7 +330,7 @@ function Mid() {
               );
             })}
           </div>
-          <div className="flex justify-center align-middle mb-24 mt-16">
+          <div className="flex justify-center align-middle mb-10 lg:mb-24 mt-16">
             <div className="">
               <a
                 href="#_"

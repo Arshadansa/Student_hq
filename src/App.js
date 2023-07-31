@@ -28,7 +28,7 @@ function App() {
         <Route path="AssignmentWriting" element={<AssignmentWriting />} />
         <Route path="DeceratationWriting" element={<DeceratationWriting />} />
         <Route path="SynopsisWriting" element={<SynopsisWriting />} />
-        <Route path="Mbaproject" element={<Mbaproject />} />
+        <Route path="MbaProject" element={<Mbaproject />} />
         <Route path="PhdthesisWriting" element={<PhdthesisWriting />} />
         <Route path="blog" element={<Blog />} />
         <Route exact path="/Blog-post" component={BlogPostPage} />

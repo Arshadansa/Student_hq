@@ -148,7 +148,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/Mbaproject"
+                        to="/MbaProject"
                         className="block px-[35px] py-1 hover:bg-white dark:hover:bg-gray-600 hover:text-primary"
                       >
                         MBA Project Making
@@ -192,7 +192,7 @@ function Navbar() {
             </li>
             <li className="">
               <NavLink
-                to="/DeclarationWriting"
+                to="/DeceratationWriting"
                 className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold "
               >
                 Declaration Writing
@@ -213,7 +213,7 @@ function Navbar() {
             </li>
             <li className="">
               <NavLink
-                to="/MbaProjectMaking"
+                to="/MbaProject"
                 className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold "
               >
                 MBA Project Making

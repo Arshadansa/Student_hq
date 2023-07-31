@@ -8,7 +8,7 @@ function PhdthesisSection() {
             <div className="grid  mt-10 select-none max-w-screen-xl px-3 pt-10 lg:pb-8 mx-auto lg:mx-40 lg:gap-10 xl:gap-24 lg:py-16 md:grid-cols-12 lg:pt-24">
                 <div className="mr-auto lg:mb-16 place-self-center md:col-span-7">
                     <h1
-                        className="max-w-2xl mb-2 text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-5xl dark: text-black">
+                        className="max-w-2xl mb-2 text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl  text-black">
                         MBA Report Writing Service.<br /></h1>
                     <p className="max-w-2xl mb-6  text-gray-500 lg:mb-4 md:text-lg lg:text-xl text-slate-900 font-normal "> Get Online Dissertation Help From Our Experts Of Relevent Background.</p>
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">

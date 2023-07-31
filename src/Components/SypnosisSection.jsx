@@ -42,10 +42,10 @@ function SypnosisSection() {
                 <div className='lg:flex lg:text-lg text-lg p-3 md:text-xl justify-center text-justify lg:mx-28 text-gray-700'>
                     <p>The synopsis is a summary of a book that reveals the entire story to the reader. A synopsis is often written but can also take verbal or visual forms. A synopsis typically includes information about the story's main events and style along with information about the characters. </p>
                 </div>
-                <div className='flex md:text-xl justify-start text-gray-600  text-justify mt-3 lg:mx-28'>
+                <div className='flex text-lg md:text-xl justify-start text-gray-600  text-justify mt-3 lg:mx-28'>
                     <p>There are 3 parts of synopsis:-</p>
                 </div>
-                <div className='flex md:text-xl lg:text-lg justify-start mt-1 lg:mx-28'>
+                <div className='flex md:text-xl lg:text-lg justify-start mt-1 mb-8  md:mb-0 lg:mx-28'>
                     <ul class="list-decimal mx-5">
                         <li className='text-justify text-gray-400 text-black text-medium'><span className=' text-gray-700 font-medium'>Character :-</span> This is the main character  that make the foundation of your story.</li>
                         <li className='text-justify text-gray-400 text-black text-medium'><span className=' text-gray-700  font-medium'>Conflict:-</span>Another, main part  that the audience reads.  </li>
@@ -78,7 +78,7 @@ function SypnosisSection() {
             </div>
 
 
-            <div className='lg:w-full h-[55%] lg:h-full select-none  flex flex-col justify-center'>
+            <div className='lg:w-full h-[55%] lg:h-full select-none mb-12 md:mb-0 flex flex-col justify-center'>
                 <Cart />
                 <div className='lg:w-full mt-3  lg:h-96 select-none flex justify-start lg:px-20 '>
                     <div className='lg:p-11 p-2 font-semibold'>

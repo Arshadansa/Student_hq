@@ -7,9 +7,9 @@ function PhdthesisSection() {
     return (
         <>
             <div className="grid  select-none max-w-screen-xl px-4  lg:pb-8 mt-14 lg:mx-40 lg:gap-10 xl:gap-24 lg:py-16 md:grid-cols-12 lg:pt-24">
-                <div className="mr-auto  lg:mb-16 place-self-center md:col-span-9 lg:col-span-8">
+                <div className="mr-auto  lg:mb-16 place-self-center md:col-span-9 lg:col-span-7">
                     <h1
-                        className="max-w-2xl mb-2 text-3xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark: text-black">
+                        className="max-w-2xl mb-2 text-3xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-5xl dark: text-black">
                         Phd Writing Service.<br /></h1>
                     <p className="max-w-2xl mb-6  text-gray-500 lg:mb-4 md:text-lg lg:text-xl text-slate-900 font-normal ">  Best thesis  Writing Service for phd is here.</p>
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
@@ -27,7 +27,7 @@ function PhdthesisSection() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block z-0 lg:mt-0 lg:col-span-4 md:col-span-3 lg:flex">
+                <div className="hidden md:block z-0 lg:mt-0 lg:col-span-5 md:col-span-3 lg:flex">
                     <img src="https://studenthq.in/images/phd.png" className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
                 </div>
             </div>
