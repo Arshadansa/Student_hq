@@ -25,12 +25,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="pt-20 gap-14 justify-between  select-none  box-border lg:flex-nowrap flex-nowrap pr-2  pl-2 sm:pt-20  flex items-center md:pt-24 md:pl-10  md:pr-14 md:justify-between text-slate-50 h-16">
+      <div className="pt-20 gap-14 justify-between  select-none  box-border lg:flex-nowrap flex-nowrap pr-3  pl-3 sm:pt-20  flex items-center md:pt-24 md:pl-10  md:pr-14 md:justify-between text-slate-50 h-16">
         <div className="flex  justify-start flex-nowrap items-center pb-8">
           <NavLink to="/" className="cursor-pointer ">
             <img
               src="https://studenthq.in/images/studyHQ-lgo-png.png"
-              className="flex-auto h-24"
+              className="flex-auto h-[75px] lg:h-24"
               alt="studenthq logo"
             />
           </NavLink>
@@ -38,10 +38,10 @@ function Navbar() {
         <button
           onClick={handleToggleNav}
           type="button"
-          className="bg-primary justify-end inline-flex items-center p-2 pl-4 pr-4   rounded-md md:hidden focus:outline-none"
+          className="bg-primary justify-end inline-flex items-center p-2 mb-2 pl-4 pr-4   rounded-md md:hidden focus:outline-none"
         >
           <svg
-            className="w-8 h-8 text-white"
+            className="w-8 h-[30px] text-white"
             aria-hidden="true"
             fill="none"
             viewBox="0 0 24 24"
@@ -87,7 +87,7 @@ function Navbar() {
             <li className="relative duration-700 " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <button
                 id="dropdownHoverButton"
-                className={`hover:text-primary font-semibold xl:text-xs md:text-xs 2xl:text-lg focus:outline-none duration-300 focus:ring-blue-300 rounded-lg px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${toggleNav ? "text-primary" : "text-black"
+                className={`hover:text-primary font-semibold xl:text-xs md:text-xs 2xl:text-lg focus:outline-none duration-300 focus:ring-blue-300 rounded-lg px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${toggleNav ? "text-primary" : "text-darkgray"
                   }`}
                 type="button"
                 onClick={handleToggleNav}
@@ -109,11 +109,11 @@ function Navbar() {
               {toggleNav && (
                 <div
                   id="dropdownHover"
-                  className="absolute z-10 divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 transition-all duration-700"
+                  className="absolute z-10 divide-y divide-gray-100 bg-white rounded-lg shadow w-60 dark:bg-gray-700 transition-all duration-700"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <ul className="py-2 text-lg dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                  <ul className="py-2 text-lg dropdown_menu  dropdown_menu--animated dropdown_menu-6">
                     <li className="hover:text-primary">
                       <NavLink
                         to="/AssignmentWriting"
@@ -181,11 +181,19 @@ function Navbar() {
 
       {toggleNav && (
         <div className={`md:hidden  dropdown_menu-6 border border-gray-200 shadow-lg rounded-lg p-2 m-3  text-start  drop-shadow-lg  mt-12   transition-all  duration-700 ease-in-out`}>
-          <ul className="flex  underline underline-offset-1 flex-col gap-3 mt-2 text-2xl text-gray">
+          <ul className="flex   flex-col gap-3 mt-2 text-2xl text-darkgray ">
+            <li>
+              <NavLink
+                to="/blog"
+                className="block px-[30px] cursor-pointer    font-semibold text-darkgray  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Our Blog
+              </NavLink>
+            </li>
             <li className="">
               <NavLink
                 to="/AssignmentWriting"
-                className="hover:text-primary font-semibold text-gray px-[30px] cursor-pointer "
+                className="hover:text-primary font-semibold text-darkgray  px-[30px] cursor-pointer "
               >
                 Assignment Writing
               </NavLink>
@@ -193,20 +201,20 @@ function Navbar() {
             <li className="">
               <NavLink
                 to="/DeceratationWriting"
-                className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold "
+                className="hover:text-primary text-darkgray  px-[30px] cursor-pointer font-semibold "
               >
                 Declaration Writing
               </NavLink>
             </li>
             <li className="">
-              <NavLink to="/SynopsisWriting" className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold ">
+              <NavLink to="/SynopsisWriting" className="hover:text-primary text-darkgray  px-[30px] cursor-pointer font-semibold ">
                 Synopsis Writing
               </NavLink>
             </li>
             <li className="">
               <NavLink
                 to="/PhdThesisWriting"
-                className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold "
+                className="hover:text-primary text-darkgray  px-[30px] cursor-pointer font-semibold "
               >
                 Phd. Thesis Writing
               </NavLink>
@@ -214,7 +222,7 @@ function Navbar() {
             <li className="">
               <NavLink
                 to="/MbaProject"
-                className="hover:text-primary text-gray px-[30px] cursor-pointer font-semibold "
+                className="hover:text-primary text-darkgray  px-[30px] cursor-pointer font-semibold "
               >
                 MBA Project Making
               </NavLink>
@@ -222,7 +230,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/StudyInIndia"
-                className="block px-[30px] cursor-pointer font-semibold text-gray hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-[30px] cursor-pointer font-semibold text-darkgray  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Study in India
               </NavLink>
@@ -230,9 +238,17 @@ function Navbar() {
             <li>
               <NavLink
                 to="/StudyInAbroad"
-                className="block px-[30px] cursor-pointer    font-semibold text-gray hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-[30px] cursor-pointer    font-semibold text-darkgray hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Study in Abroad
+              </NavLink>
+            </li>
+            <li className="">
+              <NavLink
+                to="/ApplyOnline"
+                className="block px-[30px] text-[20px]  font-medium cursor-pointer  bg-primary p-2 mb-2 ml-[28px] text-white rounded-md w-fit    hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Apply Online
               </NavLink>
             </li>
           </ul>

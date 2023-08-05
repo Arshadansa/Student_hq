@@ -3,21 +3,119 @@ import Faq from "./Faq";
 
 function Bottom() {
   const category = [
-    "Agriculture & Foresty",
-    "science & professional",
-    "Art, Design & Culture",
-    "Business & Management",
-    "Computer Science & IT",
-    "Education & Training",
-    "Engeneering & Technology",
-    "Hopitality & Sports",
-    "Journalism & Media",
-    "Medicine & Health",
-    "Law",
-    "Social Science",
-    "Humanities",
-    "Enviromental Studies",
+
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/canda.png',
+      name: 'Agriculture & Foresty',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/usa.png',
+      name: 'Science & Professional',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/australia.png',
+      name: 'Art, Design & Culture',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Business & Management',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Computer Science & IT',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Education & Training',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/italy.png',
+      name: 'Engineering & Technology',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Hospitality & Sports',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Journalism & Media',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Medicine & Health',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/italy.png',
+      name: 'Law',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/span.png',
+      name: 'Social Science',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/franch.png',
+      name: 'Humanities',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/destination/swideen.png',
+      name: 'Environmental Studies',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png',
+      name: 'Agriculture & Foresty',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/science.png',
+      name: 'Science & Professional',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/art.png',
+      name: 'Art, Design & Culture',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/business.png',
+      name: 'Business & Management',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/pc.png',
+      name: 'Computer Science & IT',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/book.png',
+      name: 'Education & Training',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/click.png',
+      name: 'Click',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/french-fry.png',
+      name: 'French Fry',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/news-paper.png',
+      name: 'Journalism & Media',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/first-aid-kit.png',
+      name: 'Medicine & Health',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/enverment.png',
+      name: 'Environmental Studies',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/humanity.png',
+      name: 'Humanities',
+    },
+    {
+      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/recicle.png',
+      name: 'Recycle',
+    },
   ];
+
+  console.log(category);
+
   return (
     <>
       {/* about us...section */}
@@ -28,16 +126,16 @@ function Bottom() {
           <div className="w-full md:justify-center md:align-middle flex flex-col lg:h-full">
             <div className="flex flex-col  lg:h-full ">
 
-              <div className="text-primary md:mb-2 text-xl md:text-2xl font-bold">
+              <div className="text-primary md:mb-2 font-bold">
                 <span>ABOUT US & EXPERIENCE</span>
               </div>
-              <div className="text-xl md:text-xl tracking-normal flex flex-col gap-2 lg:text-5xl leading-tight font-medium">
+              <div className="text-3xl tracking-normal flex flex-col gap-2 lg:text-5xl leading-tight font-medium">
                 <span>Moving beyond product</span>
                 <span>innovation to gain a</span>
                 <span>competitive advantage</span>
               </div>
 
-              <div className="lg:mt-16 mt-6 text-left flex flex-col gap-3  font-medium w-11/12">
+              <div className="mt-16 text-left flex flex-col gap-3  font-medium w-11/12">
                 <span>
                   Ouya Education, which is based in Victoria, British Columbia,
                   Canada, frequently deals with issues of employment
@@ -120,13 +218,13 @@ function Bottom() {
                 <div className=" self-center">
                   <img
                     className="h-20 w-20 "
-                    src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
+                    src={categories.link}
                     alt=""
                   />
                 </div>
 
                 <div className="m-4">
-                  <h1 className=" text-xl text-center">{categories}</h1>
+                  <h1 className=" text-xl text-center">{categories.name}</h1>
                 </div>
               </div>
             );

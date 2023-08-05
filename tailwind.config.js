@@ -7,6 +7,7 @@ export const theme = {
       primary: "#764AF1",
       secondary: "#1E1926",
       gray: "#BAB2B5",
+      darkgray: "#001122",
       blue: "#BADFE7",
       blue2: "#697184",
       pink: "#D8CFD0",

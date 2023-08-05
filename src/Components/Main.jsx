@@ -4,88 +4,9 @@ import "../pages/style.css";
 // import footer from '../Components/footer';
 
 function Main() {
+
   return (
     <div class="container  flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl tails-selected-element">
-      <div className="m-2 0 flex flex-row justify-center flex-wrap">
-        <div className="max-w-sm py-[2rem] px-10 h-[23rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/idea.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-sm py-[2rem] px-10 h-[23rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/idea.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-sm py-[2rem] px-10 h-[23rem]  bg-white rounded-3xl shadow-2xl  w-[100rem] m-3 sm:h-[23rem]">
-          <div className="px-4 ">
-            <img
-              className=" my-3  text-gray-500   h-10  sm:h-[4rem]"
-              src="https://themeim.com/demo/eduplan/assets/img/icon/idea.png"
-              alt=""
-            />
-
-            <a a href="#">
-              <h5 className="mb-5 text-2xl font-semibold ">
-                One Stop Study Solution
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-black ">
-              Get a full view so you know where to save. Track spending, deta
-              keep tab subscription lorem ipsum text
-            </p>
-            <a
-              href="#"
-              className="no-underline inline-flex items-center text-blue-600 hover:underline  text-primary "
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-
       <div className=" bg-hotpink p-20 flex flex-col  justify-center">
         <div className="flex flex-col justify-center text-center">
           <div>
