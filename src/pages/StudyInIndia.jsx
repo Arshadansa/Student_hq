@@ -171,7 +171,7 @@ function StudyInIndia() {
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-3xl tracking-normal md:text-5xl  leading-tight font-medium"><span>Benefit of studying in
                 India </span><br /><span></span><br /><span></span></div>
-              <div className=" text-left text-five text-xl w-11/12"><span>
+              <div className=" text-left text-xl w-11/12"><span>
                 Studying in India offers a multitude of benefits. With its renowned institutions and affordable education,
                 students can receive a high-quality education without breaking the bank. Moreover, the diverse and multicultural
                 society provides a unique cultural experience, exposing students to different traditions, languages, and festivals.

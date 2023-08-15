@@ -63,32 +63,48 @@ function Blog() {
           </svg>
         </div>
       ) : (
-        <div className="bg-purple select-none min-h-screen py-8 mt-20 m-4">
-          <div className="container mx-auto">
-            <h1 className="text-black text-4xl font-bold mb-8 text-center">Blog</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {blogPosts.map((post) => (
-                <motion.div
-                  key={post.id}
-                  className="bg-white rounded-lg overflow-hidden hover:shadow-lg"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <img src={post.image} alt={post.title} className="w-full select-none h-48 object-cover rounded-t-lg" />
-                  <div className="p-4">
-                    <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                    <p className="text-gray-500 text-sm">{post.date}</p>
-                    <p className="text-gray-700 mt-2">{post.author}</p>
-                    <button
-                      className="bg-primary hover:bg-hotpink text-white rounded-full py-2 px-4 mt-4 transition-colors duration-300"
-                      onClick={() => handleReadMore(post.id)}
-                    >READ MORE</button>
-                  </div>
-                </motion.div>
-              ))}
+        <>
+          <div className="grid bg-hotpink select-none mt-10 md:mt-16 px-12 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
+            <div className="mr-auto md:mx-10 md:my-10  place-self-center lg:col-span-7">
+              <h1 className="max-w-2xl mb-4 text-4xl md:text-5xl font-extrabold leading-none tracking-tight  xl:text-6xl text-purple-dark">
+                Welcome to Our Blog
+              </h1>
+              <p className="max-w-lg mb-6 text-md md:text-lg text-gray-600">
+                Explore our latest blog posts and stay updated with exciting content.
+              </p>
+
             </div>
           </div>
-        </div>
+
+          <div className="bg-purple select-none min-h-screen md:py-8 m-4">
+            <div className="container mx-auto">
+              <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {blogPosts.map((post) => (
+                  <motion.div
+                    key={post.id}
+                    className="bg-white rounded-lg overflow-hidden hover:shadow-lg"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <img src={post.image} alt={post.title} className="w-full select-none h-48 object-cover rounded-t-lg" />
+                    <div className="p-4">
+                      <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                      <div className="flex gap-2">
+                        <p className="text-gray-500 text-sm">{post.date}</p>
+                        <p className="text-gray-500 text-sm">{post.author}</p>
+                      </div>
+
+                    </div>
+                    <button
+                      className="bg-primary ml-2 hover:bg-hotpink text-white rounded-full py-2 px-4 mt-4 transition-colors duration-300"
+                      onClick={() => handleReadMore(post.id)}
+                    >READ MORE</button>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </>
       )}
 
       <footer>

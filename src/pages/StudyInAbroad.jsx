@@ -177,7 +177,7 @@ function StudyInIndia() {
               {/* <div className="text-primary mb-3 font-bold"><span>ABOUT US &amp; EXPERIENCE</span></div> */}
               <div className="text-3xl tracking-normal md:text-5xl  leading-tight font-medium"><span>Benefits To Study
                 Abroad </span><br /><span></span><br /><span></span></div>
-              <div className=" text-left text-five text-xl w-11/12"><span>
+              <div className=" text-left  text-xl w-11/12"><span>
                 India is a country with a rich culture, diverse history, and a booming economy. It offers a plethora of
                 opportunities for students to
                 learn and grow in a unique and dynamic environment. Here are some of the benefits of studying in

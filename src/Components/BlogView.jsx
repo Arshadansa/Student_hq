@@ -28,7 +28,7 @@ const Blog = ({ postObject }) => {
                 />
               </div>
             </div>
-            <div className="px-8 py-6">
+            <div className="px-8 py-6 ">
               <div className="mt-6">
                 <div className="text-gray-700 overflow-auto" dangerouslySetInnerHTML={{ __html: content }} />
                 <div className="flex items-center mt-6">

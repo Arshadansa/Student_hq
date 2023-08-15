@@ -121,10 +121,10 @@ const Blog = () => {
         <div className="flex flex-wrap mt-20">
           <div className="w-full md:w-3/4 pr-4">
             <div className="my-8">
-              <h2 className="text-6xl font-bold text-black">{title}</h2>
+              <h2 className="text-3xl md:text-6xl font-bold text-black">{title}</h2>
               <div className='ml-2 text-gray text-xl flex gap-5 my-3'>
-                <p className=" ">Date: {date}</p>
-                <p className="">Author: {author}</p>
+                <p className="text-sm md:text-xl   ">Date: {date}</p>
+                <p className=" text-sm md:text-xl">Author: {author}</p>
               </div>
             </div>
             <div className="relative">
@@ -136,10 +136,10 @@ const Blog = () => {
                 />
               </div>
             </div>
-            <div className="px-8 py-6">
+            <div className="">
               <div className="mt-6">
                 <div className="text-gray-700 overflow-auto" dangerouslySetInnerHTML={{ __html: content }} />
-                <div className="flex items-center mt-6">
+                <div className="flex items-center px-10 py-2 mt-6">
                   <p className="text-gray-700 mr-4">Share this post:</p>
                   <div className="flex space-x-2">
                     <a href="#" className="text-indigo-600 hover:text-indigo-800">
