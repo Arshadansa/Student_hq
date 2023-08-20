@@ -50,10 +50,10 @@ function Section() {
               </div>
             </div>
 
-            <div className="w-fit sm:h-1/2 md:w-1/2 h-0 invisible sm:visible md:visible lg:visible">
+            <div className="w-fit sm:h-1/2 md:w-1/2 h-fit ">
               <img
                 src="https://themeim.com/demo/eduplan/assets/img/header/header-img.png"
-                className="lg:mx-16 w-[600px] sm:visible md:visible"
+                className="lg:mx-16 w-[550px] "
               />
             </div>
           </div>

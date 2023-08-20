@@ -2,6 +2,26 @@ import React from "react";
 import Faq from "./Faq";
 
 function Bottom() {
+  const cardsData = [
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/idea.png',
+      title: 'Streamlined Application Process',
+      description: 'Simplify the college application process and ensure a smooth submission of your applications.',
+      link: '#',
+    },
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/coversation.png',
+      title: 'Financial Aid and Scholarships',
+      description: 'Explore various financial aid options and scholarship programs to support your college education.',
+      link: '#',
+    },
+    {
+      imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/emergency.png',
+      title: 'Career Guidance and Counseling',
+      description: 'Receive expert guidance and counseling to choose the right career path and make informed decisions.',
+      link: '#',
+    },
+  ];
   const category = [
 
     {
@@ -151,7 +171,7 @@ function Bottom() {
                 </span>
 
 
-                <div className=" font-bold text-xl text-gray tracking-wider text-five lg:mb-8  md:mt-8">
+                <div className=" font-bold text-xl text-gray tracking-wider lg:mb-8  md:mt-8">
                   <span>CORE STRENGTH</span>
                 </div>
               </div>
@@ -403,110 +423,36 @@ function Bottom() {
         </div>
       </div>
       {/* //stpes to get your destionation section*/}
-      <div className=" bg-hotpink pt-32 pt flex flex-col  justify-center">
-        <div className="flex flex-col justify-center text-center">
-          <div className="p-3">
-            <span className=" text-primary font-medium text-lg">STEPS</span>
-          </div>
-          <div className="p-6 pt-0">
-            <span className=" text-black font-bold text-2xl  sm:text-5xl ">
-              Steps To Get Your College
-            </span>
-          </div>
-        </div>
 
-        <div className="flex flex-row  p-20 pt-1 flex-wrap justify-center">
-          <div className=" flex flex-row mx-8 ">
-            <div className=" flex flex-col justify-center  my-10">
-              <div className="bg-white rounded-full h-fit w-fit p-10   self-center">
+      <div className="flex flex-row m-3 justify-center flex-wrap bg-fourth ">
+        {
+          cardsData.map((card, index) => (
+            <div
+              key={index}
+              className="max-w-sm py-[2rem] px-10 h-[28rem] bg-white rounded-3xl shadow-2xl w-[100rem] m-3 sm:h-[23rem]"
+            >
+              <div className="px-4">
                 <img
-                  className=" "
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/step-01.png"
+                  className="my-3 text-gray-500 h-10 sm:h-[4rem]"
+                  src={card.imgSrc}
                   alt=""
                 />
-              </div>
-              <div className=" w-48 text-center">
-                <h2 className=" text-xl my-3">
-                  Identify course country & College
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className=" flex flex-row mx-8 ">
-            <div className=" flex flex-col justify-center  my-10">
-              <div className="bg-white rounded-full h-fit w-fit p-10  self-center">
-                <img
-                  className=" "
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/step-02.png"
-                  alt=""
-                />
-              </div>
-              <div className=" w-48 text-center">
-                <h2 className=" text-xl my-3">
-                  Identify course country & College
-                </h2>
+                <a href={card.link}>
+                  <h5 className="mb-5 text-2xl font-semibold">{card.title}</h5>
+                </a>
+                <p className="mb-3 font-normal text-black">{card.description}</p>
+                <a
+                  href={card.link}
+                  className="no-underline inline-flex items-center text-blue-600 hover:underline text-primary"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
-          </div>
+          ))
+        }
 
-          <div className=" flex flex-row mx-8 ">
-            <div className=" flex flex-col justify-center  my-10">
-              <div className="bg-white rounded-full h-fit w-fit p-10   self-center">
-                <img
-                  className=" "
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/step-03.png"
-                  alt=""
-                />
-              </div>
-              <div className=" w-48 text-center">
-                <h2 className=" text-xl my-3">
-                  Identify course country & College
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className=" flex flex-row mx-8 ">
-            <div className=" flex flex-col justify-center  my-10">
-              <div className="bg-white rounded-full h-fit w-fit p-10   self-center">
-                <img
-                  className=" "
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/step-04.png"
-                  alt=""
-                />
-              </div>
-              <div className=" w-48 text-center">
-                <h2 className=" text-xl my-3">
-                  Identify course country & College
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className=" flex flex-row mx-8 ">
-            <div className=" flex flex-col justify-center  my-10">
-              <div className="bg-white rounded-full h-fit w-fit p-10  self-center">
-                <img
-                  className=" "
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/step-05.png"
-                  alt=""
-                />
-              </div>
-              <div className="w-48 text-center">
-                <h2 className=" text-xl my-3">
-                  Identify course country & College
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          {/*
-      <img className=' inline-block z-10 relative  bottom-9 '
-        src="https://res.cloudinary.com/dzuv2ssvs/image/upload/v1681644943/arrow_gic2xf.svg" alt="" /> */}
-        </div>
       </div>
-
 
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
@@ -654,10 +600,8 @@ function Bottom() {
 
 
 
-      {/* faq...section */}
-      <div className="flex justify-center align-middle w-full h-full">
-        <Faq />
-      </div>
+
+
     </>
   );
 }
