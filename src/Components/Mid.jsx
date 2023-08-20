@@ -93,7 +93,7 @@ function Mid() {
               </div>
               <div className=" w-48 text-center">
                 <h2 className=" text-xl my-3">
-                  Identify course country & College
+                Prepare application materials
                 </h2>
               </div>
             </div>
@@ -110,7 +110,7 @@ function Mid() {
               </div>
               <div className=" w-48 text-center">
                 <h2 className=" text-xl my-3">
-                  Identify course country & College
+                Submit your application 
                 </h2>
               </div>
             </div>
@@ -127,7 +127,7 @@ function Mid() {
               </div>
               <div className=" w-48 text-center">
                 <h2 className=" text-xl my-3">
-                  Identify course country & College
+                Secure funding
                 </h2>
               </div>
             </div>
@@ -144,7 +144,7 @@ function Mid() {
               </div>
               <div className="w-48 text-center">
                 <h2 className=" text-xl my-3">
-                  Identify course country & College
+                Prepare for departure
                 </h2>
               </div>
             </div>

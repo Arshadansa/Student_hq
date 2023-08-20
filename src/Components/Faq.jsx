@@ -25,11 +25,7 @@ function Accordion({ title, content }) {
 
 export default function Faq() {
   const faqData = [
-    {
-      title: "When will my order arrive?",
-      content:
-        "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
-    },
+  
     {
       title: "How do I apply for admissions?",
       content:

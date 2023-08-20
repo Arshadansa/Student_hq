@@ -456,44 +456,45 @@ function Bottom() {
       </div>
 
       <section className="bg-white py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-purple-600 mb-8">Accommodation </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-              <img src="https://shorturl.at/fsNX3" alt="Standard Room" className="w-full object-cover h-48" />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-purple-600 mb-2">Standard Room</h3>
-                <p className="mb-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae ut quos ipsam
-                  aliquid error consequatur dolore ex officia possimus.</p>
-                <button className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-                  Book Now
-                </button>
-              </div>
-            </div>
-            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-              <img src="https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/312235/xspknzflk57dbbiger2x" alt="Deluxe Room" className="w-full object-cover h-48" />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-purple-600 mb-2">Deluxe Room</h3>
-                <p className="mb-4 text-gray-700">Indulge in luxury and sophistication in our deluxe rooms. Featuring elegant decor, a spacious layout, and premium amenities, these rooms provide a truly memorable experience.</p>
-                <button className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-                  Book Now
-                </button>
-              </div>
-            </div>
-            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-              <img src="https://shorturl.at/muEHP" alt="Suite" className="w-full object-cover h-48" />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-purple-600 mb-2">Suite</h3>
-                <p className="mb-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae ut quos ipsam
-                  aliquid error consequatur dolore ex officia possimus.</p>
-                <button className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-                  Book Now
-                </button>
-              </div>
-            </div>
-          </div>
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-purple-600 mb-8">Accommodation</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+        <img src="https://shorturl.at/fsNX3" alt="Standard Room" className="w-full object-cover h-48" />
+        <div className="p-4">
+          <h3 className="text-xl font-semibold text-purple-600 mb-2">Standard Room</h3>
+          <p className="mb-4 text-gray-700">Our cozy Standard Room offers a comfortable stay with modern amenities. Perfect for solo travelers or couples looking for a budget-friendly option.</p>
+          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+            Book Now
+          </a>
         </div>
-      </section>
+      </div>
+    
+      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+        <img src="https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/312235/xspknzflk57dbbiger2x" alt="Deluxe Room" className="w-full object-cover h-48" />
+        <div className="p-4">
+          <h3 className="text-xl font-semibold text-purple-600 mb-2">Deluxe Room</h3>
+          <p className="mb-4 text-gray-700">Indulge in luxury and sophistication in our Deluxe Rooms. Featuring elegant decor, a spacious layout, and premium amenities, these rooms provide a truly memorable experience.</p>
+          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+            Book Now
+          </a>
+        </div>
+      </div>
+    
+      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+        <img src="https://shorturl.at/muEHP" alt="Suite" className="w-full object-cover h-48" />
+        <div className="p-4">
+          <h3 className="text-xl font-semibold text-purple-600 mb-2">Suite</h3>
+          <p className="mb-4 text-gray-700">Experience ultimate luxury in our spacious Suites. These well-appointed rooms offer stunning views, a separate living area, and all the amenities you need for a perfect stay.</p>
+          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+            Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* {education...section} */}
       <RecentPosts/>

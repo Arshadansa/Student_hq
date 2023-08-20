@@ -268,16 +268,16 @@ function StudyInIndia() {
 
       {/* best  colleges in abroad */}
 
-      <div className=' m-2 rounded-3xl select-none bg-primary' >
-        <div className='m-5 p-10 md:p-10 justify-center'>
-          <h1 className='font-bold  text-white text-3xl md:text-center md:text-5xl'>Some Top Colleges</h1>
-          <div className="flex flex-wrap mt-10 md:m-20 gap-4">
+      <div className=' m-2 rounded-3xl select-none bg-primary p-5' >
+        <div className='m-3 md:p-10 justify-center'>
+          <h1 className='font-bold p-8  text-white text-2xl md:text-center md:text-5xl'>Some Top Colleges</h1>
+          <div className="flex  justify-center flex-wrap m-5 mt-10 md:m-20 gap-4">
             {
               Colleges.map((college) => {
                 return (
-                  <div className="bg-white border-solid border text-xl md:text-sm border-gray rounded-xl hover:border-primary md:w-[40vh]  shadow-md  p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                    <h2 className="font-bold mb-2">{college.name}</h2>
-                    <p className="text-gray-600 mb-2">QS World Ranking: {college.qswroldranking}</p>
+                  <div className="bg-white w-full border-solid border text-xl md:w-[350px] md:h-[180px] h-[230px] self-center  md:text-sm border-gray rounded-xl hover:border-primary   shadow-md  p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <h2 className="font-bold md:text-xl mb-2">{college.name}</h2>
+                    <p className="text-gray-600  mb-2">QS World Ranking: {college.qswroldranking}</p>
                     <p className="text-sm text-gray-500">Location: {college.location}</p>
                     <p className="text-sm text-gray-500">Established: {college.established}</p>
                   </div>

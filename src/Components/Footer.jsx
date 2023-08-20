@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link, NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div>
@@ -72,9 +72,10 @@ function Footer() {
                     />
                   </svg>
 
-                  <a href="" class="hover:underline">
-                    info@studenthq.in
-                  </a>
+                  <a href="mailto:info@studenthq.in" class="hover:underline">
+                 info@studenthq.in
+                   </a>
+
                 </li>
                 <li className="mb-4 flex flex-auto space-x-3">
                   <svg
@@ -92,7 +93,7 @@ function Footer() {
                     />
                   </svg>
                   <a href="" class="hover:underline">
-                    8532883798
+                    +919027886029
                   </a>
                 </li>
               </ul>
@@ -101,13 +102,14 @@ function Footer() {
             <div class="grid grid-cols-2 gap-8 sm:gap- sm:grid-cols-3 my-[2.2rem]">
               <div>
                 <h2 class="mb-6 text-2xl font-semibold text-gray-900  uppercase text-white">
-                  Our Services
+                 Upcoming Services
                 </h2>
                 <ul class="text-gray-600 text-gray-400 font-medium text-white">
                   <li className="mb-1">
-                    <a href="" class="hover:underline">
-                      Digital Marketing
-                    </a>
+                  <NavLink
+              to="/StudyInIndia"
+              className="hover:text-primary cursor-pointer"
+            />
                   </li>
                   <li className="mb-1">
                     <a href="https://tailwindcss.com/" class="hover:underline">
@@ -132,25 +134,64 @@ function Footer() {
                 </h2>
                 <ul class="text-gray-600 dark:text-gray-400 font-medium text-white">
                   <li className="mb-1">
-                    <a href="" class="hover:underline">
-                      Services
-                    </a>
+                  <NavLink
+                        to="/AssignmentWriting"
+                       
+                      >
+                        Assignment Writing
+                      </NavLink>
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
-                      Our Experts
-                    </a>
+                  <NavLink
+                        to="/DeceratationWriting"
+                      
+                      >
+                        Declaration Writing
+                      </NavLink>
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
-                      Course
-                    </a>
+                  <NavLink
+                        to="/SynopsisWriting"
+                       
+                      >
+                        Synopsis Writing
+                      </NavLink>
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
-                      Study Abroad
-                    </a>
+                  <NavLink
+                        to="/PhdthesisWriting"
+                        
+                      >
+                        Phd. Thesis Writing
+                      </NavLink>
                   </li>
+
+  
+
+                  <li className="mb-1">
+                  <NavLink
+              to="/StudyInIndia"
+              
+            >
+              Study in India
+            </NavLink>
+                  </li>
+
+                  <li className="mb-1">
+                  <NavLink
+                to="/StudyInAbroad"
+                
+              >
+                Study in Abroad
+              </NavLink>
+                  </li>
+
+                  <li className="mb-1">
+                  <NavLink  to="/Courses">
+              Our Courses
+            </NavLink>
+                  </li>
+                  
                 </ul>
               </div>
 
