@@ -1,5 +1,6 @@
 import React from "react";
 import Faq from "./Faq";
+import RecentPosts from "./RecentPosts";
 
 function Bottom() {
   const cardsData = [
@@ -495,113 +496,7 @@ function Bottom() {
       </section>
 
       {/* {education...section} */}
-      <div className="">
-        <div className="flex pt-20  flex-col justify-center text-center">
-
-          <div>
-            <div className="">
-              <span className=" text-primary font-bold text-md">
-                EDUPLAN UPDATES
-              </span>
-            </div>
-            <div className="pt-4">
-              <span className=" text-black font-bold text-2xl  sm:text-5xl ">
-                Eduplan Latest Blog
-              </span>
-            </div>
-
-          </div>
-
-
-          <div className="flex-wrap flex md:flex-row lg:flex-nowrap m-3 justify-center sm:justify-start lg:pr-24 lg:pl-24 lg:pt-4  lg:pb-20">
-
-            <div className="md:pt-16 md:pb-20 md:p-3  md:w-1/2 rounded-lg">
-              <div color="blue-gray" className="  rounded-lg h-56 ">
-                <img
-                  className="rounded-r-3xl rounded-l-3xl  h-56 w-full"
-                  src="https://themeim.com/demo/eduplan/assets/img/h-blog/01.png"
-                  alt="img-blur-shadow"
-                />
-              </div>
-
-              <div className="mt-5 mb-3 text-left">
-                <div
-                  variant="h5"
-                  color="blue-gray"
-                  className="mt-2 font-semibold "
-                >
-                  19th Jan 2022 12 Noon To 4 Pm
-                </div>
-                <div className="text-2xl font-semibold">
-                  Overseas Education Fair Amravati <br />
-                  2023
-                </div>
-              </div>
-              <div className=" text-primary text-left">
-                <button type="button">Read More</button>
-              </div>
-            </div>
-
-            <div className="md:pt-16 md:pb-20 md:p-3 md:w-1/2  rounded-lg">
-              <div color="blue-gray" className="relative  rounded-lg h-56 ">
-                <img
-                  className="rounded-r-3xl rounded-l-3xl h-56 w-full"
-                  src="https://themeim.com/demo/eduplan/assets/img/h-blog/02.png"
-                  alt="img-blur-shadow"
-                />
-              </div>
-
-              <div className="mt-5 mb-3 text-left">
-                <div
-                  variant="h5"
-                  color="blue-gray"
-                  className="mt-2 font-semibold "
-                >
-                  19th Jan 2022 12 Noon To 4 Pm
-                </div>
-                <div className="text-2xl font-semibold">
-                  Overseas Education Fair Amravati <br />
-                  2023
-                </div>
-              </div>
-              <div className=" text-primary text-left">
-                <button type="button">Read More</button>
-              </div>
-            </div>
-
-            <div className="lg:pt-16  lg:pb-20 md:p-3 md:w-1/2  rounded-lg">
-              <div color="blue-gray" className="relative  rounded-lg h-56 ">
-                <img
-                  className="rounded-r-3xl rounded-l-3xl h-56 w-full"
-                  src="https://themeim.com/demo/eduplan/assets/img/h-blog/03.png"
-                  alt="img-blur-shadow"
-                />
-              </div>
-              <div className="mt-5 mb-3 text-left">
-                <div
-                  variant="h5"
-                  color="blue-gray"
-                  className="mt-2 font-semibold "
-                >
-                  19th Jan 2022 12 Noon To 4 Pm
-                </div>
-                <div className="text-2xl font-semibold">
-                  Overseas Education Fair Amravati <br />
-                  2023
-                </div>
-              </div>
-              <div className=" text-primary text-left">
-                <button type="button">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
+      <RecentPosts/>
     </>
   );
 }

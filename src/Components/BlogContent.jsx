@@ -160,11 +160,11 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="w-full h-fit md:w-1/4 mt-40 sticky top-20 right-0 bg-white rounded-[35px]">
-  <div className="px-4 py-6">
-    <h2 className="text-3xl font-bold mb-10">Recent Posts</h2>
+          <div className="w-full h-fit md:w-1/4 mt-40 sticky top-20 right-0  rounded-[35px]">
+  <div className="px-4    rounded-2xl py-6">
+    <h2 className="text-3xl text-primary font-bold mb-10">Recent Posts</h2>
     {recentPosts.map((recentPost) => (
-      <div className="h-28 rounded mb-4" key={recentPost.id}>
+      <div className="h-28  l rounded-lg mb-4" key={recentPost.id}>
         <div className="flex items-center mb-4">
           <div className="rounded w-1/3 overflow-hidden">
             <img
@@ -175,7 +175,7 @@ const Blog = () => {
           </div>
           <div className="ml-4 w-full">
             <button onClick={() => handleReadMore(recentPost.id)} className="transition-colors duration-300 border-none focus:outline-none">
-            <p className="text-primary text-left hover:text-black  text-xl font-bold overflow-hidden -webkit-line-clamp-2 line-clamp-2">
+            <p className=" text-left hover:text-black  text-xl font-bold overflow-hidden -webkit-line-clamp-2 line-clamp-2">
     {recentPost.title}
   </p>
             </button>

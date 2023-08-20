@@ -20,8 +20,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const validUsername = 'vinaysingh@1';
+const validPassword = 'avi@1234';
+
+
 
 const BlogPostCreator = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [content, setContent] = useState('');
@@ -110,6 +117,23 @@ const BlogPostCreator = () => {
     }
   };
 
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+  
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+  
+  const handleLogin = () => {
+    if (username === validUsername && password === validPassword) {
+      setLoggedIn(true);
+    } else {
+      alert('Invalid username or password');
+    }
+  };
+  
+
   const modules = {
     toolbar: [
       [{ header: [1, 2, 3, 4, 5, 6, false] }],
@@ -136,6 +160,43 @@ const BlogPostCreator = () => {
     'image',
     'video',
   ];
+
+  if (!loggedIn) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="max-w-md w-full bg-white p-6 rounded-lg shadow-md">
+          <h1 className="text-3xl font-bold text-center mb-4">Login</h1>
+          <div className="mb-4">
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={handleUsernameChange}
+              className="w-full border rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={handlePasswordChange}
+              className="w-full border rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+            />
+          </div>
+          <div className="text-center">
+            <button
+              type="button"
+              onClick={handleLogin}
+              className=" bg-black w-full text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
