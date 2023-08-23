@@ -3,6 +3,7 @@ import Narbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Faq from '../Components/Faq'
 import StudyCard from '../Components/StudyCard'
+import { Link } from 'react-router-dom'
 
 
 
@@ -92,7 +93,8 @@ function StudyInIndia() {
 
 
             <div className="hidden  w-full md:block md:w-auto ">
-              <a href="#_"
+              <Link
+                to="/ApplyOnline"
                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-5 px-10   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                 <span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -101,7 +103,7 @@ function StudyInIndia() {
                 <span className="relative  group-hover:text-white text-2xl ">
                   Apply Now
                 </span>
-              </a>
+              </Link>
             </div>
 
 
@@ -149,11 +151,12 @@ function StudyInIndia() {
                 </span><br />
               </div>
 
-              <div className="mt-12 "><a href="#_"
+              <div className="mt-12 "><Link
+                to="/ApplyOnline"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-14   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"><span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
-                    className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></a></div>
+                    className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></Link></div>
             </div>
 
 
@@ -239,11 +242,12 @@ function StudyInIndia() {
               </ul>
 
 
-              <div className="mt-12 "><a href="#_"
+              <div className="mt-12 "><Link
+                to="/ApplyOnline"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-14   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"><span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
-                    className="relative  group-hover:text-white text-xl ">Get Free Consultation</span></a></div>
+                    className="relative  group-hover:text-white text-xl ">Get Free Consultation</span></Link></div>
             </div>
           </div>
 
@@ -289,103 +293,7 @@ function StudyInIndia() {
       </div>
       <div>
 
-        {/* <div className=' flex justify-center  bg-white pb-10'>
-      <div className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden"
-        style={{ maxWidth: '1000px' }}>
-        <div className="md:flex w-full">
-          <div className="hidden md:block max-h-20 w-1/2 bg-indigo-500 ">
-            <img className='  cover-full'
-              src="https://images.pexels.com/photos/12794074/pexels-photo-12794074.jpeg?cs=srgb&dl=pexels-feyza-tuğba-12794074.jpg&fm=jpg&w=1920&h=2880&_gl=1*1y4h6v8*_ga*MTk4Mjk1MDkzMi4xNjgwMTk1MTM3*_ga_8JE65Q40S6*MTY4MzU2OTgxMy44LjEuMTY4MzU3MDg1MC4wLjAuMA.."
-              alt="" />
-          </div>
-          <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
-            <div className=" mb-10">
-              <h1 className="font-bold text-3xl text-gray-900">Lets have a Quick Connect for a Free Counselling</h1>
-              <p className=' text-center'>Enter your information to register</p>
-            </div>
-            <div className="flex -mx-3">
-              <div className="w-full px-3 mb-5">
-                <label htmlFor className="text-xs font-semibold px-1">Email</label>
-                <div className="flex">
-                  <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i
-                      className="mdi mdi-email-outline text-gray-400 text-lg" /></div>
-                  <input type="email"
-                    className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                    placeholder="johnsmith@example.com" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="flex -mx-3">
-                <div className="w-1/2 px-3 mb-5">
-                  <label htmlFor className="text-xs font-semibold px-1">First name</label>
-                  <div className="flex">
-                    <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i
-                        className="mdi mdi-account-outline text-gray-400 text-lg" /></div>
-                    <input type="text"
-                      className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="John" />
-                  </div>
-                </div>
-                <div className="w-1/2 px-3 mb-5">
-                  <label htmlFor className="text-xs font-semibold px-1">Last name</label>
-                  <div className="flex">
-                    <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i
-                        className="mdi mdi-account-outline text-gray-400 text-lg" /></div>
-                    <input type="text"
-                      className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="Smith" />
-                  </div>
-                </div>
-              </div>
 
-              <div className="flex -mx-3">
-                <div className="w-full px-3 mb-12">
-                  <label htmlFor className="text-xs font-semibold px-1">Contact Number</label>
-                  <div className="flex">
-                    <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i
-                        className="mdi mdi-lock-outline text-gray-400 text-lg" /></div>
-                    <input type="number"
-                      className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="Phone Number" />
-                  </div>
-                </div>
-                <div className="w-full px-3 mb-12">
-                  <label htmlFor className="text-xs font-semibold px-1">Preferred location</label>
-                  <div className="flex">
-                    <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i
-                        className="mdi mdi-lock-outline text-gray-400 text-lg" /></div>
-                    <input type="country"
-                      className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                      placeholder="location" />
-                  </div>
-                </div>
-
-              </div>
-
-              <div className="flex -mx-3">
-                <div className="w-full px-3 mb-5">
-                  <button
-                    className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">REGISTER
-                    NOW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div> */}
-        {/* BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES */}
-        {/* <div className="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-      <div>
-        <a title="Buy me a beer" href="https://www.buymeacoffee.com/scottwindon" target="_blank"
-          className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-          <img className="object-cover object-center w-full h-full rounded-full"
-            src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg" />
-        </a>
-      </div>
-    </div> */}
       </div>
 
       <StudyCard />

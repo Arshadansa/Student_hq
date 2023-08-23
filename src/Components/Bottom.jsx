@@ -1,8 +1,24 @@
 import React from "react";
 import Faq from "./Faq";
 import RecentPosts from "./RecentPosts";
+import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
+import { Modal } from "flowbite-react";
+import { MdPlayCircleOutline } from "react-icons/md";
+import { useState } from "react";
 
 function Bottom() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   const cardsData = [
     {
       imgSrc: 'https://themeim.com/demo/eduplan/assets/img/icon/idea.png',
@@ -140,81 +156,6 @@ function Bottom() {
   return (
     <>
       {/* about us...section */}
-      <div className="flex  justify-center align-middle w-full h-auto ">
-
-        <div className="flex flex-wrap lg:flex-nowrap gap-5 p-5 lg:p-20   lg:justify-center align-middle w-full sm:h-fit">
-
-          <div className="w-full md:justify-center md:align-middle flex flex-col lg:h-full">
-            <div className="flex flex-col  lg:h-full ">
-
-              <div className="text-primary md:mb-2 font-bold">
-                <span>ABOUT US & EXPERIENCE</span>
-              </div>
-              <div className="text-3xl tracking-normal flex flex-col gap-2 lg:text-5xl leading-tight font-medium">
-                <span>Moving beyond product</span>
-                <span>innovation to gain a</span>
-                <span>competitive advantage</span>
-              </div>
-
-              <div className="mt-16 text-left flex flex-col gap-3  font-medium w-11/12">
-                <span>
-                  Ouya Education, which is based in Victoria, British Columbia,
-                  Canada, frequently deals with issues of employment
-                  (recruitment and retention) for temporary foreign workers
-                  (TFW), as well as temporary and permanent residency
-                  applications and other general immigration matters with
-                  Canadian federal departments (IRCC and CBSA).
-                  <div className="mt-2">
-                    Education also provides educational consulting services for
-                    student- clients who want to study in Canada, and require
-                    help with the application process.
-                  </div>
-                </span>
-
-
-                <div className=" font-bold text-xl text-gray tracking-wider lg:mb-8  md:mt-8">
-                  <span>CORE STRENGTH</span>
-                </div>
-              </div>
-              <div className="hidden lg:flex  ">
-                <div className=" bg-six flex flex-col justify-center items-center mr-20  h-32 w-44 border-l-4 border-primary rounded-md ">
-                  <span className="text-5xl font-bold text-primary">15</span>
-                  <div className="mt-4 text-lg">Years Experience</div>
-                </div>
-                <div className=" flex flex-col justify-center items-center mr-20  h-32 w-44 border-l-4 rounded-md border-seven bg-eight">
-                  <span className="text-5xl text-seven font-bold">875</span>
-                  <div className="mt-4 text-lg">VISA Approved</div>
-                </div>
-                <div className=" flex flex-col justify-center items-center mr-20  h-32 w-44 border-l-4 rounded-md border-rose-400 bg-rose-50">
-                  <span className="text-5xl font-bold text-red-600">96%</span>
-                  <div className="mt-4">Admission success</div>
-                </div>
-              </div>
-
-              <div className="mt-12 hidden lg:flex">
-                <a
-                  href="#_"
-                  className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-14   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"
-                >
-                  <span className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
-                  <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
-                  <span className="relative  group-hover:text-white text-xl ">
-                    Get Free Consulation
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="sm:w-4/5 h-auto md:pr-10">
-            <div class="w-fit h-auto ">
-              <img src="/image/student-in-library.png"
-                class=" h-full"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
@@ -250,177 +191,7 @@ function Bottom() {
               </div>
             );
           })}
-          {/* 
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
 
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div>
-            <div className="flex m-2 flex-col justify-center   border-solid border border-gray rounded-xl  hover:border-primary w-[9rem]  sm:w-[11rem] sm:h-60 h-[12rem]">
-              <div className=" self-center">
-                <img
-                  className="h-20 w-20 "
-                  src="https://themeim.com/demo/eduplan/assets/img/sections/desipline/foresty.png"
-                  alt=""
-                />
-              </div>
-
-              <div className="m-4">
-                <h1 className=" text-xl text-center">Agriculture &Foresty</h1>
-              </div>
-            </div> */}
         </div>
       </div>
       {/* //stpes to get your destionation section*/}
@@ -455,49 +226,240 @@ function Bottom() {
 
       </div>
 
-      <section className="bg-white py-20">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-purple-600 mb-8">Accommodation</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-        <img src="https://shorturl.at/fsNX3" alt="Standard Room" className="w-full object-cover h-48" />
-        <div className="p-4">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">Standard Room</h3>
-          <p className="mb-4 text-gray-700">Our cozy Standard Room offers a comfortable stay with modern amenities. Perfect for solo travelers or couples looking for a budget-friendly option.</p>
-          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-            Book Now
-          </a>
+      <section className=" py-20">
+        <div className="container mx-auto px-4">
+
+          <div className="lg:w-full flex flex-col items-center mb-16 justify-center">
+            <div className="lg:text-5xl text-lg lg:w-96 font-medium text-black ">Accommodation </div>
+            <div className="text-lg font-normal text-gray-500 lg:w-96  lg:ml-24 ">"Your Home Away From Home"</div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+              <img src="https://shorturl.at/fsNX3" alt="Standard Room" className="w-full object-cover h-48" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-purple-600 mb-2">Standard Room</h3>
+                <p className="mb-4 text-gray-700">Our cozy Standard Room offers a comfortable stay with modern amenities. Perfect for solo travelers or couples looking for a budget-friendly option.</p>
+                <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+                  Book Now
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+              <img src="https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/312235/xspknzflk57dbbiger2x" alt="Deluxe Room" className="w-full object-cover h-48" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-purple-600 mb-2">Deluxe Room</h3>
+                <p className="mb-4 text-gray-700">Indulge in luxury and sophistication in our Deluxe Rooms. Featuring elegant decor, a spacious layout, and premium amenities, these rooms provide a truly memorable experience.</p>
+                <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+                  Book Now
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
+              <img src="https://shorturl.at/muEHP" alt="Suite" className="w-full object-cover h-48" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-purple-600 mb-2">Suite</h3>
+                <p className="mb-4 text-gray-700">Experience ultimate luxury in our spacious Suites. These well-appointed rooms offer stunning views, a separate living area, and all the amenities you need for a perfect stay.</p>
+                <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    
-      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-        <img src="https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/312235/xspknzflk57dbbiger2x" alt="Deluxe Room" className="w-full object-cover h-48" />
-        <div className="p-4">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">Deluxe Room</h3>
-          <p className="mb-4 text-gray-700">Indulge in luxury and sophistication in our Deluxe Rooms. Featuring elegant decor, a spacious layout, and premium amenities, these rooms provide a truly memorable experience.</p>
-          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-            Book Now
-          </a>
-        </div>
-      </div>
-    
-      <div className="bg-purple-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg animate-fade-in">
-        <img src="https://shorturl.at/muEHP" alt="Suite" className="w-full object-cover h-48" />
-        <div className="p-4">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">Suite</h3>
-          <p className="mb-4 text-gray-700">Experience ultimate luxury in our spacious Suites. These well-appointed rooms offer stunning views, a separate living area, and all the amenities you need for a perfect stay.</p>
-          <a href="tel:+919027886029" className="text-purple-600 font-semibold hover:underline bg-purple-200 hover:bg-purple-300 py-2 px-4 rounded-lg">
-            Book Now
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* {education...section} */}
-      <RecentPosts/>
+      <RecentPosts />
+      <section className="m-3  ">
+        <div className="flex flex-col   flex-wrap  sm:flex-nowrap md:flex-nowrap sm:justify-center sm:align-middle sm:mt-8">
+          <div className=" uppercase  text-lg mb-4  flex justify-center text-primary font-bold">
+            <span>FeedBacks</span>
+          </div>
+          <div className="mb-3 flex flex-nowrap flex-grow pl-10  justify-center text-5xl font-bold">
+            <h1>Our Student shared their</h1>
+          </div>
+          <div className="flex flex-nowrap sm:justify-center pl-10   text-5xl font-bold">
+            <h1>visa success stories</h1>
+          </div>
+        </div>
+
+        <div className="mt-14 mb-20  justify-center md:justify-center sm:justify-start w-full h-full gap-3 flex flex-wrap sm:flex-row  ">
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-01.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
+              </div>
+              <div>
+                <span className="text-white font-bold">
+                  University of Alberta ~ Canada
+                </span>
+              </div>
+            </div>
+          </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex modal-content flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-02.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
+              </div>
+              <div>
+                <span className="text-white font-bold">
+                  University of Alberta ~ Canada
+                </span>
+              </div>
+            </div>
+          </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-03.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
+              </div>
+              <div>
+                <span className="text-white font-bold">
+                  University of Alberta ~ Canada
+                </span>
+              </div>
+            </div>
+          </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+          <div className='flex flex-wrap justify-center  max-w-[320px]  py-[2rem] h-[28rem] bg-white rounded-3xl shadow-8xl  w-[80rem]  sm:h-[28rem] bg-[url("https://themeim.com/demo/eduplan/assets/img/sections/students/student-04.png")] bg-cover bg-no-repeat '>
+            <div className="flex justify-center mt-8 border-none border-white h-48 w-28 items-end">
+              <MdPlayCircleOutline
+                size={100}
+                onClick={openModal}
+                className=" text-white cursor-pointer shadow-indigo-600"
+              />
+            </div>
+            <div className="flex flex-col z-0 justify-end align-middle">
+              <div className=" flex flex-wrap justify-center font-bold text-xl">
+                <span className="text-white ">Annette black</span>
+              </div>
+              <div>
+                <span className="text-white font-bold">
+                  University of Alberta ~ Canada
+                </span>
+              </div>
+            </div>
+          </div>
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={closeModal}
+            className="border-gray-100 w-screen h-screen "
+          >
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+              <div className="h-8  w-[950px] pr-3 flex items-center justify-end">
+                <p
+                  onClick={closeModal}
+                  className="float-right text-black font-medium border-gray-100 cursor-pointer"
+                >
+                  X
+                </p>
+              </div>
+              <ReactPlayer
+                className=""
+                controls="true"
+                width={"950px"}
+                height={"560px"}
+                url="https://www.shutterstock.com/shutterstock/videos/1056759086/preview/stock-footage-top-ten-countdown-neon-light-numbers-from-to-laser-ray-appears-on-black-background.webm"
+              />
+            </div>
+          </Modal>
+        </div>
+      </section>
     </>
   );
 }

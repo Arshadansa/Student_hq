@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function DeceratationSection() {
     return (
@@ -11,7 +12,8 @@ function DeceratationSection() {
                     <p className="max-w-2xl  mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl mt-2 text-slate-900 font-normal ">Get Online Dissertation Help From Our Experts Of Relevent Background</p>
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                         <div className=" w-full md:block md:w-auto ">
-                            <a href="#_"
+                            <Link
+                                to="/ApplyOnline"
                                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-lg  py-2 lg:py-3 lg:px-6 px-3   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -20,7 +22,7 @@ function DeceratationSection() {
                                 <span className="relative  group-hover:text-white lg:text-2xl ">
                                     Call to Our Experts
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -121,7 +123,8 @@ function DeceratationSection() {
                     <span className='select-none font-bold'>Note:-You should also choose a topic that you already know something about so that you already have a frame of reference for your literature search and some understanding and interest in the theory behind your topic.
                     </span>
                     <div className="hidden select-none  mt-5  w-full md:block md:w-auto ">
-                        <a href="#_"
+                        <Link
+                            to="/ApplyOnline"
                             className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-3 px-6   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                             <span
                                 className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -130,7 +133,7 @@ function DeceratationSection() {
                             <span className="relative  group-hover:text-white text-2xl ">
                                 Hire Experts
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 </div >
             </div >

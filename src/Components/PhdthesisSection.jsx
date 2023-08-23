@@ -1,6 +1,7 @@
 import Cart from "./Cart"
 import React from 'react'
 import ChooseUs from "./ChooseUs"
+import { Link } from "react-router-dom"
 
 
 function PhdthesisSection() {
@@ -14,7 +15,8 @@ function PhdthesisSection() {
                     <p className="max-w-2xl mb-6  text-gray-500 lg:mb-4 md:text-lg lg:text-xl text-slate-900 font-normal ">  Best thesis  Writing Service for phd is here.</p>
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                         <div className="  w-full md:block md:w-auto ">
-                            <a href="#_"
+                            <Link
+                                to="/ApplyOnline"
                                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x px-3 py-2 lg:px-6  shadow-md  font-sans tracking-tighter text-black border-[1px] border-gray rounded-xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -23,7 +25,7 @@ function PhdthesisSection() {
                                 <span className="relative  group-hover:text-white text-xl lg:text-2xl ">
                                     Call to Our Experts
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -52,7 +54,8 @@ function PhdthesisSection() {
                     </ul>
                 </div>
                 <div className="hidden select-none lg:px-[150px] mt-6 w-full md:block md:w-auto ">
-                    <a href="#_"
+                    <Link
+                        to="/ApplyOnline"
                         className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-1 px-6 border-gray  font-sans tracking-tighter shadow-md text-black border-[1px] border-gray-100 rounded group">
                         <span
                             className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -61,7 +64,7 @@ function PhdthesisSection() {
                         <span className="relative  group-hover:text-white text-xl ">
                             Hire Experts
                         </span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='w-full select-none mb-5 mt-5  lg:h-96 flex flex-col justify-center'>

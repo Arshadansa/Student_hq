@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../css/dropmenu.css"
+import logo from "../image/logo.png"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -26,11 +27,11 @@ function Navbar() {
   return (
     <>
       <div className="pt-20 gap-14 justify-between  select-none  box-border lg:flex-nowrap flex-nowrap pr-3  pl-3 sm:pt-20  flex items-center md:pt-24 md:pl-10  md:pr-14 md:justify-between text-slate-50 h-16">
-        <div className="flex  justify-start flex-nowrap items-center pb-8">
-          <NavLink to="/" className="cursor-pointer ">
+        <div className="flex  justify-start flex-nowrap outline-none  items-center pb-8">
+          <NavLink to="/" className="cursor-pointer outline-none ">
             <img
-              src="https://studenthq.in/images/studyHQ-lgo-png.png"
-              className="flex-auto h-[75px] lg:h-24"
+              src={logo}
+              className="flex-auto h-[175px] outline-none mt-5 lg:w-[300px] lg:h-52"
               alt="studenthq logo"
             />
           </NavLink>
@@ -57,7 +58,7 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="items-center select-none flex-wrap hidden lg:font-semibold lg:block md:w-fit mr-8 ml-48 w-full">
+        <div className="items-center  select-none flex-wrap hidden lg:font-semibold lg:block md:w-fit mr-6 ml-44 w-full">
           <ul className="flex items-center space-x-6 xl:text-xs md:text-xs 2xl:text-lg md:flex-nowrap md:space-x-8 md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-50 md:dark:bg-gray-50 text-black dark:border-gray-700">
 
             <NavLink

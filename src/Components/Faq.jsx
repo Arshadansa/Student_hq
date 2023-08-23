@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Accordion({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Accordion({ title, content }) {
 
 export default function Faq() {
   const faqData = [
-  
+
     {
       title: "How do I apply for admissions?",
       content:
@@ -78,8 +79,8 @@ export default function Faq() {
             </div>
 
             <div className="mt-12 select-none ">
-              <a
-                href="#_"
+              <Link
+                to="/ApplyOnline"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-12   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"
               >
                 <span className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -87,7 +88,7 @@ export default function Faq() {
                 <span className="relative  group-hover:text-white text-xl ">
                   ASK YOUR QUESTIONS
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -24,20 +24,23 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+
+
+
 const Blog = () => {
 
-    const handleReadMore = (postId) => {
-        console.log(postId);
-        navigate(`/new-page/${postId}`);
-      };
+  const handleReadMore = (postId) => {
+    console.log(postId);
+    navigate(`/new-page/${postId}`);
+  };
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const { id } = useParams();
   const [recentPosts, setRecentPosts] = useState([]); // Add state for recent posts
 
   useEffect(() => {
-  
-   
+
+
 
     const recentPostsQuery = query(collection(db, 'posts'), orderBy('date', 'desc'), limit(3));
     const unsubscribeRecentPosts = onSnapshot(recentPostsQuery, (snapshot) => {
@@ -52,7 +55,7 @@ const Blog = () => {
     });
 
     return () => {
-    
+
       unsubscribeRecentPosts();
     };
   }, [id]);
@@ -61,7 +64,7 @@ const Blog = () => {
   return (
     <>
 
-<div className="">
+      <div className="">
         <div className="flex pt-20  flex-col justify-center text-center">
 
           <div>
@@ -77,36 +80,36 @@ const Blog = () => {
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-start lg:flex-nowrap m-3 lg:pr-24 lg:pl-24 lg:pt-4 lg:pb-20">
-  {recentPosts.map((recentPost) => (
-    <div className="w-full md:w-1/2 lg:w-1/3 p-3 md:pt-16 md:pb-20 rounded-lg" key={recentPost.id}>
-      <div className="rounded-lg aspect-w-16 aspect-h-9">
-        <img
-          className="object-cover rounded-3xl w-full h-[240px]"
-          src={recentPost.image}
-          alt={recentPost.title}
-        />
-      </div>
+              {recentPosts.map((recentPost) => (
+                <div className="w-full md:w-1/2 lg:w-1/3 p-3 md:pt-16 md:pb-20 rounded-lg" key={recentPost.id}>
+                  <div className="rounded-lg aspect-w-16 aspect-h-9">
+                    <img
+                      className="object-cover rounded-3xl w-full h-[240px]"
+                      src={recentPost.image}
+                      alt={recentPost.title}
+                    />
+                  </div>
 
-      <div className="mt-5 mb-3 text-left">
-        <div className="font-semibold">
-          {recentPost.date}
-        </div>
-        <div className="text-2xl font-semibold">
-          {recentPost.title}
-        </div>
-      </div>
-      <div className="text-primary text-left">
-        <button onClick={() => handleReadMore(recentPost.id)} type="button">Read More</button>
-      </div>
-    </div>
-  ))}
-</div>
+                  <div className="mt-5 mb-3 text-left">
+                    <div className="font-semibold">
+                      {recentPost.date}
+                    </div>
+                    <div className="text-2xl font-semibold">
+                      {recentPost.title}
+                    </div>
+                  </div>
+                  <div className="text-primary text-left">
+                    <button onClick={() => handleReadMore(recentPost.id)} type="button">Read More</button>
+                  </div>
+                </div>
+              ))}
+            </div>
 
           </div>
 
 
-        
-        
+
+
         </div>
       </div>
 
@@ -114,7 +117,7 @@ const Blog = () => {
 
 
 
-    
+
     </>
   );
 };

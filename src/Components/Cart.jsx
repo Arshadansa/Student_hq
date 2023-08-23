@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Cart() {
     return (
@@ -11,16 +12,17 @@ function Cart() {
                     We are happy to help you in synopsis writing.
                 </p>
                 <div className="mt-4 lg:w-full md:block md:w-auto ">
-                    <a href="#_"
+                    <Link
+                        to="/ApplyOnline"
                         className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-1 px-4   font-sans tracking-tighter shadow-md text-black border-[1px] border-gray-100 rounded group">
                         <span
                             className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
                         <span
-                            className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
+                            className="absolute inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
                         <span className="relative  group-hover:text-white text-xl ">
                             Get a Quote
                         </span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='hidden md:block lg:mr-20'>

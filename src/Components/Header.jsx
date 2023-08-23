@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Section() {
   return (
@@ -18,8 +19,8 @@ function Section() {
                   Discover a seamless way to navigate the college admissions process and achieve your dreams.
                 </p>
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4">
-                  <a
-                    href="#_"
+                  <Link
+                    to="/ApplyOnline"
                     className="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto"
                     data-primary="indigo-600"
                     data-rounded="rounded-md"
@@ -38,7 +39,7 @@ function Section() {
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                  </a>
+                  </Link>
                   <a
                     href="#_"
                     className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"

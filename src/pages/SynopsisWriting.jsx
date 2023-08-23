@@ -9,7 +9,7 @@ function SynopsisWriting() {
         <>
             <Navbar />
             <SypnosisSection />
-            <div className="flex justify-center bg-fourth bg-background   align-middle w-full lg:first-letter:h-full">
+            <div className="flex justify-center bg-fourth  align-middle w-full lg:first-letter:h-full">
                 <Faq />
             </div>
             <footer>

@@ -1,6 +1,7 @@
 import React from 'react'
 import AnotherChooseUs from '../Components/AnotherChooseUs'
 import Cart from './Cart'
+import { Link } from 'react-router-dom'
 
 function SypnosisSection() {
     return (
@@ -15,7 +16,8 @@ function SypnosisSection() {
 
                     <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                         <div className="hidden  w-full md:block md:w-auto ">
-                            <a href="#_"
+                            <Link
+                                to="/ApplyOnline"
                                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x py-2 px-4 lg:py-2 lg:px-6  shadow-md  font-sans tracking-tighter text-black border-[1px] border-gray rounded-xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -24,7 +26,7 @@ function SypnosisSection() {
                                 <span className="relative  group-hover:text-white text-xl lg:text-2xl ">
                                     Call to Our Experts
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -62,7 +64,8 @@ function SypnosisSection() {
                         <p className='mt-6 text-gray-500 font-light text-medium'>Our experts have knowledge in various fields.They are highly skilled in writing custom papers,having several years of experience in academic writing. </p>
                         <div className=" mt-4 w-full md:block md:w-auto ">
 
-                            <a href="#_"
+                            <Link
+                                to="/ApplyOnline"
                                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-1 px-4 lg:px-8  shadow-md font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -71,7 +74,7 @@ function SypnosisSection() {
                                 <span className="relative  group-hover:text-white text-xl ">
                                     Hire Experts
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </ul>
                 </div>

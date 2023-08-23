@@ -3,6 +3,7 @@ import Narbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Faq from '../Components/Faq'
 import StudyCard from '../Components/StudyCard'
+import { Link } from 'react-router-dom'
 
 
 function StudyInIndia() {
@@ -89,7 +90,8 @@ function StudyInIndia() {
 
 
             <div className="hidden select-none  w-full md:block md:w-auto ">
-              <a href="#_"
+              <Link
+                to="/ApplyOnline"
                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-5 px-10   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                 <span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -98,7 +100,7 @@ function StudyInIndia() {
                 <span className="relative  group-hover:text-white text-2xl ">
                   Apply Now
                 </span>
-              </a>
+              </Link>
             </div>
 
 
@@ -144,11 +146,12 @@ function StudyInIndia() {
                 </span><br />
               </div>
 
-              <div className="mt-12 "><a href="#_"
+              <div className="mt-12 "><Link
+                to="/ApplyOnline"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-14   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"><span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
-                    className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></a></div>
+                    className="relative  group-hover:text-white text-xl ">Get Free Consulation</span></Link></div>
             </div>
 
 
@@ -235,11 +238,12 @@ function StudyInIndia() {
               </ul>
 
 
-              <div className="mt-12 "><a href="#_"
+              <div className="mt-12 "><Link
+                to="/ApplyOnline"
                 className="relative inline-flex  bg-white items-center justify-center overflow-hidden text-xs font-semibold py-5 px-14   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group"><span
                   className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80" /><span
                   className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent " /><span
-                    className="relative  group-hover:text-white text-xl ">Get Free Consultation</span></a></div>
+                    className="relative  group-hover:text-white text-xl ">Get Free Consultation</span></Link></div>
             </div>
           </div>
 

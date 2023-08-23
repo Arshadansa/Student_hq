@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AssignementSection() {
     return (
@@ -14,7 +15,8 @@ function AssignementSection() {
 
 
                         <div className="hidden md:mt-3 w-full md:block md:w-auto ">
-                            <a href="#_"
+                            <Link
+                                to="/ApplyOnline"
                                 className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  md:py-3 md:px-7  lg:py-3 lg:px-8   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group">
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -23,13 +25,13 @@ function AssignementSection() {
                                 <span className="relative  group-hover:text-white text-2xl ">
                                     Call to Our Experts
                                 </span>
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
                 </div>
-                <div className="hidden md:block  lg:mt-0 lg:col-span-5 lg:flex">
-                    <img className='md:h-[230px] md:w-[300px] lg:h-[400px] lg:w-[500px] lg:mb-3' src="/image/assign.png" alt="hero image" />
+                <div className=" md:block  lg:mt-0 lg:col-span-5 lg:flex">
+                    <img className='md:h-[230px] md:w-[300px] lg:h-[410px] lg:w-[520px] lg:mb-3' src="https://o.remove.bg/downloads/ed3268f2-d035-4de4-8c57-56da41c916b7/Assignment-Writing-Services-1-removebg-preview.png" alt="hero image" />
                 </div>
 
             </div>

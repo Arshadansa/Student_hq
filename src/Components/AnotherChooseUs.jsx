@@ -1,19 +1,18 @@
 import React from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import ChooseUs from './ChooseUs'
+import { Link } from 'react-router-dom'
 
 function AnotherChooseUs() {
 
     return (
-        <div className="select-none bg-hotpink lg:pt-16 lg:pb-16  flex flex-col  justify-center">
+        <div className="select-none  lg:pt-16 lg:pb-16  flex flex-col  justify-center">
             <ChooseUs />
             <div className=' md:w-[765px] m-3 lg:w-[100%]  select-none lg:h-96 flex justify-center'>
                 <div className='bg-five lg:w-[1300px] md:w-[750px] md:flex justify-between   md:h-auto rounded-3xl'>
                     <div className='lg:p-16 p-12'>
                         <p className='text-white text-2xl lg:text-[45px]'><span className='font-bold'>Without Us</span> Where you will Lack.</p>
-
                         <div className=' text-white mt-4'>
-
                             <div className='flex gap-4'>
                                 <div className=' flex gap-4'>
                                     <AiOutlineArrowRight size={24} className='text-white' />
@@ -55,7 +54,8 @@ function AnotherChooseUs() {
                                 </div>
                             </div>
                             <div className="mt-4 ml-6 lg:ml-0 lg:w-full  md:w-auto ">
-                                <a href="#_"
+                                <Link
+                                    to="/ApplyOnline"
                                     className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-1 px-4   font-sans tracking-tighter text-black border-[1px] border-gray shadow-md rounded group">
                                     <span
                                         className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -64,7 +64,7 @@ function AnotherChooseUs() {
                                     <span className="relative   group-hover:text-white text-lg ">
                                         Book Your Assignment Now
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

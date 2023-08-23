@@ -5,6 +5,7 @@ import Faq from '../Components/Faq'
 import StudyInIndia from './StudyInIndia'
 import AssignementSection from '../Components/AssignementSection'
 import ChooseUs from '../Components/ChooseUs'
+import { Link } from 'react-router-dom'
 
 
 function AssignmentWriting() {
@@ -24,18 +25,19 @@ function AssignmentWriting() {
                 <ChooseUs />
                 <div className='lg:w-full text-center h-24 bg-primary lg:flex lg:justify-center py-6'>
                     <div className="  lg:w-full md:block md:w-auto ">
-                        <a href="#_"
+                        <Link
+                            to="/ApplyOnline"
                             className="relative bg-white inline-flex  items-center justify-center overflow-hidden text-x  py-2 px-6   font-sans tracking-tighter text-black border-[1px] border-gray rounded-2xl group" >
                             <span
                                 className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
                             <span className="relative text-lg md:text-2xl lg:text-lg  ">
                                 Book Your Assignment Now
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div >
-            <div className="flex justify-center bg-fourth bg-background   align-middle w-full lg:first-letter:h-full">
+            <div className="flex justify-center bg-fourth  align-middle w-full lg:first-letter:h-full">
                 <Faq />
             </div>
             <footer>

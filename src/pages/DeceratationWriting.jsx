@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar"
 import Footer from '../Components/Footer'
 import Faq from '../Components/Faq'
 import DeceratationSection from '../Components/DeceratationSection'
+import { Link } from 'react-router-dom'
 
 function DeceratationWriting() {
     return (
@@ -10,14 +11,14 @@ function DeceratationWriting() {
             <Navbar />
             <DeceratationSection />
 
-            <div className='lg:flex select-none m-3 justify-center items-center lg:p-10'>
-                <div className='bg-lightblue lg:w-[1600px] lg:h-[290px] rounded-lg lg:first-letter lg:flex flex-col items-center lg:pl-10 lg:pr-10 pt-6 pb-6'>
+            <div className='lg:flex select-none m-3 justify-center items-center '>
+                <div className='bg-lightblue lg:w-[100%] lg:h-[290px] rounded-lg lg:first-letter lg:flex flex-col items-center      pt-6 pb-6'>
                     <div className='flex justify-center items-start lg:w-full '>
                         <span className='text-white text-xl md:text-4xl lg:text-5xl p-4 mb-3 font-bold'>We Cover the <span className=' font-medium'>follwing</span> topics. </span>
                     </div>
-                    <div className="flex flex-wrap  justify-center items-center lg:w-full lg:h-full">
-                        <ol class="lg:flex md:w-[50%] items-center lg:w-full md:text-2xl lg:text-sm  font-medium text-center text-gray-500  border-none border-gray-200 rounded-lg shadow-md dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4">
-                            <li class="flex  mb-2 md:ml-4 items-center text-white dark:text-blue-500">
+                    <div className="flex flex-wrap    justify-center items-center lg:w-full lg:h-full">
+                        <ol class="lg:flex  md:w-[50%] items-center lg:w-full md:text-2xl lg:text-sm  font-medium text-center text-gray-500  border-none border-gray-200 rounded-lg shadow-md dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4">
+                            <li class="flex lg:pl-12 mb-2 lg:mb-0 md:ml-4 items-center text-white dark:text-blue-500">
                                 <span class="flex items-center justify-center w-5 h-5 mr-2  sm:text-xs border border-white rounded-full shrink-0 dark:border-blue-500">
                                     1
                                 </span>
@@ -91,7 +92,8 @@ function DeceratationWriting() {
                     </div>
 
                     <div className=" select-none flex items-center justify-center mt-5  lg:w-full  md:w-auto ">
-                        <a href="#_"
+                        <Link
+                            to="/ApplyOnline"
                             className="relative bg-white lg:inline-flex  items-center justify-center overflow-hidden lg:text-x py-2 px-3 lg:py-3 md:py-3 md:px-4 lg:px-6   font-sans tracking-tighter text-black  border-gray rounded-2xl group">
                             <span
                                 className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-third rounded-full group-hover:w-80 group-hover:h-80"></span>
@@ -100,12 +102,12 @@ function DeceratationWriting() {
                             <span className="relative  group-hover:text-white md:text-2xl sm:text-xl lg:text-2xl ">
                                 Hire Experts
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
             </div>
-            <div className="flex select-none justify-center bg-fourth bg-background  align-middle w-full h-full">
+            <div className="flex select-none justify-center bg-fourth  align-middle w-full h-full">
                 <Faq />
             </div>
             <footer>
