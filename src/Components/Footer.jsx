@@ -3,41 +3,33 @@ import { Link, NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div>
-      <footer class=" bg-secondary">
-        {/* <div className=" flex flex-row p-20 flex-wrap  place-content-center justify-center">
-          <div className="flex flex-row p-20 flex-wrap m-10  ">
-            <div className="container flex space-x-5 w-1/2">
-              <div>
-                <img
-                  className="p-10 rounded-full bg-primary"
-                  src="https://themeim.com/demo/eduplan/assets/img/icon/newslater.png"
-                  alt=""
-                />
-              </div>
-              <div className=" self-center">
-                <h1 className=" text-3xl text-white">
-                  Subscribe our newsletter
-                </h1>
-                <p className="text-white">
-                  Enter your mail address to get our updates, offer and study
-                  abroad related all updates
-                </p>
-              </div>
-            </div>
 
-            <div className=" w-1/2">
-              <input
-                className="p-5 w-1/2 rounded-l-lg border-none focus:none"
-                type="text"
-                placeholder="ENTER YOUR EMAIL"
-              />
-              <button className="w-1/3 bg-red-600 p-5 rounded-r-lg">
-                SUBSCRIBE
-              </button>
-            </div>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto  text-white  lg:my-8" />
-        </div> */}
+      <div class="bg-secondary h-[400px]  p-10   w-[1980px]   rounded-custom-top -mb-72  -ml-70">
+
+      </div>
+      <footer class=" bg-secondary">
+        <h1 className="  text-2xl text-center md:text-4xl font-bold text-white">Stay Updated With Student HQ</h1>
+      <div class="flex flex-col sm:flex-row p-4 sm:p-10 md:p-20 flex-wrap justify-center">
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+    <div>
+      <input class="p-3 sm:p-5 rounded-md w-full sm:w-72 focus:outline-none focus:ring focus:border-blue-300" type="email" name="email" placeholder="Email" id="" />
+    </div>
+    <div class="relative">
+      <select class="block w-full sm:w-72 p-3 sm:p-5 pr-10 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring focus:border-blue-300" id="interest" name="interest">
+        <option value="college-tips">College Tips</option>
+        <option value="internships">Internships</option>
+        <option value="free-courses-news">Free Courses News</option>
+      </select>
+    </div>
+    <div>
+      <input type="button" value="Subscribe Now" class="text-white font-bold p-3 sm:p-5 bg-red-500 rounded-md w-full sm:w-72" />
+    </div>
+  </div>
+</div>
+
+
+
+
 
         <div class="mx-auto w-full max-w-screen-xl p-3 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
@@ -73,8 +65,8 @@ function Footer() {
                   </svg>
 
                   <a href="mailto:info@studenthq.in" class="hover:underline">
-                 info@studenthq.in
-                   </a>
+                    info@studenthq.in
+                  </a>
 
                 </li>
                 <li className="mb-4 flex flex-auto space-x-3">
@@ -102,14 +94,14 @@ function Footer() {
             <div class="grid grid-cols-2 gap-8 sm:gap- sm:grid-cols-3 my-[2.2rem]">
               <div>
                 <h2 class="mb-6 text-2xl font-semibold text-gray-900  uppercase text-white">
-                 Upcoming Services
+                  Upcoming Services
                 </h2>
                 <ul class="text-gray-600 text-gray-400 font-medium text-white">
                   <li className="mb-1">
-                  <NavLink
-              to="/StudyInIndia"
-              className="hover:text-primary cursor-pointer"
-            />
+                    <NavLink
+                      to="/StudyInIndia"
+                      className="hover:text-primary cursor-pointer"
+                    />
                   </li>
                   <li className="mb-1">
                     <a href="https://tailwindcss.com/" class="hover:underline">
@@ -134,64 +126,64 @@ function Footer() {
                 </h2>
                 <ul class="text-gray-600 dark:text-gray-400 font-medium text-white">
                   <li className="mb-1">
-                  <NavLink
-                        to="/AssignmentWriting"
-                       
-                      >
-                        Assignment Writing
-                      </NavLink>
+                    <NavLink
+                      to="/AssignmentWriting"
+
+                    >
+                      Assignment Writing
+                    </NavLink>
                   </li>
                   <li className="mb-1">
-                  <NavLink
-                        to="/DeceratationWriting"
-                      
-                      >
-                        Declaration Writing
-                      </NavLink>
+                    <NavLink
+                      to="/DeceratationWriting"
+
+                    >
+                      Declaration Writing
+                    </NavLink>
                   </li>
                   <li className="mb-1">
-                  <NavLink
-                        to="/SynopsisWriting"
-                       
-                      >
-                        Synopsis Writing
-                      </NavLink>
+                    <NavLink
+                      to="/SynopsisWriting"
+
+                    >
+                      Synopsis Writing
+                    </NavLink>
                   </li>
                   <li className="mb-1">
-                  <NavLink
-                        to="/PhdthesisWriting"
-                        
-                      >
-                        Phd. Thesis Writing
-                      </NavLink>
+                    <NavLink
+                      to="/PhdthesisWriting"
+
+                    >
+                      Phd. Thesis Writing
+                    </NavLink>
                   </li>
 
-  
+
 
                   <li className="mb-1">
-                  <NavLink
-              to="/StudyInIndia"
-              
-            >
-              Study in India
-            </NavLink>
-                  </li>
+                    <NavLink
+                      to="/StudyInIndia"
 
-                  <li className="mb-1">
-                  <NavLink
-                to="/StudyInAbroad"
-                
-              >
-                Study in Abroad
-              </NavLink>
+                    >
+                      Study in India
+                    </NavLink>
                   </li>
 
                   <li className="mb-1">
-                  <NavLink  to="/Courses">
-              Our Courses
-            </NavLink>
+                    <NavLink
+                      to="/StudyInAbroad"
+
+                    >
+                      Study in Abroad
+                    </NavLink>
                   </li>
-                  
+
+                  <li className="mb-1">
+                    <NavLink to="/Courses">
+                      Our Courses
+                    </NavLink>
+                  </li>
+
                 </ul>
               </div>
 

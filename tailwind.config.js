@@ -3,6 +3,9 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 
 export const theme = {
   extend: {
+    borderRadius: {
+      'custom-top': '1200px 1200px 0 0', // Scale the top-left and top-right radii by 3x
+    },
     colors: {
       primary: "#764AF1",
       secondary: "#1E1926",
