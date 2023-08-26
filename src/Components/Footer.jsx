@@ -4,25 +4,35 @@ function Footer() {
   return (
     <div>
 
-      <div class="bg-secondary h-[400px]  p-10   w-[1980px]   rounded-custom-top -mb-72  -ml-70">
+<div
+      className=" bg-secondary h-[100px] "
+      style={{
 
-      </div>
+        padding:'20px',
+        borderTopLeftRadius: '100%',
+        borderTopRightRadius: '100%',
+      }}
+    >
+      {/* Content goes here */}
+    </div>
+
       <footer class=" bg-secondary">
         <h1 className="  text-2xl text-center md:text-4xl font-bold text-white">Stay Updated With Student HQ</h1>
       <div class="flex flex-col sm:flex-row p-4 sm:p-10 md:p-20 flex-wrap justify-center">
   <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
     <div>
-      <input class="p-3 sm:p-5 rounded-md w-full sm:w-72 focus:outline-none focus:ring focus:border-blue-300" type="email" name="email" placeholder="Email" id="" />
+      <input class="p-3 sm:p-5  rounded-2xl w-full sm:w-72 focus:outline-none focus:ring focus:border-blue-300" type="email" name="email" placeholder="Email" id="" />
     </div>
     <div class="relative">
-      <select class="block w-full sm:w-72 p-3 sm:p-5 pr-10 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring focus:border-blue-300" id="interest" name="interest">
+      <select class="block w-full sm:w-72 p-3 sm:p-5 pr-10 rounded-2xl bg-white border border-gray-300 focus:outline-none focus:ring focus:border-blue-300" id="interest" name="interest">
+      <option disabled value="i'm Intrested In">i'm Intrested In</option>
         <option value="college-tips">College Tips</option>
         <option value="internships">Internships</option>
         <option value="free-courses-news">Free Courses News</option>
       </select>
     </div>
     <div>
-      <input type="button" value="Subscribe Now" class="text-white font-bold p-3 sm:p-5 bg-red-500 rounded-md w-full sm:w-72" />
+      <input type="button" value="Subscribe Now" class="bg-gradient-to-r from-orange-400 to-rose-400  text-white font-bold p-3 sm:p-5 rounded-2xl w-full sm:w-72" />
     </div>
   </div>
 </div>
@@ -33,19 +43,30 @@ function Footer() {
 
         <div class="mx-auto w-full max-w-screen-xl p-3 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
-            <div class="mb-6  md:mb-10">
+          
+          <div className="  justify-center -mt-16  flex mb-10  flex-col ">
+          <div class="  h-fit w-fit">
               <a href="" class="">
                 <img
                   src="https://studenthq.in/images/transparent.png"
-                  class="h-[15rem] sm:h-88 justify-center"
+                  class="h-[10rem] sm:h-88 justify-center"
                   alt="studenthq Logo"
                 />
                 {/* <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">StudentHq</span> */}
               </a>
             </div>
 
+            <div className=" w-fit  text-white">
+                <h1 className=" text-2xl">About Us Student Hq</h1>
+                <p>We Help Students to Discover a seamless way to navigate the college admissions process and achieve your dreams</p>
+            </div>
+          </div>
+
+           
+
+            <div class="grid grid-cols-2  gap-8 sm:gap- sm:grid-cols-3 ">
             <div className=" my-[2.44rem] rounded-2xl h-fit">
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900 uppercase text-white ">
+              <h2 class="mb-6 -mt-10 text-2xl font-semibold text-gray-900 uppercase text-white ">
                 Contact Us
               </h2>
               <ul class="text-gray-600 dark:text-gray-400 font-medium  text-white">
@@ -90,11 +111,9 @@ function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div class="grid grid-cols-2 gap-8 sm:gap- sm:grid-cols-3 my-[2.2rem]">
               <div>
-                <h2 class="mb-6 text-2xl font-semibold text-gray-900  uppercase text-white">
-                  Upcoming Services
+                <h2 class="mb-6  font-semibold text-gray-900  uppercase text-gray">
+                 Services for Students
                 </h2>
                 <ul class="text-gray-600 text-gray-400 font-medium text-white">
                   <li className="mb-1">
@@ -104,27 +123,27 @@ function Footer() {
                     />
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
+                    <a href="" class="hover:underline">
                       Interships
                     </a>
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
+                    <a href="" class="hover:underline">
                       Web Designing
                     </a>
                   </li>
                   <li className="mb-1">
-                    <a href="https://tailwindcss.com/" class="hover:underline">
+                    <a href="" class="hover:underline">
                       SEO Services
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
-                <h2 class="mb-6 text-2xl  font-semibold text-gray-900 uppercase text-white">
+                <h2 class="mb-6  font-semibold text-gray-900 uppercase text-gray">
                   Useful Links
                 </h2>
-                <ul class="text-gray-600 dark:text-gray-400 font-medium text-white">
+                <ul class=" text-sm  text-gray-600 dark:text-gray-400 font-medium text-white">
                   <li className="mb-1">
                     <NavLink
                       to="/AssignmentWriting"
@@ -186,13 +205,13 @@ function Footer() {
 
                 </ul>
               </div>
-
+{/* 
               <div>
-                <h2 class="text-2xl mb-6  font-semibold text-gray-900 uppercase text-white">
+                <h2 class=" mb-6  font-semibold text-gray-900 uppercase text-gray">
                   Follow us
                 </h2>
                 <ul class="text-gray-600 dark:text-gray-400 font-medium  text-white">
-                  <li class="mb-4">
+                  <li class="mb-2">
                     <a href="" class="hover:underline ">
                       Github
                     </a>
@@ -203,13 +222,14 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           {/*
   <hr class="my-6  border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> */}
-        </div>
-        <div class=" bg-black text-white p-9  w-full sm:flex sm:items-center sm:justify-between">
+        </div> 
+        <hr  className=" text-gray mx-10 md:mx-20 bg-gray"/>
+        <div class=" text-white p-9  w-full sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="" class="hover:underline">
