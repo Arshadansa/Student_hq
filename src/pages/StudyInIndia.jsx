@@ -10,67 +10,47 @@ function StudyInIndia() {
 
   const Colleges = [
     {
-      name: "Birla Institute of Technology and Science (BITS Pilani)",
-      qswroldranking: "801-1000",
-      location: "Pilani, Rajasthan",
-      established: "1964"
-    },
-    {
-      name: "Manipal Academy of Higher Education",
-      qswroldranking: "1001-1200",
-      location: "Manipal, Karnataka",
-      established: "1953"
-    },
-    {
-      name: "Vellore Institute of Technology (VIT)",
-      qswroldranking: "801-1000",
-      location: "Vellore, Tamil Nadu",
-      established: "1984"
-    },
-    {
-      name: "SRM Institute of Science and Technology (SRMIST)",
-      qswroldranking: "1001-1200",
-      location: "Chennai, Tamil Nadu",
-      established: "1985"
-    },
-    {
-      name: "Amity University",
-      qswroldranking: "801-1000",
-      location: "Noida, Uttar Pradesh",
-      established: "2005"
+      name: "Shoolini University",
+      location: "Himachal Pradesh, India",
+      logo: "https://shooliniuniversity.com/_next/image?url=%2Fassets%2Fimages%2Ff-logo.png&w=128&q=75" //Replace with actual logo URL
     },
     {
       name: "Lovely Professional University",
-      qswroldranking: "1001-1200",
-      location: "Phagwara, Punjab",
-      established: "2005"
+      location: "Punjab, India",
+      logo: "https://www.lpu.in/landing-pages/brand/images/logo-dark.svg" //Replace with actual logo URL
     },
     {
-      name: "Symbiosis International University",
-      qswroldranking: "1001-1200",
-      location: "Pune, Maharashtra",
-      established: "1971"
+      name: "Graphic Era University",
+      location: "Dehradun, Uttarakhand, India",
+      logo: "https://cdn.geu.ac.in/wp-content/uploads/2023/03/geu_white.svg" //Replace with actual logo URL
     },
     {
-      name: "Christ University",
-      qswroldranking: "1001-1200",
-      location: "Bengaluru, Karnataka",
-      established: "1969"
+      name: "Uttranchal University",
+      location: "Dehrad, Uttarakhand, India",
+      logo: "https://www.uudoon.in/apply-now/img/logo.jpg" //Replace with actual logo URL
     },
     {
-      name: "Bennett University",
-      qswroldranking: "1001-1200",
-      location: "Greater Noida, Uttar Pradesh",
-      established: "2016"
+      name: "Rishihood University",
+      location: " Gurgaon, Haryana, India",
+      logo: "https://rishihood.edu.in/wp-content/uploads/2023/08/COLOUR-01-scaled.jpg" //Replace with actual logo URL
     },
     {
-      name: "Ashoka University",
-      qswroldranking: "1001-1200",
-      location: "Sonepat, Haryana",
-      established: "2014"
+      name: "NIU University",
+      location: " Gautam Budh, Uttar Pradesh, India",
+      logo: "https://niu.edu.in/wp-content/uploads/2022/03/cropped-NIU-logo_2-214x55.png" //Replace with actual logo URL
+    },
+    {
+      name: "Sharda University",
+      location: "Greater Noida, Pradesh, India",
+      logo: "https://admissions.sharda.ac.in/apply/images/logo.png" //Replace with actual logo URL
+    },
+    {
+      name: "Dev Bhoomi University",
+      location: " Manduwala, Dehradun, Uttarakhand, India",
+      logo: "https://admissions.dbuu.ac.in/static/media/pentaLogo.51238e30.png" //Replace with actual logo URL
     }
-    // Add more colleges here
   ];
+  
 
   return (
     <>
@@ -272,27 +252,30 @@ function StudyInIndia() {
 
 
 
-      {/* best  colleges in india */}
-
-      <div className=' m-2 rounded-3xl select-none bg-primary p-5' >
-        <div className='m-3 md:p-10 justify-center'>
-          <h1 className='font-bold p-8  text-white text-2xl md:text-center md:text-5xl'>Some Top Colleges</h1>
-          <div className="flex  justify-center flex-wrap m-5 mt-10 md:m-20 gap-4">
-            {
-              Colleges.map((college) => {
-                return (
-                  <div className="bg-white w-full border-solid border text-xl md:w-[350px] md:h-[180px] h-[240px] self-center  md:text-sm border-gray rounded-xl hover:border-primary   shadow-md  p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                    <h2 className="font-bold text-md md:text-xl mb-2">{college.name}</h2>
-                    <p className="text-gray-600  mb-2">QS World Ranking: {college.qswroldranking}</p>
-                    <p className="text-sm text-gray-500">Location: {college.location}</p>
-                    <p className="text-sm text-gray-500">Established: {college.established}</p>
-                  </div>
-                )
-              })
-            }
+      <div className="m-2 rounded-3xl select-none p-5">
+  <div className="m-3 md:p-10 justify-center">
+    <h1 className="font-bold p-8 text-secondary text-2xl md:text-center md:text-5xl">
+      Some Top Colleges
+    </h1>
+    <div className="flex justify-center flex-wrap m-5 mt-10 md:m-20 gap-4">
+      {Colleges.map((college) => (
+        <div className="bg-purple-300 w-full border-solid border text-xl md:w-[450px] md:h-[180px] h-[260px] self-center md:text-sm border-gray rounded-xl hover:border-primary shadow-md p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div className="flex flex-col md:flex-row items-center"> {/* Center content vertically and horizontally */}
+            <div className="w-full md:w-1/2 text-center"> {/* Center the image and text horizontally */}
+              <img className='inline-block' src={college.logo} alt={`${college.name} logo`} />
+            </div>
+            <div className="w-full md:w-1/2 ml-4">
+              <h2 className="font-bold mt-5 text-md md:text-xl text-white mb-2">{college.name}</h2>
+              <p className="text-sm text-gray-500">Location: {college.location}</p>
+            </div>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
 
 
 
