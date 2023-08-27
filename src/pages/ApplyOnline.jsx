@@ -195,88 +195,124 @@ function ApplyOnline() {
 
             {/* //cards */}
 
-            <div>
-              <h1 className="text-xl mb-4  font-bold mt-4">
-                Select preferred study destination (Select Multiple)
-              </h1>
-            </div>
-            <div className=" flex  flex-wrap  gap-2  justify-center sm:justify-normal ">
-              <div className=" flex flex-col  ">
-                <div className="flex m-2 flex-col justify-center w-[11rem]  h-[14rem]  border-solid border border-gray rounded-xl  hover:border-primary   sm:w-[11rem] sm:h-60 ">
-                  <div class=" self-center">
-                    <img
-                      className=" h-32 w-30 "
-                      src="https://static.vecteezy.com/system/protected/files/016/328/568/vecteezy_india-flat-rounded-flag-with-transparent-background_16328568_78.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="m-4">
-                    <h1 class=" mt-5 text-xl text-center">India</h1>
-                  </div>
-                </div>
-              </div>
+            <div className="">
+  <div>
+    <h1 className="text-xl mb-4 font-bold mt-4">
+      Select preferred study destination (Select Multiple)
+    </h1>
+  </div>
+    <div className="flex flex-wrap gap-2 justify-center sm:justify-normal">
 
-              <div className=" flex flex-col  ">
-                <div className="flex m-2 flex-col justify-center w-[11rem]  h-[14rem]  border-solid border border-gray rounded-xl  hover:border-primary   sm:w-[11rem] sm:h-60 ">
-                  <div class=" self-center">
-                    <img
-                      class="h-30 w-30 "
-                      src="https://themeim.com/demo/eduplan/assets/img/flag/02.png"
-                      alt=""
-                    />
-                  </div>
+      <div className="flex flex-col">
+        <div className="flex m-2 flex-col justify-center w-[11rem] h-[14rem] border-solid border border-gray rounded-xl hover:border-primary sm:w-[11rem] sm:h-60">
+          <div class="self-center">
+            <input type="checkbox" id="india" name="destination" value="India" />
+            <label for="india">
+              <img
+                className="h-32 w-30"
+                src="https://static.vecteezy.com/system/protected/files/016/328/568/vecteezy_india-flat-rounded-flag-with-transparent-background_16328568_78.png"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="m-4">
+            <h1 class="mt-5 text-xl text-center">India</h1>
+          </div>
+        </div>
+      </div>
 
-                  <div class="m-4">
-                    <h1 class=" mt-5 text-xl text-center">Canada</h1>
-                  </div>
-                </div>
-              </div>
+    
+      <div className="flex flex-col">
+        <div className="flex m-2 flex-col justify-center w-[11rem] h-[14rem] border-solid border border-gray rounded-xl hover:border-primary sm:w-[11rem] sm:h-60">
+          <div class="self-center">
+            <input type="checkbox" id="canada" name="destination" value="Canada" />
+            <label for="canada">
+              <img
+                className="h-32 w-30"
+                src="https://themeim.com/demo/eduplan/assets/img/flag/02.png"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="m-4">
+            <h1 class="mt-5 text-xl text-center">Canada</h1>
+          </div>
+        </div>
+      </div>
 
-              <div className=" flex flex-col  ">
-                <div className="flex m-2 flex-col justify-center w-[11rem]  h-[14rem]  border-solid border border-gray rounded-xl  hover:border-primary   sm:w-[11rem] sm:h-60 ">
-                  <div class=" self-center">
-                    <img
-                      class="h-30 w-30 "
-                      src="https://themeim.com/demo/eduplan/assets/img/flag/01.png"
-                      alt=""
-                    />
-                  </div>
+      <div className="flex flex-col">
+        <div className="flex m-2 flex-col justify-center w-[11rem] h-[14rem] border-solid border border-gray rounded-xl hover:border-primary sm:w-[11rem] sm:h-60">
+          <div class="self-center">
+            <input type="checkbox" id="America" name="destination" value="America" />
+            <label for="canada">
+              <img
+                className="h-32 w-30"
+                src="https://themeim.com/demo/eduplan/assets/img/flag/01.png"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="m-4">
+            <h1 class="mt-5 text-xl text-center">America</h1>
+          </div>
+        </div>
+      </div>
 
-                  <div class="m-4">
-                    <h1 class=" mt-5 text-xl text-center">America</h1>
-                  </div>
-                </div>
-              </div>
+      <div className="flex flex-col">
+        <div className="flex m-2 flex-col justify-center w-[11rem] h-[14rem] border-solid border border-gray rounded-xl hover:border-primary sm:w-[11rem] sm:h-60">
+          <div class="self-center">
+            <input type="checkbox" id="London" name="destination" value="London" />
+            <label for="canada">
+              <img
+                className="h-32 w-30"
+                src="https://themeim.com/demo/eduplan/assets/img/flag/06.png"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="m-4">
+            <h1 class="mt-5 text-xl text-center">London</h1>
+          </div>
+        </div>
+      </div>
 
-              <div className=" flex flex-col  ">
-                <div className="flex m-2 flex-col justify-center w-[11rem]  h-[14rem]  border-solid border border-gray rounded-xl  hover:border-primary   sm:w-[11rem] sm:h-60 ">
-                  <div class=" self-center">
-                    <img
-                      class="h-30 w-30 "
-                      src="https://themeim.com/demo/eduplan/assets/img/flag/06.png"
-                      alt=""
-                    />
-                  </div>
+      <div className="flex flex-col">
+        <div className="flex m-2 flex-col justify-center w-[11rem] h-[14rem] border-solid border border-gray rounded-xl hover:border-primary sm:w-[11rem] sm:h-60">
+          <div class="self-center">
+            <input type="checkbox" id="other" name="destination" value="other" />
+            <label for="canada">
+              <img
+                className="h-32 w-30"
+                src="https://upload.wikimedia.org/wikipedia/commons/2/23/Other.Icon-Only.dark.svg"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="m-4">
+            <h1 class="mt-5 text-xl text-center">Other</h1>
+          </div>
+        </div>
+      </div>
 
-                  <div class="m-4">
-                    <h1 class=" mt-5 text-xl text-center">London</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <button>
-              <div className=" flex  justify-left ml-2 sm:mr-2 sm:justify-end">
-                <a
-                  href="#_"
-                  class="relative inline-flex   items-center justify-center overflow-hidden text-xl  py-5 px-16 ml  font-sans tracking-tighter text-black border rounded-2xl group"
-                >
-                  <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
-                  <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
-                  <span class="relative ">Submit</span>
-                </a>
-              </div>
-            </button>
+     
+      
+    </div>
+
+    <button>
+      <div className="flex justify-left ml-2 sm:mr-2 sm:justify-end">
+        <a
+          href="#_"
+          class="relative inline-flex items-center justify-center overflow-hidden text-xl py-5 px-16 ml font-sans tracking-tighter text-black border rounded-2xl group"
+        >
+          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
+          <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent"></span>
+          <span class="relative">Submit</span>
+        </a>
+      </div>
+    </button>
+</div>
+
           </div>
         </div>
       </form>

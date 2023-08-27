@@ -12,66 +12,55 @@ function StudyInIndia() {
 
   const Colleges = [
     {
-      name: "Massachusetts Institute of Technology (MIT)",
-      qswroldranking: "1",
-      location: "Cambridge, United States",
-      established: "1861"
+      name: "McGill University’s School of Continuing Studies",
+      location: "Montreal, Quebec",
+      logo: "https://assets.studies-overseas.com/Mc_Gill_University_s_School_of_Continuing_Studies_Montreal_Quebec_5d7b15a6f7.svg"
     },
     {
-      name: "Stanford University",
-      qswroldranking: "2",
-      location: "Stanford, United States",
-      established: "1885"
+      name: "The University of New South Wales",
+      location: "Sydney (CRICOS Code 00098G)",
+      logo: "https://assets.studies-overseas.com/the_university_of_south_wales_logo_592e898eb7.svg"
     },
     {
-      name: "Harvard University",
-      qswroldranking: "3",
-      location: "Cambridge, United States",
-      established: "1636"
+      name: "Coventry University, Wroclaw (Poland Campus)",
+      location: "Wroclaw, Poland",
+      logo: "https://assets.studies-overseas.com/Coventry_University_Wroclaw_Poland_Campus_1bf1160f87.png"
     },
     {
-      name: "California Institute of Technology (Caltech)",
-      qswroldranking: "4",
-      location: "Pasadena, United States",
-      established: "1891"
+      name: "Synergy University, Moscow",
+      location: "Moscow",
+      logo: "https://assets.studies-overseas.com/Synergy_University_Moscow_b80383ae31.png"
     },
     {
-      name: "University of Oxford",
-      qswroldranking: "5",
-      location: "Oxford, United Kingdom",
-      established: "1096"
+      name: "University of Auckland, Auckland",
+      location: "Auckland",
+      logo: "https://assets.studies-overseas.com/The_University_of_Auckland_logo_300x300_0f2b8ec0e4.jpg"
     },
     {
-      name: "University of Cambridge",
-      qswroldranking: "6",
-      location: "Cambridge, United Kingdom",
-      established: "1209"
+      name: "University of Antwerp, Antwerp",
+      location: "Antwerp, Belgium",
+      logo: "https://assets.studies-overseas.com/University_of_Antwerp_fevicon_edb8ef0f8b.jpg"
     },
     {
-      name: "ETH Zurich - Swiss Federal Institute of Technology",
-      qswroldranking: "7",
-      location: "Zurich, Switzerland",
-      established: "1854"
+      name: "University of Zurich ",
+      location: "Zürich, Switzerland",
+      logo: "https://assets.studies-overseas.com/University_of_Zurich_European_and_Asian_Business_Management_EABM_Zuerich_Switzerland_909c480701.png"
     },
     {
-      name: "University of Chicago",
-      qswroldranking: "9",
-      location: "Chicago, United States",
-      established: "1890"
+      name: "University of Nicosia",
+      location: "",
+      logo: "https://assets.studies-overseas.com/University_of_Nicosia_09fe9f4b98.png"
     },
     {
-      name: "University College London (UCL)",
-      qswroldranking: "10",
-      location: "London, United Kingdom",
-      established: "1826"
+      name: "University of Twente, Enschede",
+      location: "Enschede",
+      logo: "https://assets.studies-overseas.com/Group_1_97cd94f391.svg"
     },
     {
-      name: "Princeton University",
-      qswroldranking: "13",
-      location: "Princeton, United States",
-      established: "1746"
+      name: "Modul University, Vienna",
+      location: "Vienna",
+      logo: "https://assets.studies-overseas.com/Modul_University_Vienna_7f0672f5f8.jpg"
     }
-    // Add more colleges here
   ];
 
   return (
@@ -270,27 +259,32 @@ function StudyInIndia() {
 
 
 
+
       {/* best  colleges in abroad */}
 
-      <div className=' m-2 rounded-3xl select-none bg-primary p-5' >
-        <div className='m-3 md:p-10 justify-center'>
-          <h1 className='font-bold p-8  text-white text-2xl md:text-center md:text-5xl'>Some Top Colleges</h1>
-          <div className="flex  justify-center flex-wrap m-5 mt-10 md:m-20 gap-4">
-            {
-              Colleges.map((college) => {
-                return (
-                  <div className="bg-white w-full border-solid border text-xl md:w-[350px] md:h-[180px] h-[230px] self-center  md:text-sm border-gray rounded-xl hover:border-primary   shadow-md  p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                    <h2 className="font-bold md:text-xl mb-2">{college.name}</h2>
-                    <p className="text-gray-600  mb-2">QS World Ranking: {college.qswroldranking}</p>
-                    <p className="text-sm text-gray-500">Location: {college.location}</p>
-                    <p className="text-sm text-gray-500">Established: {college.established}</p>
-                  </div>
-                )
-              })
-            }
+      <div className="m-2 rounded-3xl select-none p-5">
+  <div className="m-3 md:p-10 justify-center">
+    <h1 className="font-bold p-8 text-secondary text-2xl md:text-center md:text-5xl">
+      Some Top Colleges
+    </h1>
+    <div className="flex justify-center flex-wrap m-5 mt-10 md:m-20 gap-4">
+      {Colleges.map((college) => (
+        <div className="bg-purple-300 w-full border-solid border text-xl md:w-[450px] md:h-[180px] h-[260px] self-center md:text-sm border-gray rounded-xl hover:border-primary shadow-md p-8 md:p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div className="flex flex-col md:flex-row items-center"> {/* Center content vertically and horizontally */}
+            <div className=" w-1/3 md:w-1/3 text-center"> {/* Center the image and text horizontally */}
+              <img className='inline-block' src={college.logo} alt={`${college.name} logo`} />
+            </div>
+            <div className="w-full md:w-1/2 ml-4">
+              <h2 className="font-bold mt-5 text-md md:text-xl text-white mb-2">{college.name}</h2>
+              <p className="text-sm text-gray-500">Location: {college.location}</p>
+            </div>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
       <div>
 
 

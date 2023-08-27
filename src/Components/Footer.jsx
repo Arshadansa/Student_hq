@@ -56,16 +56,11 @@ function Footer() {
               </a>
             </div>
 
-            <div className=" w-fit  text-white">
+            <div className="  w-1/2  text-white">
                 <h1 className=" text-2xl">About Us Student Hq</h1>
                 <p>We Help Students to Discover a seamless way to navigate the college admissions process and achieve your dreams</p>
-            </div>
-          </div>
 
-           
-
-            <div class="grid grid-cols-2  gap-8 sm:gap- sm:grid-cols-3 ">
-            <div className=" my-[2.44rem] rounded-2xl h-fit">
+                <div className=" my-[2.44rem] rounded-2xl h-fit mt-16">
               <h2 class="mb-6 -mt-10 text-2xl font-semibold text-gray-900 uppercase text-white ">
                 Contact Us
               </h2>
@@ -111,34 +106,81 @@ function Footer() {
                 </li>
               </ul>
             </div>
-              <div>
-                <h2 class="mb-6  font-semibold text-gray-900  uppercase text-gray">
-                 Services for Students
-                </h2>
-                <ul class="text-gray-600 text-gray-400 font-medium text-white">
-                  <li className="mb-1">
-                    <NavLink
-                      to="/StudyInIndia"
-                      className="hover:text-primary cursor-pointer"
-                    />
-                  </li>
-                  <li className="mb-1">
-                    <a href="" class="hover:underline">
-                      Interships
-                    </a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="" class="hover:underline">
-                      Web Designing
-                    </a>
-                  </li>
-                  <li className="mb-1">
-                    <a href="" class="hover:underline">
-                      SEO Services
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            </div>
+          </div>
+
+           
+
+            <div class="grid grid-cols-3   gap-8 sm:gap- sm:grid-cols-3 ">
+
+            <div>
+<h2 class="mb-6 font-semibold text-gray-900 uppercase text-gray">
+   Study Destinations
+  </h2>
+  <ul class="text-gray-600 text-xxl text-gray-400 font-medium text-white">
+  <li class="mb-1">
+    Canada
+  </li>
+  <li class="mb-1">
+    America
+  </li>
+  <li class="mb-1">
+    Australia
+  </li>
+  <li class="mb-1">
+    Spain
+  </li>
+  <li class="mb-1">
+    French
+  </li>
+  <li class="mb-1">
+    Sweden
+  </li>
+  <li class="mb-1">
+    Italy
+  </li>
+</ul>
+
+</div>
+<div>
+<div>
+<h2 class="mb-6 font-semibold text-gray-900 uppercase text-gray">
+    Services for Students
+  </h2>
+  <ul class="text-gray-600 text-gray-400 font-medium text-white">
+    <li class="mb-1">
+      Counselling
+    </li>
+    <li class="mb-1">
+      Test Preparation
+    </li>
+    <li class="mb-1">
+      Course, Country &amp; University Selection
+    </li>
+    <li class="mb-1">
+      Applications &amp; Admission
+    </li>
+    <li class="mb-1">
+      Scholarships
+    </li>
+    <li class="mb-1">
+      Internship
+    </li>
+    <li class="mb-1">
+      Education Loan
+    </li>
+    <li class="mb-1">
+      Visa Processing
+    </li>
+    <li class="mb-1">
+      Allied Services
+    </li>
+  </ul>
+</div>
+
+
+</div>
+
               <div>
                 <h2 class="mb-6  font-semibold text-gray-900 uppercase text-gray">
                   Useful Links
@@ -205,24 +247,7 @@ function Footer() {
 
                 </ul>
               </div>
-{/* 
-              <div>
-                <h2 class=" mb-6  font-semibold text-gray-900 uppercase text-gray">
-                  Follow us
-                </h2>
-                <ul class="text-gray-600 dark:text-gray-400 font-medium  text-white">
-                  <li class="mb-2">
-                    <a href="" class="hover:underline ">
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="hover:underline">
-                      Discord
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
+
             </div>
           </div>
           {/*
