@@ -88,7 +88,7 @@ function StudyInIndia() {
           </div>
         </div>
         <div className="hidden select-none lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="https://studenthq.in/images/study.webp" alt="hero image" />
+        <img src="image/study.webp" alt="hero image" />
         </div>
       </div>
 

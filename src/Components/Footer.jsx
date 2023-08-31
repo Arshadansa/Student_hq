@@ -23,14 +23,7 @@ function Footer() {
     <div>
       <input class="p-3 sm:p-5  rounded-2xl w-full sm:w-72 focus:outline-none focus:ring focus:border-blue-300" type="email" name="email" placeholder="Email" id="" />
     </div>
-    <div class="relative">
-      <select class="block w-full sm:w-72 p-3 sm:p-5 pr-10 rounded-2xl bg-white border border-gray-300 focus:outline-none focus:ring focus:border-blue-300" id="interest" name="interest">
-      <option disabled value="i'm Intrested In">i'm Intrested In</option>
-        <option value="college-tips">College Tips</option>
-        <option value="internships">Internships</option>
-        <option value="free-courses-news">Free Courses News</option>
-      </select>
-    </div>
+  
     <div>
       <input type="button" value="Subscribe Now" class="bg-gradient-to-r from-orange-400 to-rose-400  text-white font-bold p-3 sm:p-5 rounded-2xl w-full sm:w-72" />
     </div>
