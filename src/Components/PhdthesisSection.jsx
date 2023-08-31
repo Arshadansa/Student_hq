@@ -30,12 +30,12 @@ function PhdthesisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block z-0 lg:mt-0 lg:col-span-5 md:col-span-3 lg:flex">
-                    <img src="https://studenthq.in/images/phd.png" className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
+                    <img src="https://o.remove.bg/downloads/09e9b79e-4b0f-4077-9058-6e8b6c0b1c5a/distance-learning-online-courses-business-education-online-books-textbooks-illustration_566886-1595-removebg-preview.png" className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
                 </div>
             </div>
 
             <div className='w-full select-none p-3 lg:h-auto  lg:pt-8 flex flex-col justify-center items-start  '>
-                <div className='lg:px-[490px] md:text-4xl mt-6 mb-8 text-xl lg:text-4xl font-semibold '>
+                <div className='lg:px-[490px] md:text-2xl mt-6 mb-8 text-xl 2xl:text-4xl font-semibold '>
                     <h1>Phd Thesis Writing Services</h1>
                 </div>
                 <div className='flex justify-center text-lg lg:text-lg md:text-xl text-justify lg:mx-32'>

@@ -31,7 +31,7 @@ function AssignementSection() {
                     </div>
                 </div>
                 <div className=" md:block  lg:mt-0 lg:col-span-5 lg:flex">
-                    <img className='md:h-[230px] md:w-[300px] lg:h-[410px] lg:w-[520px] lg:mb-3' src="https://o.remove.bg/downloads/ed3268f2-d035-4de4-8c57-56da41c916b7/Assignment-Writing-Services-1-removebg-preview.png" alt="hero image" />
+                    <img className='md:h-[230px] md:w-[300px] lg:h-[410px] lg:w-[520px] lg:mb-3' src="https://o.remove.bg/downloads/8061104d-2df9-406d-bd17-7f08066160ea/creative-writing-assignment-isolated-cartoon-vector-illustration_107173-27606-removebg-preview.png" alt="hero image" />
                 </div>
 
             </div>

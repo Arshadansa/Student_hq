@@ -57,7 +57,7 @@ function Mid() {
           </div>
         </div>
 
-        <div className="flex flex-row  p-20 pt-1 flex-wrap justify-center">
+        <div className="flex flex-row  lg:p-5 2xl:p-20  pt-1 flex-wrap justify-center">
           <div className=" flex flex-row mx-8 ">
             <div className=" flex flex-col justify-center  my-10">
               <div className="bg-white rounded-full h-fit w-fit p-10   self-center">
@@ -277,12 +277,12 @@ function Mid() {
                 </span>
               </Link>
             </div>
-            <div className="flex  mt-2   lg:w-[50%]">
-              <div className=" relative left-10  md:left-32 ">
-                <img className="h-28 lg:w-[600px] w-[100%]" src="https://themeim.com/demo/eduplan/assets/img/shapes/mountant.png" alt="" />
-              </div>
-              <div className="relative lg:right-32 right-20 bottom-5 w-32 ">
+            <div className="flex   justify-end   lg:w-[50%] ">
+              <div className="relative left-[65%]  z-10 bottom-5 w-32 ">
                 <img className="h-20 w-42" src="https://themeim.com/demo/eduplan/assets/img/shapes/plane.png" alt="" />
+              </div>
+              <div className=" relative  w-[80%] z-0  ">
+                <img className="h-28  float-right lg:w-[90%] w-[100%]" src="https://themeim.com/demo/eduplan/assets/img/shapes/mountant.png" alt="" />
               </div>
             </div>
           </div>

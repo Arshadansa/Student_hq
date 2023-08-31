@@ -58,8 +58,8 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="items-center  select-none flex-wrap hidden lg:font-semibold lg:block md:w-fit mr-6 ml-44 w-full">
-          <ul className="flex items-center space-x-6 xl:text-xs md:text-xs 2xl:text-lg md:flex-nowrap md:space-x-8 md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-50 md:dark:bg-gray-50 text-black dark:border-gray-700">
+        <div className="items-center  select-none flex-wrap hidden   lg:font-semibold lg:block md:w-fit mr-6  md:ml-20 2xl:ml-44 w-full">
+          <ul className="flex items-center space-x-6  xl:text-xs md:text-xs 2xl:text-lg md:flex-nowrap md:space-x-8 md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-50 md:dark:bg-gray-50 text-black dark:border-gray-700">
 
             <NavLink
               to="/StudyInIndia"
@@ -186,7 +186,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/blog"
-                className="block px-[30px] cursor-pointer    font-semibold text-darkgray  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-[30px] cursor-pointer  hover:text-primary   font-semibold text-darkgray "
               >
                 Our Blog
               </NavLink>
@@ -231,7 +231,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/StudyInIndia"
-                className="block px-[30px] cursor-pointer font-semibold text-darkgray  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-[30px] cursor-pointer hover:text-primary font-semibold text-darkgray  "
               >
                 Study in India
               </NavLink>
@@ -239,7 +239,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/StudyInAbroad"
-                className="block px-[30px] cursor-pointer    font-semibold text-darkgray hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-[30px] cursor-pointer hover:text-primary   font-semibold text-darkgray "
               >
                 Study in Abroad
               </NavLink>

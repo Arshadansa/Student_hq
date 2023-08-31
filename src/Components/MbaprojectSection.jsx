@@ -29,12 +29,12 @@ function PhdthesisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block z-0 lg:mt-0 md:col-span-5 lg:flex">
-                    <img src="https://studenthq.in/images/report.webp" className='z-0 h-34' alt="hero image" />
+                    <img src="https://o.remove.bg/downloads/3f55a6a5-9559-4a06-b2cf-f8f43f0d1a97/novelist-writing-concept-illustration_114360-2695-removebg-preview.png" className='z-0 h-34' alt="hero image" />
                 </div>
             </div>
 
             <div className='lg:w-full p-3 select-none h-auto  lg:pt-8 flex flex-col justify-center items-start  '>
-                <div className='lg:px-[470px] mt-3 md:text-2xl text-xl mb-4 lg:mb-8 lg:text-5xl font-semibold '>
+                <div className='lg:px-[470px] mt-3 md:text-3xl text-xl mb-4 lg:mb-8  2xl:text-5xl font-semibold '>
                     <h1>MBA Report Making Service</h1>
                 </div>
                 <div className='flex justify-center md:text-xl lg:text-lg  text-justify lg:mx-32 '>

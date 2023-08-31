@@ -31,13 +31,13 @@ function SypnosisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block lg:mt-0  md:col-span-4 lg:col-span-5 lg:flex">
-                    <img src="https://studenthq.in/images/synopsis.png" alt="hero image" />
+                    <img src="https://o.remove.bg/downloads/f8db7963-f412-42d9-9b58-16ebe317124d/woman-sat-home-with-laptop-rested-happily-with-fragrant-coffee-cause-creativity-flat-style-cartoon-illustration-vector_610956-817-removebg-preview.png" alt="hero image" />
                 </div>
 
             </div>
 
 
-            <div className='lg:w-full p-2 select-none  h-auto pb-10 lg:flex flex-col justify-center '>
+            <div className='lg:w-full p-2 select-none  h-auto 2xl:pb-10 lg:flex flex-col justify-center '>
                 <div className='flex lg:justify-center lg:mt-6 mt-3 mb-3 lg:mb-10 text-3xl  lg:text-5xl font-semibold'>
                     <h1>Synopsis Writing ?</h1>
                 </div>
@@ -70,7 +70,7 @@ function SypnosisSection() {
                                 <span
                                     className="absolute w-0 h-0 transition-all duration-700 ease-in-out bg-primary rounded-full group-hover:w-80 group-hover:h-80"></span>
                                 <span
-                                    className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
+                                    className="absolute inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent "></span>
                                 <span className="relative  group-hover:text-white text-xl ">
                                     Hire Experts
                                 </span>
@@ -81,7 +81,7 @@ function SypnosisSection() {
             </div>
 
 
-            <div className='lg:w-full h-[55%] lg:h-full select-none mb-12 md:mb-0 flex flex-col justify-center'>
+            <div className='lg:w-full h-[55%]  2xl:h-full select-none mb-12 md:mb-0 flex flex-col justify-center'>
                 <Cart />
                 <div className='lg:w-full mt-3  lg:h-96 select-none flex justify-start lg:px-20 '>
                     <div className='lg:p-11 p-2 font-semibold'>

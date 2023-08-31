@@ -161,11 +161,11 @@ function Bottom() {
 
       {/* category...section */}
       <div className="flex flex-col p-2 sm:p-10  sm:m-10 m-4  flex-wrap">
-        <div className="lg:ml-1">
+        <div className="lg:ml-1 flex justify-center">
           <p className="font-bold text-primary">CATEGORIES</p>
         </div>
         <div>
-          <h1 className=" mt-3 lg:ml-2  font-bold text-xl md:text-2xl lg:text-5xl text-black">
+          <h1 className=" mt-3 lg:ml-2  flex justify-center font-bold text-xl md:text-2xl lg:text-5xl text-black">
             Popular Discipline & Courses
           </h1>
         </div>
