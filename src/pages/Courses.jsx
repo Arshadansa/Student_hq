@@ -4,7 +4,7 @@ import Narbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 import CourseCard from "../Components/CourseCard";
-
+import { Link, NavLink } from "react-router-dom";
 
 
 
