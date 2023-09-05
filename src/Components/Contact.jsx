@@ -37,7 +37,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log(form.current);
     emailjs.sendForm("service_ehoxret", "template_j93jwtr", form.current, "P_PnTN-0ZUJJmj1z-")
       .then(
         (result) => {
@@ -62,7 +62,7 @@ function Contact() {
 
   return (
     <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="flex justify-center items-center w-screen h-screen">
-      <form ref={form} id="myForm" onSubmit={handleSubmit}></form>
+      <form ref={form} onSubmit={handleSubmit}>
       <div className="modal-content select-none w-full flex justify-center items-center">
         <div className="p-5 rounded-[30px] text-white my-5 bg-gradient-to-r from-orange-400 to-rose-400 lg:mx-52 shadow-inner">
           <div className="flex flex-col md:flex-row lg:flex-row md:flex-wrap lg:flex-wrap">
@@ -102,9 +102,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      
+      </form>
       {showSuccessPopup && <SuccessPopup isVisible={showSuccessPopup} onClose={() => setShowSuccessPopup(false)} />}
-      <form/>
+      
     </Modal>
   );
 }
