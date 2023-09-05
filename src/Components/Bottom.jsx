@@ -121,14 +121,14 @@ function Bottom() {
       link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/book.png',
       name: 'Education & Training',
     },
-    {
-      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/click.png',
-      name: 'Click',
-    },
-    {
-      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/french-fry.png',
-      name: 'French Fry',
-    },
+    // {
+    //   link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/click.png',
+    //   name: 'Click',
+    // },
+    // {
+    //   link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/french-fry.png',
+    //   name: 'French Fry',
+    // },
     {
       link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/news-paper.png',
       name: 'Journalism & Media',
@@ -145,10 +145,10 @@ function Bottom() {
       link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/humanity.png',
       name: 'Humanities',
     },
-    {
-      link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/recicle.png',
-      name: 'Recycle',
-    },
+    // {
+    //   link: 'https://themeim.com/demo/eduplan/assets/img/sections/desipline/recicle.png',
+    //   name: 'Recycle',
+    // },
   ];
 
   console.log(category);
