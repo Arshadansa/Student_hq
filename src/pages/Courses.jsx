@@ -204,7 +204,10 @@ function Courses() {
                         <p className='my-4  text-bgDark font-medium'>{course.description}</p>
                       </div>
 
-                      <div className=' flex self-center m-3'>
+                      <NavLink
+            to="/ApplyOnline"
+          >
+           <div className=' flex self-center m-3'>
                         <a href="#_" class="relative rounded-3xl inline-flex items-center self-center  px-6 py-3 overflow-hidden font-medium transition-all bg-white  justify-center  hover:bg-white  ">
                           <span class="w-48 h-48 rounded-3xl rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                           <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
@@ -212,6 +215,10 @@ function Courses() {
                             APPLY NOW</span>
                         </a>
                       </div>
+          </NavLink>
+
+
+                     
                     </div>
                   </div>
                 </div>
