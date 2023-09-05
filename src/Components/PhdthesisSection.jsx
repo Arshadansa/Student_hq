@@ -2,6 +2,7 @@ import Cart from "./Cart"
 import React from 'react'
 import ChooseUs from "./ChooseUs"
 import { Link } from "react-router-dom"
+import phd from '../image/Phd.png'
 
 
 function PhdthesisSection() {
@@ -30,7 +31,7 @@ function PhdthesisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block z-0 lg:mt-0 lg:col-span-5 md:col-span-3 lg:flex">
-                    <img src="https://o.remove.bg/downloads/09e9b79e-4b0f-4077-9058-6e8b6c0b1c5a/distance-learning-online-courses-business-education-online-books-textbooks-illustration_566886-1595-removebg-preview.png" className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
+                    <img src={phd} className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
                 </div>
             </div>
 

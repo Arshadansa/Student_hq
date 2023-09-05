@@ -2,7 +2,7 @@ import React from 'react'
 import AnotherChooseUs from '../Components/AnotherChooseUs'
 import Cart from './Cart'
 import { Link } from 'react-router-dom'
-
+import sypnosis from '../image/sypnosis.png'
 function SypnosisSection() {
     return (
         <>
@@ -31,7 +31,7 @@ function SypnosisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block lg:mt-0  md:col-span-4 lg:col-span-5 lg:flex">
-                    <img src="https://o.remove.bg/downloads/f8db7963-f412-42d9-9b58-16ebe317124d/woman-sat-home-with-laptop-rested-happily-with-fragrant-coffee-cause-creativity-flat-style-cartoon-illustration-vector_610956-817-removebg-preview.png" alt="hero image" />
+                    <img src={sypnosis} alt="hero image" />
                 </div>
 
             </div>
