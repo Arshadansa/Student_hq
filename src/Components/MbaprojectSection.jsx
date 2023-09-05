@@ -1,6 +1,7 @@
 import React from 'react'
 import ChooseUs from '../Components/ChooseUs'
 import { Link } from 'react-router-dom'
+import mba from "../image/mba.png"
 
 
 function PhdthesisSection() {
@@ -29,7 +30,7 @@ function PhdthesisSection() {
                     </div>
                 </div>
                 <div className="hidden md:block z-0 lg:mt-0 md:col-span-5 lg:flex">
-                    <img src="https://o.remove.bg/downloads/3f55a6a5-9559-4a06-b2cf-f8f43f0d1a97/novelist-writing-concept-illustration_114360-2695-removebg-preview.png" className='z-0 h-34' alt="hero image" />
+                    <img src={mba} className='z-0 h-34' alt="hero image" />
                 </div>
             </div>
 

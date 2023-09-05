@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import assignment from "../image/assignement.png"
 
 function AssignementSection() {
     return (
@@ -31,7 +32,7 @@ function AssignementSection() {
                     </div>
                 </div>
                 <div className=" md:block  lg:mt-0 lg:col-span-5 lg:flex">
-                    <img className='md:h-[230px] md:w-[300px] lg:h-[410px] lg:w-[520px] lg:mb-3' src="https://o.remove.bg/downloads/8061104d-2df9-406d-bd17-7f08066160ea/creative-writing-assignment-isolated-cartoon-vector-illustration_107173-27606-removebg-preview.png" alt="hero image" />
+                    <img className='md:h-[230px] md:w-[300px] lg:h-[410px] lg:w-[520px] lg:mb-3' src={assignment} alt="hero image" />
                 </div>
 
             </div>
