@@ -21,7 +21,7 @@ function Courses() {
       shortform: "BBA",
       fullform: "BACHELOR OF BUSINESS ADMINISTRATION",
       description: "Learn the fundamentals of business management and develop essential leadership skills.",
-      img: "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      img: "https://www.jnncollege.edu.in/wp-content/uploads/2018/12/2.jpg",
     },
     {
       shortform: "BSc",
@@ -33,7 +33,7 @@ function Courses() {
       shortform: "BA",
       fullform: "BACHELOR OF ARTS",
       description: "Deepen your understanding of humanities, social sciences, and creative arts.",
-      img: "https://images.pexels.com/photos/1808689/pexels-photo-1808689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      img: "https://images.ctfassets.net/pdf29us7flmy/3uRSbnOKWfAfUv32rhRfPB/1527cb9d682afc0e82bac512f72ec97d/GettyImages-478161521.jpg?w=720&q=100&fm=jpg",
     },
     {
       shortform: "MBBS",
@@ -45,7 +45,7 @@ function Courses() {
       shortform: "LLB",
       fullform: "BACHELOR OF LAWS",
       description: "Study the legal system and gain skills in legal analysis and argumentation.",
-      img: "https://images.pexels.com/photos/3701798/pexels-photo-3701798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      img: "https://images.phttps://images.news18.com/ibnkhabar/uploads/2022/10/mbbs-1-16659370153x2.jpgexels.com/photos/3701798/pexels-photo-3701798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       shortform: "BEng",
@@ -167,7 +167,7 @@ function Courses() {
               return (
                 <div key={item} className='select-none shadow bg-white  rounded-3xl  w-full  sm:w-[95%]  relative'>
                   <div className=''>
-                    <img className=' object-fill rounded-t-3xl  h-60 w-96' src={course.img} alt="" />
+                    <img className=' object-fill rounded-t-3xl  h-60 w-96' src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg?w=1060&t=st=1693924671~exp=1693925271~hmac=2f238744a200bf452c493cb44b4224fa9ed90e37a6e161fc557f387211472e58" alt="" />
                   </div>
                   <div className='flex flex-col w-fit m-4'>
                     <h1 className='my-2 text-lg text-gray font-thin'>{course.shortform}</h1>
@@ -207,7 +207,9 @@ function Courses() {
                       <div className=' flex self-center m-3'>
                         <a href="#_" class="relative rounded-3xl inline-flex items-center self-center  px-6 py-3 overflow-hidden font-medium transition-all bg-white  justify-center  hover:bg-white  ">
                           <span class="w-48 h-48 rounded-3xl rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                          <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">APPLY NOW</span>
+                          <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                            
+                            APPLY NOW</span>
                         </a>
                       </div>
                     </div>
