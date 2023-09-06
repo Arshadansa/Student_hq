@@ -29,7 +29,7 @@ function PhdthesisSection() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block z-0 lg:mt-0 md:col-span-5 lg:flex">
+                <div className=" md:block z-0 lg:mt-0 md:col-span-5 lg:flex">
                     <img src={mba} className='z-0 h-34' alt="hero image" />
                 </div>
             </div>

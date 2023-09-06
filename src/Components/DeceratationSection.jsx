@@ -28,7 +28,7 @@ function DeceratationSection() {
                     </div>
 
                 </div>
-                <div className=" hidden  md:block lg:mt-0 md:col-span-4 lg:col-span-4 lg:flex">
+                <div className=" md:block lg:mt-0 md:col-span-4 lg:col-span-4 lg:flex">
                     <img className='' src={deceratation} alt="StuHq" />
                 </div>
 
