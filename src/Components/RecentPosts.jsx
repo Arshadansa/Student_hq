@@ -79,7 +79,7 @@ const Blog = () => {
               </span>
             </div>
 
-            <div className="flex flex-wrap justify-center md:justify-start lg:flex-nowrap m-3 lg:pr-24 lg:pl-24 lg:pt-4 lg:pb-20">
+            <div  className="flex flex-wrap justify-center md:justify-start lg:flex-nowrap m-3 lg:pr-24 lg:pl-24 lg:pt-4 lg:pb-20">
               {recentPosts.map((recentPost) => (
                 <div className="w-full md:w-1/2 lg:w-1/3 p-3 md:pt-16 md:pb-20 rounded-lg" key={recentPost.id}>
                   <div className="rounded-lg aspect-w-16 aspect-h-9">

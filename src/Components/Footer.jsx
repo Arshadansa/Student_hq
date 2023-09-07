@@ -40,16 +40,16 @@ function Footer() {
           <div className="  justify-center -mt-16  flex mb-10  flex-col ">
           <div class="  h-fit w-fit">
               <a href="" class="">
-                <img
+                {/* <img
                   src="https://studenthq.in/images/transparent.png"
                   class="h-[10rem] sm:h-88 justify-center"
                   alt="studenthq Logo"
-                />
+                /> */}
                 {/* <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">StudentHq</span> */}
               </a>
             </div>
 
-            <div className="  w-1/2  text-white">
+            <div className="  w-1/2 mt-10 mb-10  text-white">
                 <h1 className=" text-2xl">About Us Student Hq</h1>
                 <p>We Help Students to Discover a seamless way to navigate the college admissions process and achieve your dreams</p>
 
@@ -111,6 +111,9 @@ function Footer() {
    Study Destinations
   </h2>
   <ul class="text-gray-600 text-xxl text-gray-400 font-medium text-white">
+  <li class="mb-1">
+    India
+  </li>
   <li class="mb-1">
     Canada
   </li>

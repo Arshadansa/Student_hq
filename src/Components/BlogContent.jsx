@@ -28,6 +28,7 @@ const db = getFirestore(app);
 const Blog = () => {
 
     const handleReadMore = (postId) => {
+      window.scrollTo(0,0);
         console.log(postId);
         navigate(`/new-page/${postId}`);
       };

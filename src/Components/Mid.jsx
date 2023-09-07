@@ -45,7 +45,7 @@ function Mid() {
 
   return (
     <>
-      <div className="  pt-10 flex flex-col  justify-center">
+      <div id="targetComponent" className="  pt-10 flex flex-col  justify-center">
         <div className="flex flex-col justify-center text-center">
           <div className="p-3">
             <span className=" text-primary font-medium text-lg">STEPS</span>
@@ -170,16 +170,9 @@ function Mid() {
 
               <div className="mt-16 text-left flex flex-col gap-3  font-medium w-11/12">
                 <span>
-                  Ouya Education, which is based in Victoria, British Columbia,
-                  Canada, frequently deals with issues of employment
-                  (recruitment and retention) for temporary foreign workers
-                  (TFW), as well as temporary and permanent residency
-                  applications and other general immigration matters with
-                  Canadian federal departments (IRCC and CBSA).
+                In today's fast-paced and ever-changing world, gaining a competitive advantage goes beyond just product innovation. In the realm of education, organizations like StudentHQ are pioneering new ways to assist students in their journey towards admissions and successful study experiences. Let's explore how StudentHQ goes the extra mile to support students on their educational path.
                   <div className="mt-2">
-                    Education also provides educational consulting services for
-                    student- clients who want to study in Canada, and require
-                    help with the application process.
+                  One key aspect of gaining a competitive advantage is providing comprehensive guidance throughout the admissions process. StudentHQ understands that the journey from application to acceptance can be overwhelming for students. Hence, they offer a range of resources to equip students with the knowledge and skills needed to navigate the admissions landscape successfully. From personalized counseling sessions to workshops on writing effective college essays, StudentHQ ensures that students have the necessary tools to showcase their strengths and stand out from the competition.
                   </div>
                 </span>
 
