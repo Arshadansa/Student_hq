@@ -1,4 +1,10 @@
 import React from 'react'
+import onTime from "../image/on-time.png"
+import expert from "../image/expert.png"
+import customerservice from "../image/customer-service.png"
+import bookshelf from "../image/bookshelf.png"
+import bestprice from "../image/best-price.png"
+import flag from "../image/flag.png"
 
 function ChooseUs() {
     return (
@@ -9,8 +15,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-20"
-                                src="https://studenthq.in/images/on-time.png"
-                                alt=""
+                                src={onTime}
+                                alt="StuHq"
                             />
                         </div>
                         <div className="text-center  font-bold lg:text-2xl">
@@ -30,8 +36,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-20"
-                                src="https://studenthq.in/images/expert.png"
-                                alt=""
+                                src={expert}
+                                alt="StuHq"
                             />
                         </div>
                         <div className="text-center font-bold lg:text-2xl">
@@ -51,8 +57,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-20"
-                                src="https://studenthq.in/images/customer-service.png"
-                                alt=""
+                                src={customerservice}
+                                alt="StuHq"
                             />
                         </div>
                         <div className="text-center font-bold lg:text-2xl">
@@ -74,8 +80,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-20"
-                                src="https://studenthq.in/images/bookshelf.png"
-                                alt=""
+                                src={bookshelf}
+                                alt="StuHq"
                             />
                         </div>
                         <div className="text-center font-bold lg:text-2xl">
@@ -95,8 +101,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-20"
-                                src="https://studenthq.in/images/best-price.png"
-                                alt=""
+                                src={bestprice}
+                                alt="StuHq"
                             />
                         </div>
                         <div className=" font-bold lg:text-2xl">
@@ -116,8 +122,8 @@ function ChooseUs() {
                         <div className="h-fit">
                             <img
                                 className="h-24"
-                                src="https://studenthq.in/images/flag.png"
-                                alt=""
+                                src={flag}
+                                alt="StuHq"
                             />
                         </div>
                         <div className=" font-bold lg:text-2xl">

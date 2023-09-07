@@ -30,7 +30,7 @@ function SypnosisSection() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block lg:mt-0  md:col-span-4 lg:col-span-5 lg:flex">
+                <div className=" md:block lg:mt-0  md:col-span-4 lg:col-span-5 lg:flex">
                     <img src={sypnosis} alt="hero image" />
                 </div>
 
@@ -47,7 +47,7 @@ function SypnosisSection() {
                 <div className='flex text-lg md:text-xl justify-start text-gray-600  text-justify mt-3 lg:mx-28'>
                     <p>There are 3 parts of synopsis:-</p>
                 </div>
-                <div className='flex md:text-xl lg:text-lg justify-start mt-1 mb-8  md:mb-0 lg:mx-28'>
+                <div className='flex md:text-xl lg:text-lg justify-start mt-1 mb-16  md:mb-0 lg:mx-28'>
                     <ul class="list-decimal mx-5">
                         <li className='text-justify text-gray-400 text-black text-medium'><span className=' text-gray-700 font-medium'>Character :-</span> This is the main character  that make the foundation of your story.</li>
                         <li className='text-justify text-gray-400 text-black text-medium'><span className=' text-gray-700  font-medium'>Conflict:-</span>Another, main part  that the audience reads.  </li>

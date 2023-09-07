@@ -30,7 +30,7 @@ function PhdthesisSection() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block z-0 lg:mt-0 lg:col-span-5 md:col-span-3 lg:flex">
+                <div className=" md:block z-0 lg:mt-0 lg:col-span-5 md:col-span-3 lg:flex">
                     <img src={phd} className='z-0 md:h-[180px] lg:h-[320px]' alt="hero image" />
                 </div>
             </div>
